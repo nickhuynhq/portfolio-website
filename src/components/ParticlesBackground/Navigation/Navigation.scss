@@ -1,0 +1,20 @@
+@use "../../../styles/partials/colors" as *;
+@use "../../../styles/partials/mixins" as *;
+
+.navigation {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem 8%;
+  background-color: #3b4252;
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    list-style: none;
+
+    &-item {
+      color: white;
+    }
+  }
+}
