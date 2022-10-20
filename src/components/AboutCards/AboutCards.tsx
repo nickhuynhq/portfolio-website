@@ -1,9 +1,15 @@
-import "./AboutCards.scss"
-
-const AboutCards = () => {
+import "./AboutCards.scss";
+const AboutCards = ({ logo }: any) => {
   return (
-    <div>AboutCards</div>
-  )
-}
+    <div className="about-cards">
+      <img
+        className="about-cards__logo"
+        title={`${logo}`}
+        src={require(`../../assets/logos/${logo}-logo.png`)}
+        alt={`${logo}`}
+      />
+    </div>
+  );
+};
 
-export default AboutCards
+export default AboutCards;

@@ -7,7 +7,7 @@ const Navigation = () => {
       <ul className="navigation__list">
         <li>
           <a className="navigation__list-item" href="#about">
-            About
+            About Me
           </a>
         </li>
         <li>
