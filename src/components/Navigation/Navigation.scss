@@ -1,11 +1,14 @@
-@use "../../../styles/partials/colors" as *;
-@use "../../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
 
 .navigation {
+  position: sticky;
+  top:0;
   display: flex;
-  justify-content: end;
+  justify-content: right;
   padding: 0.5rem 8%;
   background-color: #3b4252;
+  opacity: 0.95;
 
   &__list {
     display: flex;

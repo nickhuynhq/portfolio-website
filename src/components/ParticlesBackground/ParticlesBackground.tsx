@@ -1,14 +1,13 @@
 import { useCallback } from "react";
+import { TypeAnimation } from "react-type-animation";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./ParticlesBackground.scss";
-import {HiArrowDown} from "react-icons/hi"
+import { HiArrowDown } from "react-icons/hi";
 
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
-
     // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -16,22 +15,68 @@ const ParticlesBackground = () => {
   }, []);
 
   const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container);
-    },
+    async (container: Container | undefined) => {},
     []
   );
   return (
     <div className="particle-background">
       <h1 className="particle-background__heading--left">
-        Hello, my name is{" "}
-        <span className="particle-background__heading--highlight">Nick.</span>
+        <TypeAnimation
+          sequence={[
+            "Hello", // Types 'One'
+            3000, // Waits 1s
+            "你好", // Deletes 'One' and types 'Two'
+            4000, // Waits 2s
+            "Salut",
+            3000,
+            "Xin chào",
+            3000,
+            "Hola",
+            3000,
+            "안녕",
+            4000,
+            // Types 'Three' without deleting 'Two'
+          ]}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          speed={1}
+          className={"particle-background__heading--hello"}
+        />{" "}
+        my name is{" "}
+        <span className="particle-background__heading--highlight">
+          Nick
+        {/* <TypeAnimation
+          sequence={[
+            "Nick", // Types 'One'
+            3500, // Waits 1s
+            "偉仁", // Deletes 'One' and types 'Two'
+            4500, // Waits 2s
+            "Nick",
+            3500,
+            "Vỹ Nhân",
+            3500,
+            "Nick",
+            3500,
+            "위인",
+            4500,
+            // Types 'Three' without deleting 'Two'
+          ]}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          speed={25}
+          className={"particle-background__heading--hello"}
+        /> */}
+        </span>
       </h1>
       <h1 className="particle-background__heading">
-        And I am a full stack web developer.
+        And I'm a full stack web developer.
       </h1>
-      <a href="#projects" className="particle-background__button">View my work  <HiArrowDown /></a>
-     
+      <a href="#projects" className="particle-background__button">
+        View my work <HiArrowDown />
+      </a>
+
       <Particles
         id="tsparticles"
         init={particlesInit}

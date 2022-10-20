@@ -12,11 +12,17 @@
   &__heading {
     color: $text-primary;
     font-weight: 400;
-    font-size: 3rem;
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 1rem;
     animation: fadeInRight 1s ease-in-out;
 
-    @include tablet{
+    @include tablet {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @include desktop {
       font-size: 4rem;
     }
 
@@ -29,24 +35,27 @@
       color: $text-secondary;
       font-weight: 700;
     }
+
+    &--hello {
+      font-weight: 700;
+    }
   }
 
   &__button {
     display: flex;
-    align-self: flex-start;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     margin-top: 1rem;
     text-decoration: none;
     font-size: 1.25rem;
+    border-radius: .625rem;
     color: $text-secondary;
     padding: 1rem 2rem;
     border: 0.25rem solid $text-secondary;
     animation: fadeInBottom 1s ease-in-out;
 
-    @include tablet{
-      align-self: center;
+    @include tablet {
       font-size: 1.5rem;
     }
 

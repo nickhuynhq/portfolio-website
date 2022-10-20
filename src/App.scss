@@ -1,3 +1,5 @@
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/mixins" as *;
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 *, ::before, ::after {
@@ -25,5 +27,13 @@ body {
 }
 
 .main{
-  background-color: #4c566a;
+  background-color: $background-primary;
+  padding: 2rem 8%;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  color: white;
+  min-height: 100vh;
 }
