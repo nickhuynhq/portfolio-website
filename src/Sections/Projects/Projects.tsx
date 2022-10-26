@@ -10,6 +10,7 @@ const Projects = () => {
 
       {ProjectsData.map((project) => (
         <ProjectCard
+          key={project.name}
           name={project.name}
           description={project.description}
           image={project.image}

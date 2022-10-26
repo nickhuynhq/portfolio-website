@@ -51,9 +51,9 @@ const About = () => {
             solving puzzles and had a knack for troubleshooting. This led me
             into the world of tech and I have been hooked ever since. As an
             enthusiast, I am constantly online trying to seek out the latest and
-            greatest, and in the process have learnt to program and create
-            interesting new projects in my spare time. When I'm not at my
-            computer I love to spend my time cycling, listening to music, and
+            greatest, and in my spare time have learnt to program and create
+            interesting new projects. When I'm not at my
+            computer I love to spend my time cycling, taking photos, listening to music, and
             playing guitar.
           </p>
         </div>

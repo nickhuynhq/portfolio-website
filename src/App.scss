@@ -2,20 +2,21 @@
 @use "./styles/partials/colors" as *;
 @use "./styles/partials/mixins" as *;
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400');
 
 *, ::before,::after {
   box-sizing: border-box;
 }
 
 h1, h2, h3, p, a {
-  font-family: eurostile-extended, sans-serif;
+  font-family: eurostile-extended, "Do Hyeon", sans-serif;
   color: $text-primary;
   padding: 0;
   margin: 0;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   
   @include tablet {
@@ -49,7 +50,7 @@ h2 {
 }
 
 p {
-  font-family: "Rajdhani";
+  font-family: "Rajdhani", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;

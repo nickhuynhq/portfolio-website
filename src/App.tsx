@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation/Navigation";
 import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
 import Projects from "./Sections/Projects/Projects";
 import "./App.scss";
+import Contact from "./Sections/Contact/Contact";
 
 function App() {
   return (
@@ -11,13 +12,9 @@ function App() {
       <Navigation />
       <main className="main">
         <About />
-
         <Projects />
-
-        <section className="section" id="contact">
-          Contact Me
-        </section>
       </main>
+      <Contact />
       <section>Footer</section>
     </div>
   );
