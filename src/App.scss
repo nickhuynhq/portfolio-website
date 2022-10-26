@@ -1,12 +1,13 @@
 @use "./styles/partials/fonts";
 @use "./styles/partials/colors" as *;
 @use "./styles/partials/mixins" as *;
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 *, ::before,::after {
   box-sizing: border-box;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
   font-family: eurostile-extended, sans-serif;
   color: $text-primary;
   padding: 0;
@@ -18,12 +19,39 @@ h1 {
   font-weight: 700;
   
   @include tablet {
+    font-size: 2rem;
+  }
+
+  @include desktop {
+    font-size: 2.25rem;
+  }
+
+  @include desktop-xl {
     font-size: 3rem;
   }
 }
 
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  
+  @include tablet {
+    font-size: 1.55rem;
+  }
+
+  @include desktop {
+    font-size: 1.75rem;
+  }
+
+  @include desktop-xl {
+    font-size: 2rem;
+  }
+}
+
 p {
+  font-family: "Rajdhani";
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.6;
 
   @include tablet {
@@ -31,6 +59,10 @@ p {
   }
   @include desktop {
     font-size: 1.25rem;
+  }
+
+  @include desktop-xl {
+    font-size: 1.5rem;
   }
 }
 
@@ -54,11 +86,9 @@ body {
   padding: 2rem 8%;
 }
 
-.section {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: white;
   min-height: 100vh;
 }

@@ -1,9 +1,9 @@
 import "./AboutCards.scss";
-const AboutCards = ({ logo }: any) => {
+const AboutCards = ({ logo, section }: any) => {
   return (
-    <div className="about-cards">
+    <div className={`${section}-cards`}>
       <img
-        className="about-cards__logo"
+        className={`${section}-cards__logo`}
         title={`${logo}`}
         src={require(`../../assets/logos/${logo}-logo.png`)}
         alt={`${logo}`}

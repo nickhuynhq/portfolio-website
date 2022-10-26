@@ -51,11 +51,9 @@
     gap: 1rem;
     margin-top: 1rem;
     text-decoration: none;
-    font-size: 1.25rem;
-    border-radius: .625rem;
     color: $text-secondary;
     padding: 1rem 2rem;
-    border: 0.25rem solid $text-secondary;
+    border: 0.25rem solid $button-background;
     animation: fadeInBottom 1s ease-in-out;
 
     @include tablet {
@@ -64,8 +62,8 @@
 
     &:hover {
       transition: 0.5s ease;
-      background-color: $text-secondary;
-      color: $text-primary;
+      background-color: $button-background;
+      color: white;
     }
   }
 

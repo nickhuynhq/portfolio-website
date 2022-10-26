@@ -4,6 +4,7 @@ import "./Navigation.scss";
 const Navigation = () => {
   return (
     <nav className="navigation">
+      <a className="navigation__home" href="/">nicholashuynh.</a>
       <ul className="navigation__list">
         <li>
           <a className="navigation__list-item" href="#about">

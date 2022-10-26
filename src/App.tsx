@@ -1,23 +1,19 @@
-import { useInView } from "react-intersection-observer";
 import About from "./Sections/About/About";
-import "./App.scss";
 import Navigation from "./components/Navigation/Navigation";
 import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
+import Projects from "./Sections/Projects/Projects";
+import "./App.scss";
 
 function App() {
-  const { ref: myRef, inView: isVisible } = useInView();
   return (
     <div className="App">
       <ParticlesBackground />
       <Navigation />
       <main className="main">
-        <section className="section" id="about">
-         <About />
-        </section>
-        <section ref={myRef} className="section" id="projects">
-          Projects
-          {isVisible ? "Yes" : "No"}
-        </section>
+        <About />
+
+        <Projects />
+
         <section className="section" id="contact">
           Contact Me
         </section>

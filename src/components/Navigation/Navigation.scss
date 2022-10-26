@@ -7,15 +7,27 @@
   top:0;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0 0;
   font-family: eurostile-extended;
   background-color: $background-primary;
   opacity: 0.9;
   backdrop-filter: blur(1.25rem);
+  z-index: 1000;
 
   @include tablet{
     padding: 0 8%;
-    justify-content: right;
+    justify-content: space-between;
+  }
+
+  &__home{
+    display: none;
+    font-weight: 700;
+
+    @include tablet{
+      display: flex;
+      font-size: 1.5rem;
+    }
   }
 
   &__list {
@@ -26,11 +38,22 @@
     list-style: none;
 
     @include tablet{
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    @include desktop{
+      font-size: 1.4rem;
+      gap: 4rem;
     }
 
     &-item {
       color:$text-primary;
+
+      &:hover{
+        color:$text-secondary;
+        transition: 0.5s ease;
+      }
     }
+
   }
 }

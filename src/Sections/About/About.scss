@@ -2,12 +2,20 @@
 @use "../../styles/partials/mixins" as *;
 
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  z-index: 0;
 
   &__heading {
     margin-top: 4.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+
+    @include desktop{
+      margin-top: 0;
+    }
   }
 
   &__content {
@@ -80,16 +88,6 @@
   from {
     opacity: 0;
     transform: translateX(-18.75rem);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInBottom {
-  from {
-    opacity: 0;
-    transform: translateY(9.75rem);
   }
   to {
     opacity: 1;

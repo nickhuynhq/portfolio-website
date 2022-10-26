@@ -23,10 +23,22 @@ const About = () => {
   ];
 
   return (
-    <div ref={myRef} className="about">
-      <h1 className={isVisible ? `about__heading left-animation` : `about__heading`}>//About Me</h1>
-      <div className="about__content">
-        <div className={isVisible ? `about__profile left-animation` : `about__profile`}>
+    <section id="about" className="about">
+      <h1
+        className={
+          isVisible ? `about__heading left-animation` : `about__heading hidden`
+        }
+      >
+        {`//About Me`}
+      </h1>
+      <div ref={myRef} className="about__content">
+        <div
+          className={
+            isVisible
+              ? `about__profile left-animation`
+              : `about__profile hidden`
+          }
+        >
           <img
             className="about__profile-image"
             src={Memoji}
@@ -45,13 +57,19 @@ const About = () => {
             playing guitar.
           </p>
         </div>
-        <div className={isVisible ? `about__cards-container right-animation` : `about__cards-container`}>
+        <div
+          className={
+            isVisible
+              ? `about__cards-container right-animation`
+              : `about__cards-container hidden`
+          }
+        >
           {logoArray.map((logo: string) => (
-            <AboutCards key={logo} logo={logo} />
+            <AboutCards key={logo} section={"about"} logo={logo} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

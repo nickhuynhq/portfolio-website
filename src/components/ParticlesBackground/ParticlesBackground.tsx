@@ -24,17 +24,24 @@ const ParticlesBackground = () => {
         <TypeAnimation
           sequence={[
             "Hello", // Types 'One'
-            3000, // Waits 1s
+            2000, // Waits 1s
             "你好", // Deletes 'One' and types 'Two'
-            4000, // Waits 2s
+            2500, // Waits 2s
             "Salut",
-            3000,
+            2000,
+            "こんにちは",
+            2000,
             "Xin chào",
-            3000,
-            "Hola",
-            3000,
+            2000,
             "안녕",
-            4000,
+            2500,
+            "Hola",
+            2000,
+            "नमस्ते",
+            2000,
+            "привет",
+            2000,
+
             // Types 'Three' without deleting 'Two'
           ]}
           wrapper="span"
@@ -42,11 +49,11 @@ const ParticlesBackground = () => {
           repeat={Infinity}
           speed={1}
           className={"particle-background__heading--hello"}
-        />{" "}
+        />
         my name is{" "}
         <span className="particle-background__heading--highlight">
           Nick
-        {/* <TypeAnimation
+          {/* <TypeAnimation
           sequence={[
             "Nick", // Types 'One'
             3500, // Waits 1s
@@ -73,7 +80,7 @@ const ParticlesBackground = () => {
       <h1 className="particle-background__heading">
         And I'm a full stack web developer.
       </h1>
-      <a href="#projects" className="particle-background__button">
+      <a href="#about" className="particle-background__button">
         View my work <HiArrowDown />
       </a>
 
