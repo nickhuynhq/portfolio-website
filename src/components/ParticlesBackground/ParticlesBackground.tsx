@@ -85,7 +85,7 @@ const ParticlesBackground = () => {
           autoPlay: true,
           background: {
             color: {
-              value: "#2e3440",
+              value: "#FFFFFF",
             },
             image: "",
             position: "",
@@ -207,7 +207,7 @@ const ParticlesBackground = () => {
                 quantity: 5,
                 particles: {
                   color: {
-                    value: "#ff0000",
+                    value: "#000000",
                     animation: {
                       enable: true,
                       speed: 400,
@@ -310,7 +310,7 @@ const ParticlesBackground = () => {
               },
             },
             color: {
-              value: "#fafff7",
+              value: "#000000",
               animation: {
                 h: {
                   count: 0,
@@ -620,7 +620,8 @@ const ParticlesBackground = () => {
               shadow: {
                 blur: 5,
                 color: {
-                  value: "#000",
+                  //Line color
+                  value: "#000000",
                 },
                 enable: false,
               },

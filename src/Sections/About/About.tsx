@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <div ref={myRef} className="about">
-      <h1 className={isVisible ? `about__heading left-animation` : `about__heading`}>// About Me</h1>
+      <h1 className={isVisible ? `about__heading left-animation` : `about__heading`}>//About Me</h1>
       <div className="about__content">
         <div className={isVisible ? `about__profile left-animation` : `about__profile`}>
           <img
