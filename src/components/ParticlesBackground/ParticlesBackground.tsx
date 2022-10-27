@@ -19,7 +19,7 @@ const ParticlesBackground = () => {
     []
   );
   return (
-    <div className="particle-background">
+    <section id="hero" className="particle-background">
       <h1 className="particle-background__heading--left">
         <TypeAnimation
           sequence={[
@@ -662,7 +662,7 @@ const ParticlesBackground = () => {
           emitters: [],
         }}
       />
-    </div>
+    </section>
   );
 };
 
