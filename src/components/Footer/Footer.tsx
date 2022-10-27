@@ -56,6 +56,7 @@ const Footer = () => {
               >
                 GitHub |
               </a>{" "}
+              {" "}
               <a
                 href="https://drive.google.com/file/d/1ME2ZlOizp6n8fAJHS9WRQmQllAw20WYs/view?usp=sharing"
                 target="_blank"
@@ -63,6 +64,7 @@ const Footer = () => {
               >
                 Resume |{" "}
               </a>
+              &nbsp;
             </h1>
             <h1>
               <a
