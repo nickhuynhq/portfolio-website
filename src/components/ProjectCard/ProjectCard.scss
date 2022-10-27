@@ -100,54 +100,18 @@
   }
 }
 
-.mobile{
+.mobile {
   display: flex;
 
-  @include desktop{
+  @include desktop {
     display: none;
   }
 }
 
-.desktop{
+.desktop {
   display: none;
 
-  @include desktop{
+  @include desktop {
     display: flex;
-  }
-}
-
-
-
-.hidden {
-  opacity: 0;
-}
-
-.left-animation {
-  opacity: 1;
-  animation: fadeInLeft 0.8s ease-in-out;
-}
-
-.right-animation {
-  opacity: 1;
-  animation: fadeInRight 0.8s ease-in-out;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  to {
-    opacity: 1;
   }
 }

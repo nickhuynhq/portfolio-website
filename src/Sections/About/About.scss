@@ -59,37 +59,3 @@
     }
   }
 }
-
-.hidden {
-  opacity: 0;
-}
-
-.left-animation {
-  opacity: 1;
-  animation: fadeInLeft 1s ease-in-out;
-}
-
-.right-animation {
-  opacity: 1;
-  animation: fadeInRight 1s ease-in-out;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(18.75rem);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-18.75rem);
-  }
-  to {
-    opacity: 1;
-  }
-}
