@@ -16,7 +16,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
             : `projects-card__heading hidden`
         }
       >
-        {`${name} >>`}
+        {`${name}`}<span className="desktop">{`>>`}</span>
       </h1>
       <a href={demo} target="_blank" rel="noopener noreferrer">
         <img
