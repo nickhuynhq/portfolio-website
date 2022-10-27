@@ -4,8 +4,11 @@ import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackg
 import Projects from "./Sections/Projects/Projects";
 import "./App.scss";
 import Contact from "./Sections/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 function App() {
+
   return (
     <div className="App">
       <ParticlesBackground />
@@ -15,7 +18,8 @@ function App() {
         <Projects />
       </main>
       <Contact />
-      <section>Footer</section>
+      <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
