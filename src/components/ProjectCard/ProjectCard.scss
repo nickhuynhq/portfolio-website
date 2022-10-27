@@ -12,15 +12,10 @@
 
   @include desktop {
     flex-direction: row;
-    align-items: flex-start;
-  }
-
-  @include desktop-xl {
     align-items: center;
   }
 
   &__heading {
-    margin-right: auto;
 
     // @include desktop {
     //   display: none;
@@ -42,16 +37,14 @@
 
     @include tablet {
       width: 90%;
-      margin: 1rem;
     }
 
     @include desktop {
       width: 38vw;
-      margin: 2rem;
     }
 
     &:hover {
-      scale: 1.05;
+      scale: 1.03;
       @include tablet {
         box-shadow: -1rem -1rem #ccc;
       }
@@ -77,6 +70,7 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     gap: 1rem;
     flex-wrap: wrap;
 
@@ -88,7 +82,6 @@
   &__button-container {
     display: flex;
     gap: 2rem;
-    margin-top: 2rem;
   }
 
   &__button {
@@ -106,6 +99,24 @@
     }
   }
 }
+
+.mobile{
+  display: flex;
+
+  @include desktop{
+    display: none;
+  }
+}
+
+.desktop{
+  display: none;
+
+  @include desktop{
+    display: flex;
+  }
+}
+
+
 
 .hidden {
   opacity: 0;

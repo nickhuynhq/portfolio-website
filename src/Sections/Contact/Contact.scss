@@ -43,6 +43,7 @@
 
     &-input {
       font-family: "Rajdhani", sans-serif;
+      border: .0625rem solid black;
       font-size: 1.25rem;
       width: 100%;
       padding: 1rem;
@@ -57,7 +58,7 @@
       display: flex;
       align-self: flex-end;
       width: 33%;
-      border: 1px solid black;
+      border: .0625rem solid black;
       font-family: eurostile-extended, "Do Hyeon", sans-serif;
       font-size: 1.25rem;
       padding: 0.5rem;

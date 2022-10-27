@@ -9,7 +9,6 @@
       "react",
       "js",
       "html",
-      "css",
       "sass",
       "node",
       "express",
@@ -23,11 +22,9 @@
     "github": "https://github.com/nickhuynhq/NEX1",
     "image": "https://user-images.githubusercontent.com/71597829/196006148-b4e882fe-1f64-40de-9514-dbceed523df2.jpg",
     "techstack": [
-      "react",
       "nextjs",
       "ts",
       "html",
-      "css",
       "tailwind",
       "node",
       "express"
@@ -39,7 +36,7 @@
     "demo": "https://weather-vue-tw.netlify.app/",
     "github": "https://github.com/nickhuynhq/weather-vue",
     "image": "https://firebasestorage.googleapis.com/v0/b/weather-vue-f1edf.appspot.com/o/weather-vue.jpg?alt=media&token=73dd1a20-1a8b-4bd8-9337-3fb7bcc19dda",
-    "techstack": ["vue", "js", "html", "css", "tailwind"]
+    "techstack": ["vue", "js", "html", "tailwind"]
   },
   {
     "name": "Tasker",
@@ -47,6 +44,6 @@
     "demo": "https://ts-tasker-app.netlify.app/",
     "github": "https://github.com/nickhuynhq/Tasker",
     "image": "https://firebasestorage.googleapis.com/v0/b/tasker-f4636.appspot.com/o/Tracker.jpg?alt=media&token=c3aa2218-4248-4bac-b2ba-1bfa38b639c6",
-    "techstack": ["react", "ts", "html", "css", "sass"]
+    "techstack": ["react", "ts", "html", "sass"]
   }
 ]

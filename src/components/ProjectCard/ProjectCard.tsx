@@ -16,7 +16,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
             : `projects-card__heading hidden`
         }
       >
-        {`${name} _`}
+        {`${name} >>`}
       </h1>
       <a ref={projectRef} href={demo} target="_blank" rel="noopener noreferrer">
         <img
@@ -39,8 +39,8 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
       >
         <h2 className="">INFO.</h2>
         <p className="projects-card__text">{description}</p>
-        <h2>TECH STACK</h2>
-        <div className="projects-card__tech">
+        <h2 className="mobile">Tech Stack</h2>
+        <div className="projects-card__tech mobile">
           {techstack.map((logo: string) => (
             <AboutCards key={logo} section={"projects"} logo={logo} />
           ))}
@@ -66,7 +66,17 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
             GitHub
           </a>
         </div>
+        
       </div>
+      <div className={
+          isVisible
+            ? `projects-card__tech right-animation desktop`
+            : `projects-card__tech hidden`
+        }>
+          {techstack.map((logo: string) => (
+            <AboutCards key={logo} section={"projects"} logo={logo} />
+          ))}
+        </div>
     </div>
   );
 };
