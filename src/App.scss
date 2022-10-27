@@ -73,7 +73,11 @@ a {
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  @include tablet{
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 body {
@@ -81,8 +85,6 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .main {
