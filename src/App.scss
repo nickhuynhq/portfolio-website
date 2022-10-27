@@ -79,10 +79,10 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   @include desktop {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    overflow-x: hidden;
   }
 }
 
