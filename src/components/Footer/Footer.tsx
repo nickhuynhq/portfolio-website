@@ -2,10 +2,10 @@ import "./Footer.scss";
 
 const Footer = () => {
   // Number of times infinite text carousel repeats
-  const n = 3;
+  const n = 4;
 
   return (
-    <section className="footer">
+    <section id="footer" className="footer">
       <a className="footer__home" href="/">
         nicholashuynh.
       </a>

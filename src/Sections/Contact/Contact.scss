@@ -27,8 +27,8 @@
     width: 100%;
     margin-top: 2rem;
 
-    @include desktop{
-        width: 50%;
+    @include desktop {
+      width: 50%;
     }
 
     &-top {
@@ -36,14 +36,14 @@
       flex-direction: column;
       gap: 1.5rem;
 
-      @include tablet{
+      @include tablet {
         flex-direction: row;
       }
     }
 
     &-input {
       font-family: "Rajdhani", sans-serif;
-      border: .0625rem solid black;
+      border: 0.0625rem solid black;
       font-size: 1.25rem;
       width: 100%;
       padding: 1rem;
@@ -58,12 +58,13 @@
       display: flex;
       align-self: flex-end;
       width: 33%;
-      border: .0625rem solid black;
+      border: 0.0625rem solid black;
       font-family: eurostile-extended, "Do Hyeon", sans-serif;
       font-size: 1.25rem;
       padding: 0.5rem;
       transition: 0.3s ease;
       background-color: white;
+      cursor: pointer;
 
       &:hover {
         background-color: black;

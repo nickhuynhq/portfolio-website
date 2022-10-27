@@ -66,17 +66,18 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
             GitHub
           </a>
         </div>
-        
       </div>
-      <div className={
+      <div
+        className={
           isVisible
             ? `projects-card__tech right-animation desktop`
             : `projects-card__tech hidden`
-        }>
-          {techstack.map((logo: string) => (
-            <AboutCards key={logo} section={"projects"} logo={logo} />
-          ))}
-        </div>
+        }
+      >
+        {techstack.map((logo: string) => (
+          <AboutCards key={logo} section={"projects"} logo={logo} />
+        ))}
+      </div>
     </div>
   );
 };

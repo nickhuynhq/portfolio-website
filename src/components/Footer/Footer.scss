@@ -76,7 +76,7 @@
     transition: all 1s ease;
     & > div {
       display: flex;
-      animation: scrollText 36s infinite linear;
+      animation: scrollText 33s infinite linear;
     }
     h1 {
       margin: 0;
@@ -100,14 +100,11 @@
   }
 }
 
-/*div:hover {
-  animation-play-state: paused;
-}*/
 @keyframes scrollText {
   from {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-33%);
   }
 }

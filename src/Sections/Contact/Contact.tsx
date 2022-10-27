@@ -1,4 +1,5 @@
 import "./Contact.scss";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const Contact = () => {
   return (
@@ -51,6 +52,9 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <a className="more-arrow vert-move" href="#footer">
+        <BsChevronDoubleDown />
+      </a>
     </section>
   );
 };
