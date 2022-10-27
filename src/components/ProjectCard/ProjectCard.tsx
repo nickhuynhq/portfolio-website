@@ -8,7 +8,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
   const { ref: projectRef, inView: isVisible } = useInView();
 
   return (
-    <div ref={projectRef} className="projects-card">
+    <div className="projects-card">
       <h1
         className={
           isVisible
@@ -18,7 +18,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
       >
         {`${name} _`}
       </h1>
-      <a href={demo} target="_blank" rel="noopener noreferrer">
+      <a ref={projectRef} href={demo} target="_blank" rel="noopener noreferrer">
         <img
           className={
             isVisible
