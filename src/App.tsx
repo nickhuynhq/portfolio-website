@@ -6,6 +6,7 @@ import "./App.scss";
 import Contact from "./Sections/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import ResumeModal from "./components/ResumeModal/ResumeModal";
 
 function App() {
 

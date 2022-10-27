@@ -3,7 +3,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .footer {
-height: 5vh;;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,17 +14,14 @@ height: 5vh;;
   backdrop-filter: blur(1.25rem);
   z-index: 1000;
 
-  @include tablet{
+  @include tablet {
     padding: 0 8%;
-
   }
 
-  &__home{
-    display: none;
+  &__home {
     font-weight: 700;
 
-    @include tablet{
-      display: flex;
+    @include tablet {
       font-size: 1.5rem;
     }
   }
@@ -36,23 +33,22 @@ height: 5vh;;
     font-size: 1rem;
     list-style: none;
 
-    @include tablet{
+    @include tablet {
       font-size: 1.25rem;
     }
 
-    @include desktop{
+    @include desktop {
       font-size: 1.4rem;
       gap: 4rem;
     }
 
     &-item {
-      color:$text-primary;
+      color: $text-primary;
 
-      &:hover{
-        color:$text-secondary;
+      &:hover {
+        color: $text-secondary;
         transition: 0.5s ease;
       }
     }
-
   }
 }

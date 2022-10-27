@@ -8,7 +8,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
   const { ref: projectRef, inView: isVisible } = useInView();
 
   return (
-    <div className="projects-card">
+    <div ref={projectRef} className="projects-card">
       <h1
         className={
           isVisible
@@ -39,7 +39,6 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
       >
         <h2 className="">INFO.</h2>
         <p className="projects-card__text">{description}</p>
-        <span ref={projectRef}></span>
         <h2>TECH STACK</h2>
         <div className="projects-card__tech">
           {techstack.map((logo: string) => (
