@@ -20,7 +20,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
       </h1>
       <a href={demo} target="_blank" rel="noopener noreferrer">
         <img
-          ref={projectRef} 
+          ref={projectRef}
           className={
             isVisible
               ? `projects-card__image left-animation`
@@ -39,7 +39,9 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
         }
       >
         <h2 className="project-card__info">INFO.</h2>
-        <p className="projects-card__text">{description}</p>
+        <p ref={projectRef} className="projects-card__text">
+          {description}
+        </p>
         <h2 className="mobile">Tech Stack</h2>
         <div className="projects-card__tech mobile">
           {techstack.map((logo: string) => (
