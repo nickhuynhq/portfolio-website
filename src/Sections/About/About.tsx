@@ -1,6 +1,7 @@
 import Memoji from "../../assets/images/memoji.jpeg";
 import { useInView } from "react-intersection-observer";
 import AboutCards from "../../components/AboutCards/AboutCards";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import "./About.scss";
 
 const About = () => {
@@ -69,6 +70,9 @@ const About = () => {
           ))}
         </div>
       </div>
+      <a className="more-arrow vert-move" href="#projects">
+        <BsChevronDoubleDown />
+      </a>
     </section>
   );
 };

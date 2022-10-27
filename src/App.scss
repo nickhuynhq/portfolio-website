@@ -37,15 +37,15 @@ h2 {
   font-weight: 700;
   
   @include tablet {
-    font-size: 1.55rem;
+    font-size: 1.4rem;
   }
 
   @include desktop {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   @include desktop-xl {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -93,3 +93,33 @@ section {
   justify-content: center;
   min-height: 100vh;
 }
+
+.more-arrow{
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+  &:hover{
+    transition: 0.6s ease;
+    scale: 1.1;
+  }
+}
+
+.vert-move {
+  -webkit-animation: mover 0.8s infinite  alternate;
+  animation: mover 0.8s infinite  alternate;
+}
+.vert-move {
+  -webkit-animation: mover 0.8s infinite  alternate;
+  animation: mover 0.8s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1rem); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1rem); }
+}
+

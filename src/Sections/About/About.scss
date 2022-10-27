@@ -13,8 +13,8 @@
     margin-bottom: 2rem;
     align-self: flex-start;
 
-    @include desktop{
-      margin-top: 0;
+    @include desktop {
+      margin-top: 4rem;
     }
   }
 
@@ -55,23 +55,23 @@
     width: 100%;
 
     @include tablet {
-        width: 45%;
-      }
+      width: 45%;
+    }
   }
 }
 
-.hidden{
-    opacity: 0;
+.hidden {
+  opacity: 0;
 }
 
-.left-animation{
-    opacity: 1;
-    animation: fadeInLeft 1s ease-in-out;
+.left-animation {
+  opacity: 1;
+  animation: fadeInLeft 1s ease-in-out;
 }
 
-.right-animation{
-    opacity: 1;
-    animation: fadeInRight 1s ease-in-out;
+.right-animation {
+  opacity: 1;
+  animation: fadeInRight 1s ease-in-out;
 }
 
 @keyframes fadeInRight {
