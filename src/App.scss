@@ -73,8 +73,8 @@ a {
 
 html {
   scroll-behavior: smooth;
-  @include tablet{
-    scroll-snap-type: y proximity;
+  @include desktop{
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     overflow-x: hidden;
   }
