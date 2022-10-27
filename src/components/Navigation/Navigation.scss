@@ -26,7 +26,17 @@
 
     @include tablet{
       display: flex;
-      font-size: 1.5rem;
+      font-size: 1.15rem;
+    }
+
+    @include desktop{
+      display: flex;
+      font-size: 1.25rem;
+    }
+
+    @include desktop-xl{
+      display: flex;
+      font-size: 1.4rem;
     }
   }
 
@@ -38,11 +48,12 @@
     list-style: none;
 
     @include tablet{
-      font-size: 1.25rem;
+      font-size: 1.15rem;
+      gap: 3rem;
     }
 
-    @include desktop{
-      font-size: 1.4rem;
+    @include desktop-xl{
+      font-size: 1.25rem;
       gap: 4rem;
     }
 

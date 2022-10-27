@@ -6,8 +6,8 @@ const Contact = () => {
       <h1>{`// Contact Me`}</h1>
       <p className="contact__text">
         I am interested in full-time and freelance oppertunities- especially on
-        ambitious or large projects. However, if you have any other requests or
-        questions, don't hesitate to contact me using below form either.
+        ambitious or large projects. If you have any other requests or
+        questions, please don't hesitate to reach me using the form below.
       </p>
 
       <div className="contact__container">

@@ -52,11 +52,18 @@
 .m-scroll {
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 6rem;
+  height: 4rem;
   background-color: black;
   overflow: hidden;
   z-index: 1;
+
+  @include tablet{
+    height: 5rem;
+  }
+
+  @include desktop{
+    height: 6rem;
+  }
 
   &__title {
     display: flex;
@@ -69,7 +76,7 @@
     transition: all 1s ease;
     & > div {
       display: flex;
-      animation: scrollText 33s infinite linear;
+      animation: scrollText 36s infinite linear;
     }
     h1 {
       margin: 0;
