@@ -1,0 +1,95 @@
+@use "./styles/partials/fonts";
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/mixins" as *;
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400');
+
+*, ::before,::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p, a {
+  font-family: eurostile-extended, "Do Hyeon", sans-serif;
+  color: $text-primary;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+  @include tablet {
+    font-size: 2rem;
+  }
+
+  @include desktop {
+    font-size: 2.25rem;
+  }
+
+  @include desktop-xl {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  
+  @include tablet {
+    font-size: 1.55rem;
+  }
+
+  @include desktop {
+    font-size: 1.75rem;
+  }
+
+  @include desktop-xl {
+    font-size: 2rem;
+  }
+}
+
+p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+
+  @include tablet {
+    font-size: 1.125rem;
+  }
+  @include desktop {
+    font-size: 1.25rem;
+  }
+
+  @include desktop-xl {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none; /* no underline */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "open-sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: $background-primary;
+  padding: 2rem 8%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}

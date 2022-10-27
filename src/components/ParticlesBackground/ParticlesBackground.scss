@@ -1,0 +1,99 @@
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.particle-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: eurostile-extended;
+  padding: 2rem;
+  height: 100vh;
+
+  &__heading {
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInRight 1s ease-in-out;
+
+    @include tablet {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    @include desktop {
+      font-size: 5rem;
+    }
+
+    &--left {
+      @extend .particle-background__heading;
+      animation: fadeInLeft 1s ease-in-out;
+    }
+
+    &--highlight {
+      color: $text-secondary;
+      font-weight: 700;
+    }
+
+    &--hello {
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    gap: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: $text-secondary;
+    padding: 1rem 2rem;
+    border: 0.25rem solid $button-background;
+    animation: fadeInBottom 1s ease-in-out;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      transition: 0.5s ease;
+      background-color: $button-background;
+      color: white;
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(18.75rem);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-18.75rem);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(9.75rem);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

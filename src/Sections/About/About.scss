@@ -1,0 +1,95 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+
+  &__heading {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+
+    @include desktop{
+      margin-top: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+
+    @include tablet {
+      width: 45%;
+    }
+
+    &-image {
+      width: 320px;
+      border-radius: 50%;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+
+    @include tablet {
+        width: 45%;
+      }
+  }
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.left-animation{
+    opacity: 1;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.right-animation{
+    opacity: 1;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(18.75rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-18.75rem);
+  }
+  to {
+    opacity: 1;
+  }
+}

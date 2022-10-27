@@ -1,0 +1,32 @@
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.scroll-to-top-button{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    font-size: 0.75rem;
+    font-family: eurostile-extended, "Do Hyeon", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1rem 2rem;
+    max-width: 11.25rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 1000;
+
+    @include tablet{
+        font-size: 1rem;
+        bottom: 2.5rem;
+        right: 2.5rem;
+    }
+
+    &:hover{
+        @extend .scroll-to-top-button;
+        background-color: $button-background;
+    }
+}

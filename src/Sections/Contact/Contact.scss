@@ -1,0 +1,73 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/mixins" as *;
+
+.contact {
+  padding: 2rem 8%;
+
+  &__text {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: white;
+
+    @include desktop {
+      width: 50%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+
+    @include desktop{
+        width: 50%;
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      @include tablet{
+        flex-direction: row;
+      }
+    }
+
+    &-input {
+      font-family: "Rajdhani", sans-serif;
+      font-size: 1.25rem;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    &-textarea {
+      @extend .contact__form-input;
+      height: 10rem;
+    }
+
+    &-button {
+      display: flex;
+      align-self: flex-end;
+      width: 33%;
+      border: 1px solid black;
+      font-family: eurostile-extended, "Do Hyeon", sans-serif;
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      transition: 0.3s ease;
+      background-color: white;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}

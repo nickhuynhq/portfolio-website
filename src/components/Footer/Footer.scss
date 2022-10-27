@@ -1,0 +1,54 @@
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  font-family: eurostile-extended;
+  background-color: $background-primary;
+  opacity: 0.75;
+  backdrop-filter: blur(1.25rem);
+  z-index: 1000;
+
+  @include tablet {
+    padding: 0 8%;
+  }
+
+  &__home {
+    font-weight: 700;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    list-style: none;
+
+    @include tablet {
+      font-size: 1.25rem;
+    }
+
+    @include desktop {
+      font-size: 1.4rem;
+      gap: 4rem;
+    }
+
+    &-item {
+      color: $text-primary;
+
+      &:hover {
+        color: $text-secondary;
+        transition: 0.5s ease;
+      }
+    }
+  }
+}

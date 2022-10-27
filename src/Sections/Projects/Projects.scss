@@ -1,0 +1,14 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  z-index: 0;
+
+  &__heading {
+    margin-top: 6.5rem;
+  }
+}
