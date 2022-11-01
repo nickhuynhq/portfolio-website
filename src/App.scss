@@ -78,18 +78,12 @@ a {
 }
 
 html {
-  position:relative;
+  position: relative;
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  @include desktop {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-  }
+  overflow-y: scroll;
 }
 
 body {
-  position:relative;
-	overflow-x:hidden;
   font-family: "open-sans", sans-serif;
   font-weight: 400;
   margin: 0;
@@ -146,18 +140,20 @@ section {
   }
 }
 
-.hidden {
+@include desktop {
+  .hidden {
     opacity: 0;
-}
+  }
 
-.left-animation {
+  .left-animation {
     opacity: 1;
     animation: fadeInLeft 0.8s ease-in-out;
-}
+  }
 
-.right-animation {
+  .right-animation {
     opacity: 1;
     animation: fadeInRight 0.8s ease-in-out;
+  }
 }
 
 @keyframes fadeInRight {

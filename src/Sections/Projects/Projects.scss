@@ -4,9 +4,13 @@
 .projects {
   position: relative;
   display: flex;
+  gap: 10vh;
   flex-direction: column;
-  gap: 4rem;
   z-index: 0;
+
+  @include desktop {
+    gap: 2rem;
+  }
 
   &__heading {
     margin-top: 6.5rem;

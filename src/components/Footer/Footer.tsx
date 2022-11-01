@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import { v4 as uuidv4 } from 'uuid';
 
 const Footer = () => {
   // Number of times infinite text carousel repeats
@@ -45,7 +46,7 @@ const Footer = () => {
         <div className="m-scroll__title">
           <div>
             {[...Array(n)].map((element) => (
-              <h1>
+              <h1 key={uuidv4()}>
                 <a
                   href="https://github.com/nickhuynhq"
                   target="_blank"

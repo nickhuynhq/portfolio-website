@@ -7,28 +7,13 @@
   align-items: center;
   margin-top: 1rem;
   gap: 3rem;
-  min-height: 100vh;
   transition: 1s ease;
 
   @include desktop {
     flex-direction: row;
     align-items: center;
+    min-height: 100vh;
   }
-
-  // &__heading {
-
-  //   @include desktop {
-  //     display: none;
-  //   }
-
-  //   &--desktop {
-  //     display: none;
-
-  //     @include desktop {
-  //       display: flex;
-  //     }
-  //   }
-  // }
 
   &__image {
     width: 100%;
