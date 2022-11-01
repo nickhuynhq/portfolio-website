@@ -11,8 +11,9 @@ Please use this link to demo the live site!
 https://nickhuynhq.com
 
 ## Project Screenshot
-![screenshot hero](https://user-images.githubusercontent.com/71597829/198172229-d8823e4f-f1ba-47ec-aac0-367bd7edb61b.png)
-![screenshot project](https://user-images.githubusercontent.com/71597829/198172317-ff038bee-fdad-4d2c-8199-e3804fe90b29.png)
+![image](https://user-images.githubusercontent.com/71597829/199344409-a6adf803-1936-4d94-9f1c-59c332974fcf.png)
+![image](https://user-images.githubusercontent.com/71597829/199344495-632be727-8336-4fa7-8b6f-f734d9e7d45e.png)
+
 
 
 ## Tech Stack
