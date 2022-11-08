@@ -146,19 +146,19 @@ section {
 
   .left-animation {
     opacity: 1;
-    animation: fadeInLeft 0.8s ease-in-out;
+    animation: fadeInLeft 1s ease-in-out;
   }
 
   .right-animation {
     opacity: 1;
-    animation: fadeInRight 0.8s ease-in-out;
+    animation: fadeInRight 1s ease-in-out;
   }
 }
 
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(10rem);
+    transform: translateX(6rem);
   }
   to {
     opacity: 1;
@@ -168,7 +168,7 @@ section {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-6rem);
   }
   to {
     opacity: 1;
