@@ -3,7 +3,12 @@
 @use "../../styles/partials/mixins" as *;
 
 .contact {
+  min-height: 1rem;
   padding: 2rem 8%;
+
+  @include desktop{
+    min-height: 100vh;
+  }
 
   &__text {
     width: 100%;
