@@ -1,4 +1,4 @@
-import Memoji from "../../assets/images/memoji.jpeg";
+import Memoji from "../../assets/images/headshot.jpeg";
 import { useInView } from "react-intersection-observer";
 import AboutCards from "../../components/AboutCards/AboutCards";
 import { BsChevronDoubleDown } from "react-icons/bs";
