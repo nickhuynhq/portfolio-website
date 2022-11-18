@@ -17,8 +17,8 @@
   }
 
   @include desktop {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   @include desktop-xl {
@@ -34,8 +34,8 @@
       height: 4rem;
     }
     @include desktop {
-      width: 5.5rem;
-      height: 5.5rem;
+      width: 4.5rem;
+      height: 4.5rem;
     }
     @include desktop-xl {
       width: 6.5rem;

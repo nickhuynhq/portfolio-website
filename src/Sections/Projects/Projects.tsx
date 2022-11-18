@@ -5,7 +5,7 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 const Projects = () => {
 
   return (
-    <div id="projects" className="projects">
+    <section id="projects" className="projects">
       <h1 className="projects__heading">{`// My Projects`}</h1>
 
       {ProjectsData.map((project) => (
@@ -19,7 +19,7 @@ const Projects = () => {
           techstack={project.techstack}
         />
       ))}
-    </div>
+    </section>
   );
 };
 

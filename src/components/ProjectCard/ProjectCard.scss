@@ -4,8 +4,9 @@
 .projects-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-bottom: 2rem;
   min-height: 1rem;
   gap: 3rem;
   transition: 1s ease;
@@ -21,12 +22,8 @@
     transition: 0.5s ease;
     cursor: pointer;
 
-    @include tablet {
-      width: 90%;
-    }
-
     @include desktop {
-      width: 38vw;
+      width: 30vw;
     }
 
     &:hover {
@@ -37,6 +34,19 @@
 
       @include desktop {
         box-shadow: -2rem -2rem #ccc;
+      }
+    }
+
+    &-container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      @include tablet {
+        width: 70%;
+      }
+      @include desktop {
+        width: 100%;
       }
     }
   }
