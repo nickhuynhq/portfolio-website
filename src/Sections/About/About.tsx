@@ -2,26 +2,12 @@ import Memoji from "../../assets/images/headshot.jpeg";
 import { useInView } from "react-intersection-observer";
 import AboutCards from "../../components/AboutCards/AboutCards";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import Skills from "../../data/skills.json"
 import "./About.scss";
 
 const About = () => {
   const { ref: myRef, inView: isVisible } = useInView();
-  const logoArray: string[] = [
-    "react",
-    "nextjs",
-    "ts",
-    "js",
-    "html",
-    "css",
-    "sass",
-    "tailwind",
-    "vue",
-    "node",
-    "express",
-    "python",
-    "mysql",
-    "mongodb",
-  ];
+  const logoArray: string[] = Skills;
 
   return (
     <section id="about" className="about">
@@ -53,8 +39,8 @@ const About = () => {
             into the world of tech and I have been hooked ever since. As an
             enthusiast, I am constantly online trying to seek out the latest and
             greatest, and in my spare time have learnt to program and create
-            interesting new projects. When I'm not at my
-            computer I love to spend my time cycling, taking photos, listening to music, and
+            interesting new projects. When I'm not at my computer I love to
+            spend my time cycling, taking photos, listening to music, and
             playing guitar.
           </p>
         </div>
@@ -65,9 +51,12 @@ const About = () => {
               : `about__cards-container hidden`
           }
         >
-          {logoArray.map((logo: string) => (
-            <AboutCards key={logo} section={"about"} logo={logo} />
-          ))}
+          <h2 style={{ fontWeight: 400 }}>My Skills</h2>
+          <div className="about__cards">
+            {logoArray.map((logo: string) => (
+              <AboutCards key={logo} section={"about"} logo={logo} />
+            ))}
+          </div>
         </div>
       </div>
       <a className="more-arrow vert-move" href="#projects">

@@ -50,13 +50,22 @@
 
   &__cards-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    align-items: center;
     width: 100%;
+    gap: 2rem;
 
     @include tablet {
       width: 45%;
     }
+  }
+
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
   }
 }
