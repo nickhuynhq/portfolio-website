@@ -48,7 +48,7 @@ const Footer = () => {
             {[...Array(n)].map((element) => (
               <h1 key={uuidv4()}>
                 <a
-                  href="https://github.com/nickhuynhq"
+                  href="https://www.linkedin.com/in/nickhuynhq/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -56,7 +56,7 @@ const Footer = () => {
                 </a>
                 <span>|</span>
                 <a
-                  href="https://www.linkedin.com/in/nickhuynhq/"
+                  href="https://github.com/nickhuynhq"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
