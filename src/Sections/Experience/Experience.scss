@@ -1,0 +1,18 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.projects {
+  position: relative;
+  display: flex;
+  gap: 15vh;
+  flex-direction: column;
+  z-index: 0;
+
+  @include desktop {
+    gap: 2rem;
+  }
+
+  &__heading {
+    margin-top: 6.5rem;
+  }
+}

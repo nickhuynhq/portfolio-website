@@ -1,0 +1,118 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  min-height: 1rem;
+  gap: 3rem;
+  transition: 1s ease;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  &__image {
+    width: 100%;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    @include desktop {
+      width: 30vw;
+    }
+
+    &:hover {
+      scale: 1.03;
+      @include tablet {
+        box-shadow: -1rem -1rem #ccc;
+      }
+
+      @include desktop {
+        box-shadow: -2rem -2rem #ccc;
+      }
+    }
+
+    &-container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      @include tablet {
+        width: 70%;
+      }
+      @include desktop {
+        width: 100%;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__tech {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid black;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.mobile {
+  display: flex;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
