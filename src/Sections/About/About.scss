@@ -14,7 +14,7 @@
     align-self: flex-start;
 
     @include desktop {
-      margin-top: 4rem;
+      margin-top: 5rem;
     }
   }
 
@@ -22,11 +22,13 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 2.5rem;
 
     @include tablet {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 0;
     }
   }
 
