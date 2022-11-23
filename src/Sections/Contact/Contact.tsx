@@ -4,7 +4,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 const Contact = () => {
   return (
     <section id="contact" className="contact">
-      <h1>{`// Contact Me`}</h1>
+      <h1 className="contact__heading">{`// Contact Me`}</h1>
       <p className="contact__text">
         I am interested in full-time and freelance opportunities- especially on
         ambitious or large projects. If you have any other requests or

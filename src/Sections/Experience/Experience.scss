@@ -1,10 +1,10 @@
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/mixins" as *;
 
-.projects {
+.experience {
   position: relative;
   display: flex;
-  gap: 15vh;
+  gap: 10vh;
   flex-direction: column;
   z-index: 0;
 
@@ -13,6 +13,6 @@
   }
 
   &__heading {
-    margin-top: 6.5rem;
+    margin-top: 4.5rem;
   }
 }
