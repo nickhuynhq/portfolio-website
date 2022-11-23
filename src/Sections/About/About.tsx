@@ -29,7 +29,7 @@ const About = () => {
           <img
             className="about__profile-image"
             src={Memoji}
-            alt="Profile Nicholas Huynh"
+            alt="Headshot Nicholas Huynh"
           />
           <p className="about__profile-bio">
             Fully committed to the philosophy of life-long learning, I’m a full

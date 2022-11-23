@@ -16,6 +16,10 @@
     @include desktop {
       margin-top: 5rem;
     }
+
+    @include desktop-xl {
+      margin-top: 5rem;
+    }
   }
 
   &__content {
