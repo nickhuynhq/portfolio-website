@@ -17,6 +17,11 @@ const Navigation = () => {
           </a>
         </li>
         <li>
+          <a className="navigation__list-item" href="#experience">
+            Experience
+          </a>
+        </li>
+        <li>
           <a className="navigation__list-item" href="#contact">
             Contact
           </a>

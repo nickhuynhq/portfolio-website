@@ -69,6 +69,11 @@ p {
   }
 }
 
+ul, li {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
 a {
   text-decoration: none; /* no underline */
 }
@@ -90,7 +95,7 @@ body {
   background-color: $background-primary;
   padding: 2rem 8%;
 
-  @include tablet{
+  @include tablet {
     padding: 2rem 10%;
   }
 }

@@ -1,14 +1,14 @@
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/mixins" as *;
 
-.projects-card {
+.experience-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
   min-height: 1rem;
-  gap: 3rem;
+  gap: 4rem;
   transition: 1s ease;
 
   @include desktop {
@@ -17,12 +17,25 @@
     min-height: 100vh;
   }
 
-  &__image {
+  &__info {
     width: 100%;
+    @include desktop {
+      width: 50%;
+    }
+  }
+
+  &__company {
+    margin: 0.5rem 0;
+  }
+
+  &__image {
+    margin-top: 5vh;
+    width: 80%;
     transition: 0.5s ease;
     cursor: pointer;
 
     @include desktop {
+      margin-top: 0;
       width: 30vw;
     }
 
@@ -36,83 +49,11 @@
         box-shadow: -2rem -2rem #ccc;
       }
     }
-
-    &-container{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-
-      @include tablet {
-        width: 70%;
-      }
-      @include desktop {
-        width: 100%;
-      }
-    }
   }
 
-  &__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &__text {
+  &__list{
+    margin: 0;
+    padding: 0;
     margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  &__tech {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-
-    @include tablet {
-      justify-content: flex-start;
-    }
-  }
-
-  &__button-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-
-    @include tablet {
-      justify-content: flex-start;
-    }
-  }
-
-  &__button {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    border: 1px solid black;
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    transition: 0.3s ease;
-
-    &:hover {
-      background-color: black;
-      color: white;
-    }
-  }
-}
-
-.mobile {
-  display: flex;
-
-  @include desktop {
-    display: none;
-  }
-}
-
-.desktop {
-  display: none;
-
-  @include desktop {
-    display: flex;
   }
 }
