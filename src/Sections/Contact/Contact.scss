@@ -10,6 +10,10 @@
     min-height: 100vh;
   }
 
+  &__heading{
+    margin-top: 2.5rem;
+  }
+
   &__text {
     width: 100%;
     margin-top: 2rem;
@@ -23,6 +27,7 @@
   &__container {
     display: flex;
     gap: 4rem;
+    margin-bottom: 2.5rem;
   }
 
   &__form {

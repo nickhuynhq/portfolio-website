@@ -6,49 +6,87 @@
   position: sticky;
   top:0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 0 0;
   background-color: $background-primary;
   opacity: 0.9;
   backdrop-filter: blur(1.25rem);
   z-index: 1000;
+  padding: 0.5rem 1.5rem;
+  transition: ease-in 1s;
 
-  @include tablet{
-    padding: 0 8%;
+  @include desktop{
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    padding: 0.5rem 10%;
+  }
+
+  &__hamburger{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: ease 1s;
+
+    &:hover{
+      scale: 1.03;
+    }
+
+    @include desktop{
+      display: none;
+    }
+
+    &-container{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-list{
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      animation: fadeInTop 0.5s ease-in-out;
+    }
   }
 
   &__home{
-    display: none;
     font-weight: 700;
+    transition: ease 0.3s;
 
     @include tablet{
-      display: flex;
       font-size: 1.15rem;
     }
 
     @include desktop{
-      display: flex;
       font-size: 1.25rem;
     }
 
     @include desktop-xl{
-      display: flex;
       font-size: 1.4rem;
+    }
+
+    &:hover{
+      color: $text-secondary
     }
   }
 
   &__list {
     padding: 0;
-    display: flex;
     gap: 2rem;
     font-size: 1rem;
     list-style: none;
+    display: none;
 
     @include tablet{
       font-size: 1.15rem;
       gap: 3rem;
+    }
+
+    @include desktop{
+      display: flex;
     }
 
     @include desktop-xl{
@@ -61,9 +99,19 @@
 
       &:hover{
         color:$text-secondary;
-        transition: 0.5s ease;
+        transition: 0.3s ease;
       }
     }
 
+  }
+
+  @keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-9.75rem);
+    }
+    to {
+      opacity: 1;
+    }
   }
 }

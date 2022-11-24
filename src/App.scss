@@ -69,6 +69,11 @@ p {
   }
 }
 
+ul, li {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
 a {
   text-decoration: none; /* no underline */
 }
@@ -76,7 +81,11 @@ a {
 html {
   position: relative;
   scroll-behavior: smooth;
-  overflow-y: scroll;
+
+  @include desktop{
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+  }
 }
 
 body {
@@ -84,11 +93,16 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
+ 
 }
 
 .main {
   background-color: $background-primary;
   padding: 2rem 8%;
+
+  @include tablet {
+    padding: 2rem 10%;
+  }
 }
 
 section {
@@ -96,14 +110,13 @@ section {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  margin-bottom: 10vh;
+  scroll-snap-align: start;
 }
 
 .more-arrow {
   font-size: 2.5rem;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
 
   &:hover {
     transition: 0.6s ease;

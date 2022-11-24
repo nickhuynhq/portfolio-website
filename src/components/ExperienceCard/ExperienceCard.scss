@@ -1,0 +1,60 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.experience-card {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  min-height: 1rem;
+  gap: 4rem;
+  transition: 1s ease;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  &__info {
+    width: 100%;
+    @include desktop {
+      width: 50%;
+    }
+  }
+
+  &__company {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem
+  }
+
+  &__image {
+    margin-top: 5vh;
+    width: 80%;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    @include desktop {
+      margin-top: 0;
+      width: 30vw;
+    }
+
+    &:hover {
+      scale: 1.03;
+      @include tablet {
+        box-shadow: -1rem -1rem #ccc;
+      }
+
+      @include desktop {
+        box-shadow: -2rem -2rem #ccc;
+      }
+    }
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+  }
+}

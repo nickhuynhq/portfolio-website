@@ -17,7 +17,7 @@
   },
   {
     "name": "NEX1",
-    "description": "NEX1 is a tik tok inspired application where users can upload, share, and interact with short video clips! This project was created to experiment with NEXT.js, TypeScript, and Tailwind CSS! 😆 Backend was deployed on Sanity CMS and data is called used GROQ (A GraphQL like query language).",
+    "description": "NEX1 is a tik tok inspired application where users can upload, share, and interact with short video clips! This project was created to experiment with NEXT.js, TypeScript, and Tailwind CSS! Backend was deployed on Sanity CMS and data is called used GROQ (A GraphQL like query language).",
     "demo": "https://nex1-eta.vercel.app/",
     "github": "https://github.com/nickhuynhq/NEX1",
     "image": "https://user-images.githubusercontent.com/71597829/196006148-b4e882fe-1f64-40de-9514-dbceed523df2.jpg",
