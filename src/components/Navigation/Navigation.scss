@@ -2,49 +2,57 @@
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/mixins" as *;
 
-.navigation {
+// This is to prevent hamburger menu from pushing content down in Safari
+.navigation-container {
   position: sticky;
-  top:0;
+  position: -webkit-sticky;
+  height: 0;
+  top: 0px;
+  padding: 0;
+  z-index: 1000;
+}
+
+.navigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: $background-primary;
   opacity: 0.9;
   backdrop-filter: blur(1.25rem);
-  z-index: 1000;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 7%;
   transition: ease-in 1s;
 
-  @include desktop{
+  @include desktop {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 10%;
+    padding: 0rem 10%;
   }
 
-  &__hamburger{
+  &__hamburger {
     padding: 0;
     border: none;
     background: none;
     font-size: 2rem;
+    color: $text-primary;
     cursor: pointer;
     transition: ease 1s;
 
-    &:hover{
+    &:hover {
       scale: 1.03;
     }
 
-    @include desktop{
+    @include desktop {
       display: none;
     }
 
-    &-container{
+    &-container {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
 
-    &-list{
+    &-list {
       display: flex;
       flex-direction: column;
       gap: 0.4rem;
@@ -52,24 +60,24 @@
     }
   }
 
-  &__home{
+  &__home {
     font-weight: 700;
     transition: ease 0.3s;
 
-    @include tablet{
+    @include tablet {
       font-size: 1.15rem;
     }
 
-    @include desktop{
+    @include desktop {
       font-size: 1.25rem;
     }
 
-    @include desktop-xl{
+    @include desktop-xl {
       font-size: 1.4rem;
     }
 
-    &:hover{
-      color: $text-secondary
+    &:hover {
+      color: $text-secondary;
     }
   }
 
@@ -80,29 +88,28 @@
     list-style: none;
     display: none;
 
-    @include tablet{
+    @include tablet {
       font-size: 1.15rem;
       gap: 3rem;
     }
 
-    @include desktop{
+    @include desktop {
       display: flex;
     }
 
-    @include desktop-xl{
+    @include desktop-xl {
       font-size: 1.25rem;
       gap: 4rem;
     }
 
     &-item {
-      color:$text-primary;
+      color: $text-primary;
 
-      &:hover{
-        color:$text-secondary;
+      &:hover {
+        color: $text-secondary;
         transition: 0.3s ease;
       }
     }
-
   }
 
   @keyframes fadeInTop {
