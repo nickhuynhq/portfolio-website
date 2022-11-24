@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { RiMenuFoldLine, RiMenuLine } from "react-icons/ri"
+import { CgMenuGridR } from "react-icons/cg"
+import {RiFullscreenExitLine} from "react-icons/ri"
 import "./Navigation.scss";
 
 const Navigation = () => {
@@ -13,7 +14,7 @@ const Navigation = () => {
           onClick={() => setMenuView(!menuView)}
         >
 
-         { menuView ? <RiMenuFoldLine/> : <RiMenuLine />}
+         { menuView ? <RiFullscreenExitLine/> : <CgMenuGridR />}
         </button>
 
         <a className="navigation__home" href="/">
