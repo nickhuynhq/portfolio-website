@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 10vh;
   min-height: 1rem;
   gap: 3rem;
   transition: 1s ease;
@@ -15,6 +15,11 @@
     flex-direction: row;
     align-items: center;
     min-height: 100vh;
+    margin-bottom: 0;
+  }
+
+  &__heading{
+    margin-top: 5rem;
   }
 
   &__image {

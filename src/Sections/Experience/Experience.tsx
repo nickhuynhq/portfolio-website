@@ -5,13 +5,13 @@ import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 const Experience = () => {
 
   return (
-    <section id="experience" className="experience">
+    <div id="experience" className="experience">
       <h1 className="experience__heading">{`// My Experience`}</h1>
 
       {ExperienceData.map((role) => 
         <ExperienceCard key={role.company} role={role}/>
       )}
-    </section>
+    </div>
   );
 };
 
