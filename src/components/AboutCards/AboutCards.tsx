@@ -1,5 +1,11 @@
 import "./AboutCards.scss";
-const AboutCards = ({ logo, section }: any) => {
+
+interface IProps {
+  section: string;
+  logo: string;
+}
+
+const AboutCards = ({ logo, section }: IProps) => {
   return (
     <div className={`${section}-cards`}>
       <img
