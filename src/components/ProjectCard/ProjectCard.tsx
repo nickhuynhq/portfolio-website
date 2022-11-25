@@ -33,7 +33,6 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
         }
       >
         {`${name}`}
-        <span className="desktop">{`>>`}</span>
       </h1>
       <a href={demo} className="projects-card__image-container" target="_blank" rel="noopener noreferrer">
         <img
