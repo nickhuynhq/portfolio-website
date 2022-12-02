@@ -74,6 +74,11 @@
     @include tablet {
       justify-content: flex-start;
     }
+
+    @include desktop{
+      justify-content: space-around;
+      width: 30vw;
+    }
   }
 
   &__button-container {

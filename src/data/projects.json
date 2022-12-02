@@ -5,14 +5,21 @@
     "demo": "https://carma-island-app.herokuapp.com/",
     "github": "https://github.com/nickhuynhq/Carma",
     "image": "https://firebasestorage.googleapis.com/v0/b/carma-95b63.appspot.com/o/carma-mockup.jpg?alt=media&token=d7020ff0-a393-476c-be1d-1d2c99bb06e4",
+    "techstack": ["react", "js", "html", "sass", "node", "express", "mysql"]
+  },
+  {
+    "name": "TriPod",
+    "description": "TriPod is photo sharing application where users can like, share, and comment on posts (Pods). This project was created to experiment with Redux and MongoDB. I was able to learn a lot about persistent states and state management within React. In addition, I was able to efficiently create and style components using Material UI!",
+    "demo": "https://tripod.nickhuynhq.com/",
+    "github": "https://github.com/nickhuynhq/tripod-client",
+    "image": "https://user-images.githubusercontent.com/71597829/203188487-fd81c59d-9921-4f15-be83-46d8a0886cee.jpg",
     "techstack": [
       "react",
+      "redux",
+      "materialui",
       "js",
-      "html",
-      "sass",
-      "node",
-      "express",
-      "mysql"
+      "mongodb",
+      "express"
     ]
   },
   {
@@ -21,14 +28,7 @@
     "demo": "https://nex1-eta.vercel.app/",
     "github": "https://github.com/nickhuynhq/NEX1",
     "image": "https://user-images.githubusercontent.com/71597829/196006148-b4e882fe-1f64-40de-9514-dbceed523df2.jpg",
-    "techstack": [
-      "nextjs",
-      "ts",
-      "html",
-      "tailwind",
-      "node",
-      "express"
-    ]
+    "techstack": ["nextjs", "ts", "html", "tailwind", "node", "express"]
   },
   {
     "name": "Weather Vue",
