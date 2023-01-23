@@ -81,7 +81,6 @@ a {
 html {
   position: relative;
   scroll-behavior: smooth;
-  transform: translate3d(0,0,0);
 
   @include desktop{
     scroll-snap-type: y proximity;
@@ -94,14 +93,12 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  transform: translate3d(0,0,0);
 }
 
 .main {
   background-color: $background-primary;
   padding: 2rem 8%;
-  transform: translate3d(0,0,0);
-
+  
   @include tablet {
     padding: 2rem 10%;
   }
@@ -113,7 +110,6 @@ section {
   justify-content: center;
   min-height: 100vh;
   scroll-snap-align: start;
-  transform: translate3d(0,0,0);
 }
 
 .more-arrow {
