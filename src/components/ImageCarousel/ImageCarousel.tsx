@@ -3,13 +3,23 @@ import { motion } from "framer-motion";
 
 import projects from "../../data/projects.json";
 import SliderCard from "./Slider/SliderCard";
+import { MdScreenLockLandscape } from "react-icons/md";
 
 const ImageCarousel = () => {
   const projectArray = projects;
   const [width, setWidth] = useState(0);
   const dragSlider = useRef<HTMLDivElement>(null);
 
-  const handleScroll = (direction: string) => {};
+  const handleScroll = (direction: string) => {
+    const {current} = dragSlider;
+    const scrollAmount = window.innerWidth > 1800 ? 270 : 210;
+
+    if (direction === "left"){
+      current.scrollLeft -= scrollAmount;
+    } else {
+      current.scrollLeft += scrollAmount;
+    }
+  };
 
   useEffect(() => {
     if (dragSlider.current) {
