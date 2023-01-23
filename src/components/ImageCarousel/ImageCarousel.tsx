@@ -1,51 +1,37 @@
-import "./ImageCarousel.scss";
-import data from "../../data/projects.json";
-import { useEffect, useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+
+import projects from "../../data/projects.json";
+import SliderCard from "./Slider/SliderCard";
 
 const ImageCarousel = () => {
-  const [onDragX, setOnDragX] = useState(0);
-  const [onClickX, setOnClickX] = useState(0);
-  const [percentage, setPercentage] = useState(0);
+  const projectArray = projects;
+  const [width, setWidth] = useState(0);
+  const dragSlider = useRef();
 
-  const handleOnMouseDown = (e: any) => {
-    if(onDragX === 0 ) return
-    console.log("Click", e.clientX)
-    setOnClickX(e.clientX);
-  };
-
-  const handleMouseDrag = (e: any) => {
-    setOnDragX(e.clientX);
-  };
-
-  const handleScroll = (e: any) => {
-    console.log("SCROLL", e)
-  }
-
-  useEffect(() => {
-    const mouseDelta = onClickX - onDragX,
-      maxDelta = window.innerWidth;
-
-    setPercentage((mouseDelta / maxDelta) * -100) 
-    console.log("PERCENTAGE",percentage)
-  }, [onDragX, onClickX, percentage]);
+  const handleScroll = (direction) => {};
 
   return (
-    <div
-      className="carousel-container"
-      onMouseDown={handleOnMouseDown}
-      onDrag={handleMouseDrag}
-      onScroll={handleScroll}
-      style={{transform:`translate(${percentage}%, -50%)` }}
-    >
-      {data.map((project, i) => (
-        <img
-          key={i}
-          className="carousel-container--image"
-          src={project.image}
-          alt={project.name}
-          draggable="true"
-        />
-      ))}
+    <div className="slider">
+      <div className="slider-box">
+        <div className="slideer-box--button">
+          <button onClick={() => handleScroll("left")}>{`<<`}</button>
+          <button onClick={() => handleScroll("right")}>{`>>`}</button>
+        </div>
+
+        <motion.div className="slider-box--items" ref={dragSlider}>
+          <motion.div
+            ref={dragSlider}
+            className="slider-box--item"
+            drag="x"
+            dragConstraints={{right: 0, left: -width}}
+          >
+            {projectArray.map((project, i) => (
+              <SliderCard key={i}/>
+            ))}
+          </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 };

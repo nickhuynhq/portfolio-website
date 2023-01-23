@@ -2,21 +2,7 @@
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/mixins" as *;
 
-.carousel-container {
-    display: flex;
-    gap: 4vmin;
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%); 
-    user-select: none; /* -- Prevent image highlighting -- */
 
-    &--image {
-        width: 40vmin;
-        height: 56vmin;
-        object-fit: cover;
-        object-position: 50% center;
-      }
-  }
   
   
   
