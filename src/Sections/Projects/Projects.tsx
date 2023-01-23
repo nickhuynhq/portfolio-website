@@ -1,6 +1,7 @@
 import ProjectsData from "../../data/projects.json";
 import "./Projects.scss";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 
 const Projects = () => {
 
@@ -8,7 +9,9 @@ const Projects = () => {
     <div id="projects" className="projects">
       <h1 className="projects__heading">{`// My Projects`}</h1>
 
-      {ProjectsData.map((project) => (
+      <ImageCarousel />
+
+      {/* {ProjectsData.map((project) => (
         <ProjectCard
           key={project.name}
           name={project.name}
@@ -18,7 +21,7 @@ const Projects = () => {
           demo={project.demo}
           techstack={project.techstack}
         />
-      ))}
+      ))} */}
     </div>
   );
 };
