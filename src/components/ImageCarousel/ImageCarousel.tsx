@@ -7,9 +7,15 @@ import SliderCard from "./Slider/SliderCard";
 const ImageCarousel = () => {
   const projectArray = projects;
   const [width, setWidth] = useState(0);
-  const dragSlider = useRef();
+  const dragSlider = useRef<HTMLDivElement>(null);
 
-  const handleScroll = (direction) => {};
+  const handleScroll = (direction: string) => {};
+
+  useEffect(() => {
+    if (dragSlider.current) {
+      setWidth(dragSlider.current.scrollWidth - dragSlider.current.offsetWidth);
+    }
+  }, [width]);
 
   return (
     <div className="slider">
@@ -24,10 +30,10 @@ const ImageCarousel = () => {
             ref={dragSlider}
             className="slider-box--item"
             drag="x"
-            dragConstraints={{right: 0, left: -width}}
+            dragConstraints={{ right: 0, left: -width }}
           >
             {projectArray.map((project, i) => (
-              <SliderCard key={i}/>
+              <SliderCard key={i} {...project} />
             ))}
           </motion.div>
         </motion.div>

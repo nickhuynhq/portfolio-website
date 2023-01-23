@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const SliderCard = () => {
+const SliderCard = ({ ...project }) => {
   return (
-    <div>SliderCard</div>
-  )
-}
+    <div>
+      <h2>{project.name}</h2>
+    </div>
+  );
+};
 
-export default SliderCard
+export default SliderCard;
