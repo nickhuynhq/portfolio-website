@@ -1,0 +1,38 @@
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.slider-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 25rem;
+    max-width: 31.25rem;
+    transition: all .3s ease-in;
+
+    @include desktop{
+        height: 31.25rem;
+    }
+
+    @include desktop-xl{
+        height: 37.5rem;
+        max-width: 37.5rem;
+    }
+
+    &__image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all .3s ease-in;
+        cursor: pointer;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}

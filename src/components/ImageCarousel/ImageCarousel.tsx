@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 import projects from "../../data/projects.json";
-import SliderCard from "./Slider/SliderCard";
-import { MdScreenLockLandscape } from "react-icons/md";
+import SliderCard from "../SliderCard/SliderCard";
+import "./ImageCarousel.scss";
 
 const ImageCarousel = () => {
   const projectArray = projects;
@@ -11,12 +11,13 @@ const ImageCarousel = () => {
   const dragSlider = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: string) => {
-    const {current} = dragSlider;
-    const scrollAmount = window.innerWidth > 1800 ? 270 : 210;
+    const { current } = dragSlider;
+    const scrollAmount = window.innerWidth > 1800 ? 300 : 270;
 
-    if (direction === "left"){
+    if (direction === "left") {
       current.scrollLeft -= scrollAmount;
     } else {
+      console.log(scrollAmount)
       current.scrollLeft += scrollAmount;
     }
   };
@@ -30,23 +31,24 @@ const ImageCarousel = () => {
   return (
     <div className="slider">
       <div className="slider-box">
-        <div className="slideer-box--button">
-          <button onClick={() => handleScroll("left")}>{`<<`}</button>
-          <button onClick={() => handleScroll("right")}>{`>>`}</button>
-        </div>
-
         <motion.div className="slider-box--items" ref={dragSlider}>
           <motion.div
             ref={dragSlider}
             className="slider-box--item"
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
+          
           >
             {projectArray.map((project, i) => (
               <SliderCard key={i} {...project} />
             ))}
           </motion.div>
         </motion.div>
+      </div>
+
+      <div className="slideer-box--button">
+        <button onClick={() => handleScroll("left")}>{`<<`}</button>
+        <button onClick={() => handleScroll("right")}>{`>>`}</button>
       </div>
     </div>
   );
