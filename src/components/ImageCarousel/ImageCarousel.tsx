@@ -13,14 +13,21 @@ const ImageCarousel = () => {
   const handleScroll = (direction: string) => {
     const { current } = dragSlider;
     const scrollAmount = window.innerWidth > 1800 ? 300 : 270;
-
     if (direction === "left") {
-      current.scrollLeft -= scrollAmount;
+      if (current.scrollLeft > 0) {
+        current.scrollTo({
+          left: current.scrollLeft - scrollAmount,
+          behavior: 'smooth'
+        });
+      }
     } else {
-      console.log(scrollAmount)
-      current.scrollLeft += scrollAmount;
+      current.scrollTo({
+        left: current.scrollLeft + scrollAmount,
+        behavior: 'smooth'
+      });
     }
   };
+
 
   useEffect(() => {
     if (dragSlider.current) {
@@ -31,13 +38,12 @@ const ImageCarousel = () => {
   return (
     <div className="slider">
       <div className="slider-box">
-        <motion.div className="slider-box--items" ref={dragSlider}>
+        <motion.div className="slider-box--items" ref={dragSlider} >
           <motion.div
             ref={dragSlider}
             className="slider-box--item"
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
-          
           >
             {projectArray.map((project, i) => (
               <SliderCard key={i} {...project} />
