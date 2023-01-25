@@ -12,7 +12,7 @@ const ImageCarousel = () => {
 
   const handleScroll = (direction: string) => {
     const { current } = dragSlider;
-    const scrollAmount = window.innerWidth > 1800 ? 300 : 270;
+    const scrollAmount = window.innerWidth > 1800 ? 320 : 270;
     if (direction === "left") {
       if (current.scrollLeft > 0) {
         current.scrollTo({
