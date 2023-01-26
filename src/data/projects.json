@@ -23,7 +23,7 @@
     "demo": "https://nex1-eta.vercel.app/",
     "github": "https://github.com/nickhuynhq/NEX1",
     "image": "https://user-images.githubusercontent.com/71597829/196006148-b4e882fe-1f64-40de-9514-dbceed523df2.jpg",
-    "techstack": ["nextjs", "typescript", "html", "tailwind", "node", "express"],
+    "techstack": ["nextjs", "typescript", "tailwind", "node", "express"],
     "slogan": "Interact & explore short form content"
   },
   {
@@ -32,7 +32,7 @@
     "demo": "https://crowd3d.netlify.app/",
     "github": "https://github.com/nickhuynhq/web3_crowdfunding",
     "image": "https://user-images.githubusercontent.com/71597829/214775077-22181324-11cc-4528-95a2-93e8fdbb7242.jpg",
-    "techstack": ["react", "vite", "tailwind", "hardhat"],
+    "techstack": ["react", "vite", "tailwind", "hardhat", "solidity", "ethereum"],
     "slogan": "Web3 Crowdfunding Platform"
   },
   {

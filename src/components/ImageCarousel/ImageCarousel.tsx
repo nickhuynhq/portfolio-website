@@ -5,7 +5,7 @@ import projects from "../../data/projects.json";
 import SliderCard from "../SliderCard/SliderCard";
 import "./ImageCarousel.scss";
 
-const ImageCarousel = () => {
+const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
   const projectArray = projects;
   const [width, setWidth] = useState(0);
   const dragSlider = useRef<HTMLDivElement>(null);
@@ -43,15 +43,26 @@ const ImageCarousel = () => {
             dragConstraints={{ right: 0, left: -width }}
           >
             {projectArray.map((project, i) => (
-              <SliderCard key={i} {...project} />
+              <SliderCard
+                key={i}
+                {...project}
+                showModal={showModal}
+                setCurrentModalProject={setCurrentModalProject}
+              />
             ))}
           </motion.div>
         </motion.div>
       </div>
 
       <div className="slider-box--button">
-        <button className="slider-button" onClick={() => handleScroll("left")}>{`<<`}</button>
-        <button className="slider-button" onClick={() => handleScroll("right")}>{`>>`}</button>
+        <button
+          className="slider-button"
+          onClick={() => handleScroll("left")}
+        >{`<<`}</button>
+        <button
+          className="slider-button"
+          onClick={() => handleScroll("right")}
+        >{`>>`}</button>
       </div>
     </div>
   );
