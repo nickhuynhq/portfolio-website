@@ -25,18 +25,12 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
         <h1 className={isMobile ? "projects-card__heading" : `hidden`}>
           {`${name}`}
         </h1>
-        <a
-          href={demo}
-          className="projects-card__image-container"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            className={"projects-card__image"}
-            src={image}
-            alt={`${name} Mockup`}
-          />
-        </a>
+
+        <img
+          className={"projects-card__image"}
+          src={image}
+          alt={`${name} Mockup`}
+        />
       </div>
 
       <div
