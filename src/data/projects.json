@@ -5,7 +5,8 @@
     "demo": "https://carma-island-app.herokuapp.com/",
     "github": "https://github.com/nickhuynhq/Carma",
     "image": "https://firebasestorage.googleapis.com/v0/b/carma-95b63.appspot.com/o/carma-mockup.jpg?alt=media&token=d7020ff0-a393-476c-be1d-1d2c99bb06e4",
-    "techstack": ["react", "js", "html", "sass", "node", "express", "mysql"]
+    "techstack": ["react", "sass", "node", "express", "mysql"],
+    "slogan": "The True Vehicle Value Database"
   },
   {
     "name": "TriPod",
@@ -13,14 +14,8 @@
     "demo": "https://tripod.nickhuynhq.com/",
     "github": "https://github.com/nickhuynhq/tripod-client",
     "image": "https://user-images.githubusercontent.com/71597829/214748823-9b8b4f6a-9881-4ac8-8bc6-30ba4df34287.jpg",
-    "techstack": [
-      "react",
-      "redux",
-      "materialui",
-      "js",
-      "mongodb",
-      "express"
-    ]
+    "techstack": ["react", "redux", "materialui", "mongodb", "express"],
+    "slogan": "Share your photos & get in Pods!"
   },
   {
     "name": "NEX1",
@@ -28,7 +23,17 @@
     "demo": "https://nex1-eta.vercel.app/",
     "github": "https://github.com/nickhuynhq/NEX1",
     "image": "https://user-images.githubusercontent.com/71597829/196006148-b4e882fe-1f64-40de-9514-dbceed523df2.jpg",
-    "techstack": ["nextjs", "ts", "html", "tailwind", "node", "express"]
+    "techstack": ["nextjs", "typescript", "html", "tailwind", "node", "express"],
+    "slogan": "Interact & explore short form content"
+  },
+  {
+    "name": "Crowd3D",
+    "description": "Crowd3D, pronounced 'crowded', is a web3 crowdfunding application using Vite.js, Tailwind CSS, & the Thirdweb SDK. This project was created to experiment with web3 concepts and creating my own smart contracts using Hardhat👷 and Solidity! I was also able to learn how to deploy my smart contracts and connect them to MetaMask In addition, got to express my creative UI and design using Tailwind CSS for quick styling implementation",
+    "demo": "https://crowd3d.netlify.app/",
+    "github": "https://github.com/nickhuynhq/web3_crowdfunding",
+    "image": "https://user-images.githubusercontent.com/71597829/214775077-22181324-11cc-4528-95a2-93e8fdbb7242.jpg",
+    "techstack": ["react", "vite", "tailwind", "hardhat"],
+    "slogan": "Web3 Crowdfunding Platform"
   },
   {
     "name": "Weather Vue",
@@ -36,7 +41,8 @@
     "demo": "https://weather-vue-tw.netlify.app/",
     "github": "https://github.com/nickhuynhq/weather-vue",
     "image": "https://firebasestorage.googleapis.com/v0/b/weather-vue-f1edf.appspot.com/o/weather-vue.jpg?alt=media&token=73dd1a20-1a8b-4bd8-9337-3fb7bcc19dda",
-    "techstack": ["vue", "js", "html", "tailwind"]
+    "techstack": ["vue", "javascript", "html", "tailwind"],
+    "slogan": "Be prepared, look at the Vue!"
   },
   {
     "name": "Tasker",
@@ -44,6 +50,7 @@
     "demo": "https://ts-tasker-app.netlify.app/",
     "github": "https://github.com/nickhuynhq/Tasker",
     "image": "https://user-images.githubusercontent.com/71597829/200607980-f4490d13-87ba-408f-8c79-29c6548d5183.jpg",
-    "techstack": ["react", "ts", "html", "sass"]
+    "techstack": ["react", "typescript", "html", "sass"],
+    "slogan": "Plan ahead by dragging & dropping"
   }
 ]

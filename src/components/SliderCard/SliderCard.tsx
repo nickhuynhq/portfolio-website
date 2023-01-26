@@ -18,6 +18,7 @@ const SliderCard = ({ ...project }) => {
 
       <div className="slider-card__info">
         <h2 className="slider-card__title">{project.name}</h2>
+        <p className="slider-card__description">{project.slogan}</p>
       </div>
     </motion.div>
   );

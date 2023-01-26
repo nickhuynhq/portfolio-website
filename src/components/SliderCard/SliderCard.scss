@@ -26,19 +26,16 @@
     -ms-user-select: none;
     backface-visibility: hidden;
 
-    @include tablet{
-        height: 18rem;
-        
+    @include tablet {
+      height: 18rem;
     }
 
-    @include desktop{
-        height: 20rem;
-        
+    @include desktop {
+      height: 20rem;
     }
 
-    @include desktop-xl{
-        height: 22rem;
-        
+    @include desktop-xl {
+      height: 22rem;
     }
 
     &:hover {
