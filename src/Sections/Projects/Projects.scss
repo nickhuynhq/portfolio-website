@@ -3,6 +3,9 @@
 
 .projects {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 0;
   height: 100vh;
   overflow: hidden;

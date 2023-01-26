@@ -12,7 +12,7 @@
     "description": "TriPod is photo sharing application where users can like, share, and comment on posts (Pods). This project was created to experiment with Redux and MongoDB. I was able to learn a lot about persistent states and state management within React. In addition, I was able to efficiently create and style components using Material UI!",
     "demo": "https://tripod.nickhuynhq.com/",
     "github": "https://github.com/nickhuynhq/tripod-client",
-    "image": "https://user-images.githubusercontent.com/71597829/203188487-fd81c59d-9921-4f15-be83-46d8a0886cee.jpg",
+    "image": "https://user-images.githubusercontent.com/71597829/214748823-9b8b4f6a-9881-4ac8-8bc6-30ba4df34287.jpg",
     "techstack": [
       "react",
       "redux",

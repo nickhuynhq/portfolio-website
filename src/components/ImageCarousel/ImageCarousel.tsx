@@ -11,23 +11,21 @@ const ImageCarousel = () => {
   const dragSlider = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: string) => {
-    const { current } = dragSlider;
-    const scrollAmount = window.innerWidth > 1800 ? 320 : 270;
-    if (direction === "left") {
-      if (current.scrollLeft > 0) {
-        current.scrollTo({
-          left: current.scrollLeft - scrollAmount,
-          behavior: 'smooth'
+    if (dragSlider.current) {
+      const increment = 350; // This value can be adjusted to change the amount of scrolling
+      if (direction === "left") {
+        dragSlider.current.scrollTo({
+          left: dragSlider.current.scrollLeft - increment,
+          behavior: "smooth",
+        });
+      } else if (direction === "right") {
+        dragSlider.current.scrollTo({
+          left: dragSlider.current.scrollLeft + increment,
+          behavior: "smooth",
         });
       }
-    } else {
-      current.scrollTo({
-        left: current.scrollLeft + scrollAmount,
-        behavior: 'smooth'
-      });
     }
   };
-
 
   useEffect(() => {
     if (dragSlider.current) {
@@ -38,9 +36,8 @@ const ImageCarousel = () => {
   return (
     <div className="slider">
       <div className="slider-box">
-        <motion.div className="slider-box--items" ref={dragSlider} >
+        <motion.div className="slider-box--items" ref={dragSlider}>
           <motion.div
-            ref={dragSlider}
             className="slider-box--item"
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
@@ -52,9 +49,9 @@ const ImageCarousel = () => {
         </motion.div>
       </div>
 
-      <div className="slideer-box--button">
-        <button onClick={() => handleScroll("left")}>{`<<`}</button>
-        <button onClick={() => handleScroll("right")}>{`>>`}</button>
+      <div className="slider-box--button">
+        <button className="slider-button" onClick={() => handleScroll("left")}>{`<<`}</button>
+        <button className="slider-button" onClick={() => handleScroll("right")}>{`>>`}</button>
       </div>
     </div>
   );
