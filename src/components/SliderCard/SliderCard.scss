@@ -13,10 +13,6 @@
     height: 31.25rem;
   }
 
-  @include desktop-xl {
-    height: 37.5rem;
-    max-width: 37.5rem;
-  }
 
   &__image-box {
     position: relative;
