@@ -1,0 +1,81 @@
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: all 0.3s ease-in;
+
+  &__image-box {
+    position: relative;
+  }
+
+  &__image {
+    opacity: 1;
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    backface-visibility: hidden;
+
+    @include tablet {
+      height: 18rem;
+    }
+
+    @include desktop {
+      height: 20rem;
+    }
+
+    @include desktop-xl {
+      height: 22rem;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: $button-background;
+    cursor: pointer;
+  }
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slider-card__image-box:hover .slider-card__image {
+  opacity: 0.5;
+}
+
+.slider-card__image-box:hover .middle {
+  opacity: 1;
+}

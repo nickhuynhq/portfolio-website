@@ -10,7 +10,12 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p, a {
+h1,
+h2,
+h3,
+h4,
+p,
+a {
   font-family: eurostile-extended, "Do Hyeon", sans-serif;
   color: $text-primary;
   padding: 0;
@@ -69,7 +74,8 @@ p {
   }
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   list-style-position: inside;
 }
@@ -82,8 +88,7 @@ html {
   position: relative;
   scroll-behavior: smooth;
 
-  @include desktop{
-    scroll-snap-type: y proximity;
+  @include desktop {
     overflow-y: scroll;
   }
 }
@@ -93,12 +98,13 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .main {
   background-color: $background-primary;
   padding: 2rem 8%;
-  
+
   @include tablet {
     padding: 2rem 10%;
   }
@@ -123,14 +129,6 @@ section {
   }
 }
 
-.vert-move {
-  -webkit-animation: mover 0.8s infinite alternate;
-  animation: mover 0.8s infinite alternate;
-}
-.vert-move {
-  -webkit-animation: mover 0.8s infinite alternate;
-  animation: mover 0.8s infinite alternate;
-}
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);

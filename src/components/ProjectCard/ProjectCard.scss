@@ -6,50 +6,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
-  min-height: 1rem;
-  gap: 3rem;
+  width: 100%;
+  gap: 1.5rem;
   transition: 1s ease;
 
   @include desktop {
     flex-direction: row;
     align-items: center;
-    min-height: 100vh;
-    margin-bottom: 0;
+    gap: 3rem
   }
 
   &__image {
+    height: 80%;
     width: 100%;
-    transition: 0.5s ease;
-    cursor: pointer;
-
-    @include desktop {
-      width: 30vw;
-    }
-
-    &:hover {
-      scale: 1.03;
-      @include tablet {
-        box-shadow: -1rem -1rem #ccc;
-      }
-
-      @include desktop {
-        box-shadow: -2rem -2rem #ccc;
-      }
-    }
-
-    &-container{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-
-      @include tablet {
-        width: 70%;
-      }
-      @include desktop {
-        width: 100%;
-      }
-    }
+    margin-top: 0.5rem;
+    object-fit: cover;
   }
 
   &__description {

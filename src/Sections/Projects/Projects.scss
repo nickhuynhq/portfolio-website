@@ -4,9 +4,10 @@
 .projects {
   position: relative;
   display: flex;
-  gap: 15vh;
   flex-direction: column;
+  justify-content: center;
   z-index: 0;
+  height: 100vh;
 
   @include desktop {
     gap: 2rem;

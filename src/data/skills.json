@@ -1,8 +1,8 @@
 [
     "react",
     "nextjs",
-    "ts",
-    "js",
+    "typescript",
+    "javascript",
     "html",
     "css",
     "sass",
@@ -12,5 +12,6 @@
     "express",
     "python",
     "mysql",
+    "graphql",
     "mongodb"
   ]

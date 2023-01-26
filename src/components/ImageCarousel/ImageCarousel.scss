@@ -1,0 +1,59 @@
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.slider {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-box {
+    width: 100%;
+    height: 100%;
+
+    &--items {
+      width: 100%;
+      overflow: hidden;
+      transition: all 0.3s ease-in;
+      overflow-x: scroll;
+      padding-bottom: 3rem;
+    }
+
+    &--item {
+      display: grid;
+      grid-template-columns: repeat(6, 100%);
+      gap: 2rem;
+      cursor: grab;
+
+      @include tablet {
+        grid-template-columns: repeat(6, 44%);
+      }
+
+      @include desktop {
+        grid-template-columns: repeat(6, 28%);
+      }
+    }
+    &--button {
+      display: flex;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+
+    &--item::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &-button {
+    border: none;
+    font-size: x-large;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+}

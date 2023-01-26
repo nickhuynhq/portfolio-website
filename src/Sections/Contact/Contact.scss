@@ -5,12 +5,12 @@
 .contact {
   min-height: 1rem;
   padding: 2rem 8%;
-
-  @include desktop{
+  overflow-x: hidden;
+  @include desktop {
     min-height: 100vh;
   }
 
-  &__heading{
+  &__heading {
     margin-top: 2.5rem;
   }
 

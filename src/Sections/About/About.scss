@@ -5,6 +5,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   z-index: 0;
 
@@ -70,7 +71,7 @@
     }
   }
 
-  &__cards{
+  &__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

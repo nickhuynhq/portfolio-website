@@ -7,22 +7,43 @@ import "./App.scss";
 import Contact from "./Sections/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import { useState } from "react";
+import ProjectModal from "./components/ProjectModal/ProjectModal";
 
 function App() {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [currentModalProject, setCurrentModalProject] = useState({});
+
+  const showModal = (e: React.MouseEvent<HTMLElement>) => {
+    setModalVisible(true);
+  };
+
+  const closeModal = (e: React.MouseEvent<HTMLElement>) => {
+    setModalVisible(false);
+  };
 
   return (
-    <div className="App">
-      <ParticlesBackground />
-      <Navigation />
-      <main className="main">
-        <About />
-        <Projects />
-        <Experience />
-      </main>
-      <Contact />
-      <Footer />
-      <ScrollToTopButton />
-    </div>
+    <>
+      {modalVisible && (
+        <ProjectModal project={currentModalProject} closeModal={closeModal} />
+      )}
+
+      <div className="App">
+        <ParticlesBackground />
+        <Navigation />
+        <main className="main">
+          <About />
+          <Projects
+            showModal={showModal}
+            setCurrentModalProject={setCurrentModalProject}
+          />
+          <Experience />
+        </main>
+        <Contact />
+        <Footer />
+        <ScrollToTopButton />
+      </div>
+    </>
   );
 }
 
