@@ -89,7 +89,6 @@ html {
   scroll-behavior: smooth;
 
   @include desktop {
-    scroll-snap-type: y proximity;
     overflow-y: scroll;
   }
 }
