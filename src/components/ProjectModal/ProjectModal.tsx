@@ -8,7 +8,7 @@ const ProjectModal = ({ project, closeModal }) => {
         <div className="project-modal__overlay" onClick={closeModal}>
         </div>
         <div className="project-modal__container">
-            <div className="project-modal__close-button">X</div>
+            <div className="project-modal__close-button" onClick={closeModal}>X</div>
             <ProjectCard {...project}/>
         </div>
     </div>
