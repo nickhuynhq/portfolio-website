@@ -12,7 +12,7 @@ const ImageCarousel = () => {
 
   const handleScroll = (direction: string) => {
     if (dragSlider.current) {
-      const increment = 350; // This value can be adjusted to change the amount of scrolling
+      const increment = 340; // This value can be adjusted to change the amount of scrolling
       if (direction === "left") {
         dragSlider.current.scrollTo({
           left: dragSlider.current.scrollLeft - increment,

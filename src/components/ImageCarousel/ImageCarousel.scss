@@ -17,12 +17,13 @@
       overflow: hidden;
       transition: all 0.3s ease-in;
       overflow-x: scroll;
+      padding-bottom: 3rem;
     }
 
     &--item {
       display: grid;
-      grid-template-columns: repeat(6, 80%);
-      gap: 1.5rem;
+      grid-template-columns: repeat(6, 100%);
+      gap: 2rem;
       cursor: grab;
 
       @include tablet {
