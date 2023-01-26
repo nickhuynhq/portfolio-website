@@ -8,11 +8,13 @@ import "./ImageCarousel.scss";
 const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
   const projectArray = projects;
   const [width, setWidth] = useState(0);
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const isMobile = screenWidth <= 720;
   const dragSlider = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: string) => {
     if (dragSlider.current) {
-      const increment = 340; // This value can be adjusted to change the amount of scrolling
+      const increment = isMobile ? window.innerWidth - 30 : window.innerWidth/2; // This value can be adjusted to change the amount of scrolling
       if (direction === "left") {
         dragSlider.current.scrollTo({
           left: dragSlider.current.scrollLeft - increment,
