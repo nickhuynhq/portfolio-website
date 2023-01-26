@@ -10,18 +10,6 @@ const Projects = ({ showModal, setCurrentModalProject }) => {
         showModal={showModal}
         setCurrentModalProject={setCurrentModalProject}
       />
-
-      {/* {ProjectsData.map((project) => (
-        <ProjectCard
-          key={project.name}
-          name={project.name}
-          description={project.description}
-          image={project.image}
-          github={project.github}
-          demo={project.demo}
-          techstack={project.techstack}
-        />
-      ))} */}
     </div>
   );
 };

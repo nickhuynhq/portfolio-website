@@ -16,22 +16,16 @@ function App() {
 
   const showModal = (e: React.MouseEvent<HTMLElement>) => {
     setModalVisible(true);
-    console.log("MODAL VISIBLE");
-    console.log(currentModalProject);
   };
 
   const closeModal = (e: React.MouseEvent<HTMLElement>) => {
     setModalVisible(false);
-    console.log("MODAL CLOSED");
   };
 
   return (
     <>
       {modalVisible && (
-        <ProjectModal
-          project={currentModalProject}
-          closeModal={closeModal}
-        />
+        <ProjectModal project={currentModalProject} closeModal={closeModal} />
       )}
 
       <div className="App">
