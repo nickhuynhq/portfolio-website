@@ -4,7 +4,7 @@
     "description": "Carma is an vehicle database application where Users and see the true cost of a vehicle including depreciation, insurance, fuel, and maintenance. This project was created to help regular people visualize the true cost of their vehicle before purchasing. Utilizing simple graphics and explanations allows the potential car buyer to have a 'straight to the point verdict' on a variety of vehicles.",
     "demo": "https://carma-island-app.herokuapp.com/",
     "github": "https://github.com/nickhuynhq/Carma",
-    "image": "https://firebasestorage.googleapis.com/v0/b/carma-95b63.appspot.com/o/carma-mockup.jpg?alt=media&token=d7020ff0-a393-476c-be1d-1d2c99bb06e4",
+    "image": "https://user-images.githubusercontent.com/71597829/214968364-54fd73f6-744b-4c1e-aceb-d38a5702dcac.jpg",
     "techstack": ["react", "sass", "node", "express", "mysql"],
     "slogan": "The True Vehicle Value Database"
   },
@@ -22,7 +22,7 @@
     "description": "NEX1 is a tik tok inspired application where users can upload, share, and interact with short video clips! This project was created to experiment with NEXT.js, TypeScript, and Tailwind CSS! Backend was deployed on Sanity CMS and data is called used GROQ (A GraphQL like query language).",
     "demo": "https://nex1-eta.vercel.app/",
     "github": "https://github.com/nickhuynhq/NEX1",
-    "image": "https://user-images.githubusercontent.com/71597829/196006148-b4e882fe-1f64-40de-9514-dbceed523df2.jpg",
+    "image": "https://user-images.githubusercontent.com/71597829/214969111-4d4e17ac-74b7-416e-b461-b83b88a08e4c.jpg",
     "techstack": ["nextjs", "typescript", "tailwind", "node", "express"],
     "slogan": "Interact & explore short form content"
   },
@@ -31,7 +31,7 @@
     "description": "Crowd3D, pronounced 'crowded', is a web3 crowdfunding application using Vite.js, Tailwind CSS, & the Thirdweb SDK. This project was created to experiment with web3 concepts and creating my own smart contracts using Hardhat👷 and Solidity! I was also able to learn how to deploy my smart contracts and connect them to MetaMask In addition, got to express my creative UI and design using Tailwind CSS for quick styling implementation",
     "demo": "https://crowd3d.netlify.app/",
     "github": "https://github.com/nickhuynhq/web3_crowdfunding",
-    "image": "https://user-images.githubusercontent.com/71597829/214775077-22181324-11cc-4528-95a2-93e8fdbb7242.jpg",
+    "image": "https://user-images.githubusercontent.com/71597829/214969423-c18fd2bc-7630-43e2-87fb-758006ecbc5d.jpg",
     "techstack": ["react", "vite", "tailwind", "hardhat", "solidity", "ethereum"],
     "slogan": "Web3 Crowdfunding Platform"
   },
@@ -40,7 +40,7 @@
     "description": "Weather Vue allows you to track the current and future weather of cities of your choosing. This project was created to experiment with Tailwind CSS and is my first project using Vue.js!  Weather data is pulled from OpenWeatherMap's API. All in all, got a great introduction to the Vue framework and learnt a new way of styling using Tailwind!",
     "demo": "https://weather-vue-tw.netlify.app/",
     "github": "https://github.com/nickhuynhq/weather-vue",
-    "image": "https://firebasestorage.googleapis.com/v0/b/weather-vue-f1edf.appspot.com/o/weather-vue.jpg?alt=media&token=73dd1a20-1a8b-4bd8-9337-3fb7bcc19dda",
+    "image": "https://user-images.githubusercontent.com/71597829/214969742-d867b36f-fb7e-4c92-a02a-3ed95b1f77cc.jpg",
     "techstack": ["vue", "javascript", "html", "tailwind"],
     "slogan": "Be prepared, look at the Vue!"
   },
@@ -49,7 +49,7 @@
     "description": "Tasker is an intuitive task checklist application to help users manage their active and completed tasks. This project was created to experiment with TypeScript with React as well as to help myself create tasks which can be saved in local storage. I was able to learn a lot about the benefits of TypeScript and will be definitely using it in the future!",
     "demo": "https://ts-tasker-app.netlify.app/",
     "github": "https://github.com/nickhuynhq/Tasker",
-    "image": "https://user-images.githubusercontent.com/71597829/200607980-f4490d13-87ba-408f-8c79-29c6548d5183.jpg",
+    "image": "https://user-images.githubusercontent.com/71597829/214969985-a9e8c8f3-53d2-4f92-90fd-44e31649d31d.jpg",
     "techstack": ["react", "typescript", "html", "sass"],
     "slogan": "Plan ahead by dragging & dropping"
   }

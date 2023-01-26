@@ -40,9 +40,9 @@ const About = () => {
           </p>
           <p>
             But my skills don't stop there, during the pandemic, I've also
-            helped numerous small businesses navigate the digital landscape.
-            When I'm not at my computer I love to spend my time cycling, taking
-            photos, listening to music, and playing guitar.
+            helped numerous small businesses navigate the digital landscape. When I'm not at my
+            computer I love to spend my time cycling, taking photos, listening
+            to music, and playing guitar.
           </p>
         </div>
         <div
