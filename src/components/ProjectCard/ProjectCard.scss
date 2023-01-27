@@ -15,7 +15,7 @@
   @include desktop {
     flex-direction: row;
     align-items: center;
-    gap: 1rem
+    gap: 1rem;
   }
 
   &__image {
@@ -27,11 +27,11 @@
     margin-bottom: 1rem;
     object-fit: cover;
 
-    @include tablet{
+    @include tablet {
       width: 90%;
     }
 
-    @include desktop{
+    @include desktop {
       margin-top: 0;
     }
   }
@@ -59,7 +59,7 @@
       justify-content: flex-start;
     }
 
-    @include desktop{
+    @include desktop {
       justify-content: space-around;
       width: 30vw;
     }

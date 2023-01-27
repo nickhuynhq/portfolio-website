@@ -87,10 +87,6 @@ a {
 html {
   position: relative;
   scroll-behavior: smooth;
-
-  @include desktop {
-    overflow-y: scroll;
-  }
 }
 
 body {
@@ -98,7 +94,6 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 .main {
