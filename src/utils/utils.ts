@@ -1,9 +1,9 @@
 import ReactGA from "react-ga";
 
-export const EventTracker = (
+export const handleEventTracking = (
   category: string,
   action: string,
   label: string
 ) => {
-  ReactGA.event({ category, action, label });
+  ReactGA.event({ category: category, action: action, label: label });
 };
