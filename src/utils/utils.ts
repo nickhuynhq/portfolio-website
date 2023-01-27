@@ -1,6 +1,6 @@
 import ReactGA from "react-ga";
 
-export const useAnalyticsEventTracker = (
+export const EventTracker = (
   category: string,
   action: string,
   label: string
