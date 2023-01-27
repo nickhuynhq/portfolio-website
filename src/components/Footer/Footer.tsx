@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 const Footer = () => {
   // Number of times infinite text carousel repeats
@@ -34,7 +34,7 @@ const Footer = () => {
         <li>
           <a
             className="footer__list-item"
-            href="https://drive.google.com/file/d/1ME2ZlOizp6n8fAJHS9WRQmQllAw20WYs/view?usp=sharing"
+            href="https://drive.google.com/file/d/18KPOt3RvsMSh0vexUwiL1elDauW5dwwb/view?usp=share_link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -52,7 +52,8 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {" "}LinkedIn{" "}
+                  {" "}
+                  LinkedIn{" "}
                 </a>
                 <span>|</span>
                 <a
@@ -60,15 +61,17 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {" "}GitHub{" "}
+                  {" "}
+                  GitHub{" "}
                 </a>
                 <span>|</span>
                 <a
-                  href="https://drive.google.com/file/d/1ME2ZlOizp6n8fAJHS9WRQmQllAw20WYs/view?usp=sharing"
+                  href="https://drive.google.com/file/d/18KPOt3RvsMSh0vexUwiL1elDauW5dwwb/view?usp=share_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {" "}Resume{" "}
+                  {" "}
+                  Resume{" "}
                 </a>
                 <span>|</span>
                 &nbsp;
