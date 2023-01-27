@@ -21,7 +21,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
 
   return (
     <section className="projects-card">
-      <div>
+      <div className={isMobile ? "": "left-animation"}>
         <h1 className={isMobile ? "projects-card__heading" : `hidden`}>
           {`${name}`}
         </h1>
@@ -42,8 +42,8 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
       >
         <h2 className="project-card__info">{isMobile ? `INFO` : name}</h2>
         <p className="projects-card__text">{description}</p>
-        <h2 className="mobile">Tech Stack</h2>
-        <div className="projects-card__tech mobile">
+        <h3>Tech Stack</h3>
+        <div className="projects-card__tech ">
           {techstack.map((logo: string) => (
             <AboutCards key={logo} section={"projects"} logo={logo} />
           ))}
@@ -69,17 +69,6 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
             GitHub
           </a>
         </div>
-      </div>
-      <div
-        className={
-          isMobile
-            ? "projects-card__tech desktop"
-            : `projects-card__tech right-animation desktop`
-        }
-      >
-        {techstack.map((logo: string) => (
-          <AboutCards key={logo} section={"projects"} logo={logo} />
-        ))}
       </div>
     </section>
   );

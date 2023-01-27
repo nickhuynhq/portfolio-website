@@ -2,6 +2,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .about-cards {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +11,7 @@
   width: 3.5rem;
   height: 3.5rem;
   background-color: $background-secondary;
+  transition: all 0.3s ease-in;
 
   @include tablet {
     width: 4.5rem;
@@ -43,10 +45,28 @@
     }
   }
 
+  &__tooltip{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: .3125rem 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+
   &:hover {
     transition: 0.3s ease;
     scale: 1.03;
     background-color: rgba(74, 74, 74, 0.333);
+
+    & .about-cards__tooltip{
+      visibility: visible;
+    }
   }
 }
 
@@ -59,6 +79,7 @@
   width: 3rem;
   height: 3em;
   background-color: $background-secondary;
+  transition: all 0.3s ease-in;
 
   @include tablet {
     width: 3.5rem;
@@ -80,8 +101,24 @@
     }
   }
 
+  &__tooltip{
+    visibility: hidden;
+    width: 110px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: .3125rem .125rem;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1005;
+  }
+
   &:hover {
     transition: 0.3s ease;
     background-color: rgba(74, 74, 74, 0.333);
+
+    & .projects-cards__tooltip{
+      visibility: visible;
+    }
   }
 }

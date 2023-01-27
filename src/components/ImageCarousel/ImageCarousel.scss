@@ -16,8 +16,11 @@
       width: 100%;
       overflow: hidden;
       transition: all 0.3s ease-in;
-      overflow-x: scroll;
       padding-bottom: 3rem;
+
+      &:hover {
+        overflow-x: scroll;
+      }
     }
 
     &--item {
@@ -36,7 +39,7 @@
     }
     &--button {
       display: flex;
-      margin-top: 1rem;
+      margin-top: 2rem;
       gap: 1rem;
     }
 
@@ -50,6 +53,8 @@
     font-size: x-large;
     transition: 0.5s ease;
     cursor: pointer;
+    color: black;
+    background-color: rgb(223, 223, 223);
 
     &:hover {
       color: white;

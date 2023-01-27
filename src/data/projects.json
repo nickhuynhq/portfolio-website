@@ -32,7 +32,7 @@
     "demo": "https://crowd3d.netlify.app/",
     "github": "https://github.com/nickhuynhq/web3_crowdfunding",
     "image": "https://user-images.githubusercontent.com/71597829/214969423-c18fd2bc-7630-43e2-87fb-758006ecbc5d.jpg",
-    "techstack": ["react", "vite", "tailwind", "hardhat", "solidity", "ethereum"],
+    "techstack": ["react", "vite", "tailwind", "solidity", "ethereum"],
     "slogan": "Web3 Crowdfunding Platform"
   },
   {

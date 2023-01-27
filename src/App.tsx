@@ -15,10 +15,12 @@ function App() {
   const [currentModalProject, setCurrentModalProject] = useState({});
 
   const showModal = (e: React.MouseEvent<HTMLElement>) => {
+    document.body.style.overflow = 'hidden';
     setModalVisible(true);
   };
 
   const closeModal = (e: React.MouseEvent<HTMLElement>) => {
+    document.body.style.overflow = 'unset';
     setModalVisible(false);
   };
 
@@ -28,7 +30,7 @@ function App() {
         <ProjectModal project={currentModalProject} closeModal={closeModal} />
       )}
 
-      <div className="App">
+      <div className="App" >
         <ParticlesBackground />
         <Navigation />
         <main className="main">

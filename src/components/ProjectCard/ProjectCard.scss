@@ -6,21 +6,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   width: 100%;
+  padding: 0rem 4rem;
   gap: 1.5rem;
   transition: 1s ease;
 
   @include desktop {
     flex-direction: row;
     align-items: center;
-    gap: 3rem
+    gap: 1rem
   }
 
   &__image {
+    display: flex;
+    justify-content: center;
     height: 80%;
     width: 100%;
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
     object-fit: cover;
+
+    @include tablet{
+      width: 90%;
+    }
+
+    @include desktop{
+      margin-top: 0;
+    }
   }
 
   &__description {
