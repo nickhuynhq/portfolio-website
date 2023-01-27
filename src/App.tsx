@@ -9,8 +9,12 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import { useState } from "react";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
+import ReactGA from 'react-ga';
+
+
 
 function App() {
+  ReactGA.initialize(process.env.REACT_APP_TRACKING_ID, { standardImplementation: true });
   const [modalVisible, setModalVisible] = useState(false);
   const [currentModalProject, setCurrentModalProject] = useState({});
 
