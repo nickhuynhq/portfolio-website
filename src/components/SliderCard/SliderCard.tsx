@@ -1,9 +1,12 @@
 import "./SliderCard.scss";
 import { motion } from "framer-motion";
+import {EventTracker} from "../../utils/utils"
 
 const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
+  
   const handleCurrentProject = () => {
     setCurrentModalProject({ ...project });
+    EventTracker("project", "open project", `${project.name}`);
     showModal();
   };
 
