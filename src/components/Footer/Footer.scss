@@ -19,8 +19,9 @@
     font-weight: 700;
 
     @include tablet {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     }
+    
   }
 
   &__list {
@@ -36,7 +37,7 @@
 
     @include desktop {
       font-size: 1.4rem;
-      gap: 4rem;
+      gap: 3rem;
     }
 
     &-item {
