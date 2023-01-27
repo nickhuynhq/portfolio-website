@@ -1,4 +1,4 @@
-import AboutCards from "../../components/AboutCards/AboutCards";
+import AboutCards from "../AboutCards/AboutCards";
 import { BsGithub } from "react-icons/bs";
 import { MdWeb } from "react-icons/md";
 import "./ProjectCard.scss";
