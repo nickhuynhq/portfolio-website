@@ -4,10 +4,12 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: $background-primary;
   opacity: 0.85;
+  padding-bottom: 1rem;
 
   @include tablet {
     padding: 0 8%;

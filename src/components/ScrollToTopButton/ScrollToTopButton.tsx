@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BsChevronBarUp } from "react-icons/bs";
 import "./ScrollToTopButton.scss";
 
 const ScrollToTopButton = () => {
@@ -22,7 +23,9 @@ const ScrollToTopButton = () => {
       }}
       style={{ display: visible ? "inline" : "none" }}
     >
-      To Top
+
+      <BsChevronBarUp className="scroll-to-top-button__cheveron"/>
+
     </button>
   );
 };

@@ -6,7 +6,7 @@ const Footer = () => {
   const n = 4;
 
   return (
-    <section id="footer" className="footer">
+    <div id="footer" className="footer">
       <a className="footer__home" href="/">
         nicholashuynh.
       </a>
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
