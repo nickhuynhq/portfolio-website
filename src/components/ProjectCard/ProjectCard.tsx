@@ -21,7 +21,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
 
   return (
     <section className="projects-card">
-      <div >
+      <div className={isMobile ? "": "left-animation"}>
         <h1 className={isMobile ? "projects-card__heading" : `hidden`}>
           {`${name}`}
         </h1>

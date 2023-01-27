@@ -59,7 +59,7 @@
     height: 2rem;
     width: 2rem;
     color: white;
-    background-color: rgb(255, 63, 63);
+    background-color: rgb(255, 0, 0) ;
     top: 0;
     right: 0;
     cursor: pointer;
@@ -70,35 +70,13 @@
     }
 
     &:hover {
-      color: gray;
-      background-color: rgb(197, 0, 0);
+      transition: 0.5s ease;
+      background-color: rgb(200, 0, 0) ;
     }
   }
 }
 
 /* Add Animation */
-@-webkit-keyframes slideIn {
-  from {
-    bottom: -300px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    bottom: -300px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;

@@ -14,7 +14,7 @@
   @include desktop {
     flex-direction: row;
     align-items: center;
-    gap: 3rem
+    gap: 1rem
   }
 
   &__image {
@@ -23,6 +23,7 @@
     height: 80%;
     width: 100%;
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
     object-fit: cover;
 
     @include tablet{
