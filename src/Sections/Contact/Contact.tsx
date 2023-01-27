@@ -1,5 +1,6 @@
 import "./Contact.scss";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
