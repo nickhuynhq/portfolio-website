@@ -14,6 +14,7 @@ const AboutCards = ({ logo, section }: IProps) => {
         src={require(`../../assets/logos/${logo}-logo.png`)}
         alt={`${logo}`}
       />
+      <p className={`${section}-cards__tooltip`}>{logo.toUpperCase()}</p>
     </div>
   );
 };
