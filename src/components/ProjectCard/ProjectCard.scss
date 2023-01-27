@@ -6,8 +6,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   width: 100%;
-  padding: 1rem 4rem;
+  padding: 0rem 4rem;
   gap: 1.5rem;
   transition: 1s ease;
 
@@ -28,6 +29,10 @@
 
     @include tablet{
       width: 90%;
+    }
+
+    @include desktop{
+      margin-top: 0;
     }
   }
 

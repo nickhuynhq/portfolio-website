@@ -28,17 +28,16 @@
   &__container {
     position: relative;
     gap: 1rem;
-    height: 85vh;
-    width: 90vw;
-    padding: 1rem;
+    height: 85%;
+    width: 90%;
     background-color: white;
     z-index: 1002;
     overflow: auto;
 
     @include tablet {
-      height: 80vh;
-      width: 80vw;
-      padding: 2rem;
+      height: 80%;
+      width: 80%;
+   
     }
 
     @include desktop {
@@ -57,13 +56,14 @@
     width: 2rem;
     height: 2rem;
     top: 0;
-    left: 100rem;
+    margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: 0.5s ease;
     color: white;
     background-color: rgb(255, 0, 0);
+
     cursor: pointer;
 
     @include desktop {
@@ -72,7 +72,6 @@
     }
 
     &:hover {
-      transition: 0.5s ease;
       background-color: rgb(200, 0, 0);
     }
   }
