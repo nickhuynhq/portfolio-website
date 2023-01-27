@@ -28,7 +28,7 @@
 
   &__container {
     position: relative;
-    gap:1rem;
+    gap: 1rem;
     height: 85vh;
     width: 90vw;
     padding: 1rem;
@@ -60,16 +60,16 @@
     width: 2rem;
     color: white;
     background-color: rgb(255, 63, 63);
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     cursor: pointer;
 
-    @include desktop{
+    @include desktop {
       height: 3rem;
       width: 3rem;
     }
 
-    &:hover{
+    &:hover {
       color: gray;
       background-color: rgb(197, 0, 0);
     }
