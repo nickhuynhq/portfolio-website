@@ -15,7 +15,7 @@ const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
   const handleScroll = (direction: string) => {
     if (dragSlider.current) {
       const increment = isMobile
-        ? window.innerWidth - 20
+        ? window.innerWidth * 0.915
         : window.innerWidth / 2; // This value can be adjusted to change the amount of scrolling
       if (direction === "left") {
         dragSlider.current.scrollTo({
