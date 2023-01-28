@@ -1,10 +1,9 @@
-import { useState, useEffect, useRef } from "react";
-
+import { useState, useRef } from "react";
 import projects from "../../data/projects.json";
 import SliderCard from "../SliderCard/SliderCard";
-import "./ImageCarousel.scss";
+import "./ImageSlider.scss";
 
-const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
+const ImageSlider = ({ showModal, setCurrentModalProject }) => {
   const projectArray = projects;
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
   const isMobile = screenWidth <= 720;
@@ -64,4 +63,4 @@ const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
   );
 };
 
-export default ImageCarousel;
+export default ImageSlider;
