@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 
 import projects from "../../data/projects.json";
 import SliderCard from "../SliderCard/SliderCard";
@@ -7,15 +6,16 @@ import "./ImageCarousel.scss";
 
 const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
   const projectArray = projects;
-  const [width, setWidth] = useState(0);
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
   const isMobile = screenWidth <= 720;
+
   const dragSlider = useRef<HTMLDivElement>(null);
+
 
   const handleScroll = (direction: string) => {
     if (dragSlider.current) {
       const increment = isMobile
-        ? window.innerWidth - 30
+        ? window.innerWidth - 20
         : window.innerWidth / 2; // This value can be adjusted to change the amount of scrolling
       if (direction === "left") {
         dragSlider.current.scrollTo({
@@ -31,20 +31,12 @@ const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
     }
   };
 
-  useEffect(() => {
-    if (dragSlider.current) {
-      setWidth(dragSlider.current.scrollWidth - dragSlider.current.offsetWidth);
-    }
-  }, [width]);
-
   return (
     <div className="slider">
       <div className="slider-box">
-        <motion.div className="slider-box--items" ref={dragSlider}>
-          <motion.div
+        <div className="slider-box--items" ref={dragSlider}>
+          <div
             className="slider-box--item"
-            drag="x"
-            dragConstraints={{ right: 0, left: -width }}
           >
             {projectArray.map((project, i) => (
               <SliderCard
@@ -54,8 +46,8 @@ const ImageCarousel = ({ showModal, setCurrentModalProject }) => {
                 setCurrentModalProject={setCurrentModalProject}
               />
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
 
       <div className="slider-box--button">
