@@ -1,7 +1,13 @@
 import "./Footer.scss";
 import { v4 as uuidv4 } from "uuid";
+import { handleEventTracking } from "../../utils/utils";
 
 const Footer = () => {
+
+  const handleClick = (label: string) => {
+    handleEventTracking("Footer", "click", label)
+  }
+  
   // Number of times infinite text carousel repeats
   const n = 4;
 
@@ -11,17 +17,18 @@ const Footer = () => {
         nicholashuynh.
       </a>
       <ul className="footer__list">
-        <li>
+        <li onClick={() => handleClick("github")}>
           <a
             className="footer__list-item"
             href="https://github.com/nickhuynhq"
             target="_blank"
             rel="noopener noreferrer"
+            
           >
             GitHub
           </a>
         </li>
-        <li>
+        <li onClick={() => handleClick("linkedin")}>
           <a
             className="footer__list-item"
             href="https://www.linkedin.com/in/nickhuynhq/"
@@ -31,7 +38,7 @@ const Footer = () => {
             LinkedIn
           </a>
         </li>
-        <li>
+        <li onClick={() => handleClick("resume")}>
           <a
             className="footer__list-item"
             href="https://drive.google.com/file/d/18KPOt3RvsMSh0vexUwiL1elDauW5dwwb/view?usp=share_link"
@@ -51,6 +58,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/nickhuynhq/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => handleClick("linkedin")}
                 >
                   {" "}
                   LinkedIn{" "}
@@ -60,6 +68,7 @@ const Footer = () => {
                   href="https://github.com/nickhuynhq"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => handleClick("github")}
                 >
                   {" "}
                   GitHub{" "}
@@ -69,6 +78,7 @@ const Footer = () => {
                   href="https://drive.google.com/file/d/18KPOt3RvsMSh0vexUwiL1elDauW5dwwb/view?usp=share_link"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => handleClick("resume")}
                 >
                   {" "}
                   Resume{" "}
