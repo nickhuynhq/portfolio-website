@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CgMenuGridR } from "react-icons/cg";
 import { RiFullscreenExitLine } from "react-icons/ri";
+import logo from "../../assets/images/nh_logo_192.png"
 import "./Navigation.scss";
 
 const Navigation = () => {
@@ -18,7 +19,8 @@ const Navigation = () => {
           </button>
 
           <a className="navigation__home" href="/">
-            nicholashuynh.
+            <img className="navigation__logo" src={logo} alt="logo" />
+            <span className="navigation__logo--text">nicholashuynh.</span>
           </a>
         </div>
         {menuView && (

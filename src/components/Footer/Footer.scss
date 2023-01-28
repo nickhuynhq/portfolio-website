@@ -17,9 +17,21 @@
 
   &__home {
     font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    transition: 0.3s ease-in-out;
+
+    &--tm{
+      font-size: 0.6rem;
+    }
 
     @include tablet {
-      font-size: 1.1rem;
+      height: 4rem;
+      width: 4rem;
+    }
+
+    &:hover{
+      scale: 1.03;
     }
     
   }
