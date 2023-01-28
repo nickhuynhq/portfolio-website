@@ -1,5 +1,4 @@
 import "./SliderCard.scss";
-import { motion } from "framer-motion";
 import { handleEventTracking } from "../../utils/utils";
 
 const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
@@ -12,7 +11,7 @@ const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
 
   return (
     <>
-      <motion.div className="slider-card">
+      <div className="slider-card">
         <div className="slider-card__image-box" onClick={handleCurrentProject}>
           <img
             className="slider-card__image"
@@ -28,7 +27,7 @@ const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
           <h2 className="slider-card__title">{project.name}</h2>
           <p className="slider-card__description">{project.slogan}</p>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };
