@@ -1,10 +1,10 @@
-import About from "./Sections/About/About";
+import About from "./sections/About/About";
 import Navigation from "./components/Navigation/Navigation";
-import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
-import Projects from "./Sections/Projects/Projects";
-import Experience from "./Sections/Experience/Experience";
+import Hero from "./sections/Hero/Hero";
+import Projects from "./sections/Projects/Projects";
+import Experience from "./sections/Experience/Experience";
 import "./App.scss";
-import Contact from "./Sections/Contact/Contact";
+import Contact from "./sections/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import { useEffect, useState } from "react";
@@ -40,7 +40,7 @@ function App() {
       )}
 
       <div className="App">
-        <ParticlesBackground />
+        <Hero />
         <Navigation />
         <main className="main">
           <About />

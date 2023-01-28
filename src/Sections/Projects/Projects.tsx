@@ -1,12 +1,12 @@
 import "./Projects.scss";
-import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
+import ImageSlider from "../../components/ImageSlider/ImageSlider";
 
 const Projects = ({ showModal, setCurrentModalProject }) => {
   return (
     <div id="projects" className="projects">
       <h1 className="projects__heading">{`// My Projects`}</h1>
 
-      <ImageCarousel
+      <ImageSlider
         showModal={showModal}
         setCurrentModalProject={setCurrentModalProject}
       />

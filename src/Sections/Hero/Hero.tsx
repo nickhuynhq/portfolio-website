@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import "./ParticlesBackground.scss";
+import "./Hero.scss";
 import { HiArrowDown } from "react-icons/hi";
 
 const ParticlesBackground = () => {
