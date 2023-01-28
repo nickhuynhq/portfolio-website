@@ -19,12 +19,6 @@
     object-fit: cover;
     transition: all 0.3s ease-in;
     cursor: pointer;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    backface-visibility: hidden;
 
     @include tablet {
       height: 18rem;
