@@ -79,14 +79,14 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border: 1px solid black;
+    border: 1px solid $button-background-primary;
     font-size: 1.25rem;
     padding: 0.5rem;
     transition: 0.3s ease;
 
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: $button-background-primary;
+      color: $text-white;
     }
   }
 }

@@ -1,5 +1,6 @@
 import "./Projects.scss";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const Projects = ({ showModal, setCurrentModalProject }) => {
   return (
@@ -10,6 +11,9 @@ const Projects = ({ showModal, setCurrentModalProject }) => {
         showModal={showModal}
         setCurrentModalProject={setCurrentModalProject}
       />
+       <a className="more-arrow" href="#experience">
+        <BsChevronDoubleDown />
+      </a>
     </div>
   );
 };

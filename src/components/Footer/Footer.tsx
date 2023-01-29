@@ -1,7 +1,6 @@
 import "./Footer.scss";
 import { v4 as uuidv4 } from "uuid";
 import { handleEventTracking } from "../../utils/utils";
-import logo from "../../assets/images/nh_logo_192.png";
 
 const Footer = () => {
 
@@ -15,7 +14,7 @@ const Footer = () => {
   return (
     <div id="footer" className="footer">
       <a href="/">
-        <img className="footer__home" src={logo} alt="logo"/> <span className="footer__home--tm">TM</span>
+        <h3>nicholashuynh.</h3>
       </a>
       <ul className="footer__list">
         <li onClick={() => handleClick("github")}>

@@ -10,7 +10,6 @@ const ImageSlider = ({ showModal, setCurrentModalProject }) => {
 
   const dragSlider = useRef<HTMLDivElement>(null);
 
-
   const handleScroll = (direction: string) => {
     if (dragSlider.current) {
       const increment = isMobile
@@ -34,9 +33,7 @@ const ImageSlider = ({ showModal, setCurrentModalProject }) => {
     <div className="slider">
       <div className="slider-box">
         <div className="slider-box--items" ref={dragSlider}>
-          <div
-            className="slider-box--item"
-          >
+          <div className="slider-box--item">
             {projectArray.map((project, i) => (
               <SliderCard
                 key={i}

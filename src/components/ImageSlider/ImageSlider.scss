@@ -39,8 +39,8 @@
     }
     &--button {
       display: flex;
-      margin-top: 2rem;
-      gap: 1rem;
+      width: 100%;
+      justify-content: space-between;
     }
 
     &--item::-webkit-scrollbar {
@@ -50,15 +50,15 @@
 
   &-button {
     border: none;
-    font-size: x-large;
+    font-size: xx-large;
     transition: 0.5s ease;
     cursor: pointer;
-    color: black;
-    background-color: rgb(223, 223, 223);
+    color: $text-primary;
+    background-color: transparent;
+    margin-bottom: 2rem;
 
     &:hover {
-      color: white;
-      background-color: black;
+      scale: 1.05;
     }
   }
 }

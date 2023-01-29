@@ -68,7 +68,7 @@
   align-items: center;
   height: 4rem;
   width: 100vw;
-  background-color: black;
+  background-color: $button-background-primary;
   overflow: hidden;
   z-index: 1;
 
@@ -106,10 +106,10 @@
     }
     a {
       text-decoration: none;
-      color: white;
+      color: $text-white;
     }
     a:hover {
-      -webkit-text-stroke: 1px white;
+      -webkit-text-stroke: 1px $text-white;
       color: transparent;
     }
   }

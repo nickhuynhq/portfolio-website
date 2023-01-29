@@ -18,7 +18,7 @@
   &__text {
     width: 100%;
     margin-top: 2rem;
-    background-color: white;
+    background-color: $background-primary;
 
     @include desktop {
       width: 50%;
@@ -54,7 +54,7 @@
 
     &-input {
       font-family: "Rajdhani", sans-serif;
-      border: 0.0625rem solid black;
+      border: 0.0625rem solid $button-background-primary;
       font-size: 1.25rem;
       width: 100%;
       padding: 1rem;
@@ -69,18 +69,18 @@
       display: flex;
       align-self: flex-end;
       width: 33%;
-      border: 0.0625rem solid black;
+      border: 0.0625rem solid $button-background-primary;
       font-family: eurostile-extended, "Do Hyeon", sans-serif;
       font-size: 1.25rem;
       padding: 0.5rem;
       transition: 0.3s ease;
-      background-color: white;
-      color: black;
+      background-color: $background-primary;
+      color: $text-primary;
       cursor: pointer;
 
       &:hover {
-        background-color: black;
-        color: white;
+        background-color: $button-background-primary;
+        color: $text-primary;
       }
     }
   }

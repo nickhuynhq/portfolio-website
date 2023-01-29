@@ -59,7 +59,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <a className="more-arrow vert-move" href="#projects">
+      <a className="more-arrow" href="#projects">
         <BsChevronDoubleDown />
       </a>
     </section>

@@ -12,7 +12,7 @@
   padding: 2rem;
   max-height: 100vh;
 
-  &__icons{
+  &__icons {
     position: absolute;
     display: flex;
     gap: 0.5rem;
@@ -22,72 +22,134 @@
     font-size: xx-large;
   }
 
-  &__icon:hover{
-    transition: 0.3s ease-in-out;
-    scale: 1.05;
-    color: $button-background
+  &__icon {
+    font-size: 2rem;
+
+    @include desktop {
+      font-size: 2.5rem;
+    }
+
+    :hover {
+      transition: 0.3s ease-in-out;
+      scale: 1.05;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include desktop {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1rem;
+      }
+    }
+
+    &--bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include desktop {
+        align-self: flex-end;
+      }
+    }
   }
 
   &__heading {
-    color: black;
-    font-weight: 500;
+    color: $text-primary;
+    font-weight: 700;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    animation: fadeInRight 1s ease-in-out;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    z-index: 1;
 
-    @include tablet {
-      font-size: 4rem;
-      margin-bottom: 2rem;
-    }
+    // Set up for hover animation
+    background: linear-gradient(
+      to right,
+      $text-secondary,
+      $text-secondary 50%,
+      $text-primary 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 400ms ease-in-out;
+    cursor: pointer;
 
     @include desktop {
       font-size: 5rem;
     }
 
-    &--left {
-      @extend .hero__heading;
-      animation: fadeInLeft 1s ease-in-out;
+    &:hover {
+      background-position: 0 100%;
     }
 
-    &--highlight {
-      color: $text-secondary;
-      font-weight: 700;
-    }
-
-    &--hello {
+    &--sub {
+      color: $text-primary;
+      font-size: 1.5rem;
       font-weight: 500;
+      z-index: 1;
+
+      @include desktop {
+        font-size: 3rem;
+      }
+
+      &--top {
+        @extend .hero__heading--sub;
+        display: none;
+
+        @include desktop {
+          display: flex;
+        }
+      }
+
+      &--bottom {
+        @extend .hero__heading--sub;
+
+        @include desktop {
+          display: none;
+        }
+      }
     }
   }
 
   &__button {
+    position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
     gap: 1rem;
     margin-top: 1rem;
+    font-size: 2rem;
     text-decoration: none;
-    color: $text-secondary;
-    padding: 1rem 2rem;
-    border: 0.25rem solid $button-background;
+    color: $text-primary;
+    bottom: 5vh;
+    padding: 0.5rem;
     animation: fadeInBottom 1s ease-in-out;
-
-    @include tablet {
-      font-size: 1.5rem;
-    }
+    z-index: 1;
 
     &:hover {
       transition: 0.5s ease;
-      background-color: $button-background;
-      color: white;
+      background-color: $button-background-secondary;
+      color: $text-white;
     }
   }
 
   @keyframes fadeInRight {
     from {
       opacity: 0;
-      transform: translateX(18.75rem);
+      transform: translateX(100vw);
     }
     to {
       opacity: 1;
@@ -97,7 +159,7 @@
   @keyframes fadeInLeft {
     from {
       opacity: 0;
-      transform: translateX(-18.75rem);
+      transform: translateX(-100vw);
     }
     to {
       opacity: 1;
@@ -113,4 +175,12 @@
       opacity: 1;
     }
   }
+}
+
+.left {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.right {
+  animation: fadeInRight 1s ease-in-out;
 }

@@ -40,45 +40,25 @@ const ParticlesBackground = () => {
           <AiFillLinkedin />
         </a>
       </div>
+      <div className="hero__half-background left"></div>
 
-      <h1 className="hero__heading--left">
-        <TypeAnimation
-          sequence={[
-            "Hello", // Types 'One'
-            2000, // Waits 1s
-            "你好", // Deletes 'One' and types 'Two'
-            2500, // Waits 2s
-            "Salut",
-            2000,
-            "こんにちは",
-            2000,
-            "Xin chào",
-            2000,
-            "안녕",
-            2500,
-            "Hola",
-            2000,
-            "नमस्ते",
-            2000,
-            "привет",
-            2000,
+      <div className="hero__text">
+        <div className="hero__text--top">
+          <a href="#about">
+            <h1 className="hero__heading">nicholashuynh.</h1>
+          </a>
 
-            // Types 'Three' without deleting 'Two'
-          ]}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-          speed={1}
-          className={"hero__heading--hello"}
-        />
-        my name is{" "}
-        <span className="hero__heading--highlight">
-          Nick
-        </span>
-      </h1>
-      <h1 className="hero__heading">And I'm a full stack web developer.</h1>
+          <p className="hero__heading--sub--top">based in Toronto.</p>
+        </div>
+
+        <div className="hero__text--bottom">
+          <h2 className="hero__heading--sub">full stack web developer</h2>
+          <p className="hero__heading--sub--bottom">based in Toronto.</p>
+        </div>
+      </div>
+
       <a href="#about" className="hero__button">
-        View my work <HiArrowDown />
+        <HiArrowDown />
       </a>
 
       <Particles

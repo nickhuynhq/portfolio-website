@@ -13,6 +13,7 @@
 }
 
 .navigation {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,6 +68,12 @@
 
     @include desktop {
       display: flex;
+    }
+
+    &--text{
+      @include desktop{
+        display: none;
+      }
     }
   }
 

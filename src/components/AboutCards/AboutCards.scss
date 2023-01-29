@@ -48,7 +48,7 @@
   &__tooltip{
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: $button-background-primary;
     color: #fff;
     text-align: center;
     padding: .3125rem 0;
@@ -104,7 +104,7 @@
   &__tooltip{
     visibility: hidden;
     width: 110px;
-    background-color: black;
+    background-color: $button-background-primary;
     color: #fff;
     text-align: center;
     padding: .3125rem .125rem;
