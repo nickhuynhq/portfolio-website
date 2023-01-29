@@ -15,6 +15,7 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    padding: 2rem 4rem;
   }
 
   &--top{
@@ -30,6 +31,7 @@
   &__image {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
     object-fit: cover;
 
@@ -39,6 +41,7 @@
 
     @include desktop {
       margin-top: 0;
+      margin-bottom: 4rem;
     }
   }
 
