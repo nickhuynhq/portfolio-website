@@ -5,7 +5,7 @@ import "./ImageSlider.scss";
 
 const ImageSlider = ({ showModal, setCurrentModalProject }) => {
   const projectArray = projects;
-  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const [screenWidth,] = useState<number>(window.innerWidth);
   const isMobile = screenWidth <= 720;
 
   const dragSlider = useRef<HTMLDivElement>(null);

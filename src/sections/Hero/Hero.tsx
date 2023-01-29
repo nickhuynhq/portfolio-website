@@ -41,7 +41,7 @@ const ParticlesBackground = () => {
       </div>
       <div className="hero__half-background left"></div>
 
-      <div className="hero__text">
+      <div className="hero__text top-animation">
         <div className="hero__text--top">
           <a href="#about">
             <h1 className="hero__heading">nicholashuynh.</h1>
@@ -56,7 +56,7 @@ const ParticlesBackground = () => {
         </div>
       </div>
 
-      <a href="#about" className="hero__button">
+      <a href="#about" className="hero__button bounce">
         <BsChevronDoubleDown />
       </a>
 

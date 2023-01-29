@@ -156,6 +156,13 @@ section {
     opacity: 1;
     animation: fadeInRight 0.75s ease-in-out;
   }
+
+  .top-animation {
+    opacity: 1;
+    animation: fadeInTop 0.75s ease-in-out;
+  }
+
+  
 }
 
 @keyframes fadeInRight {
@@ -176,4 +183,24 @@ section {
   to {
     opacity: 1;
   }
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bounce {
+  animation: bounce 3s ease infinite;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-1.275rem);}
+	60% {transform: translateY(-0.5375rem);}
 }
