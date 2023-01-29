@@ -145,42 +145,4 @@
       color: $text-white;
     }
   }
-
-  @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(100vw);
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-100vw);
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeInBottom {
-    from {
-      opacity: 0;
-      transform: translateY(9.75rem);
-    }
-    to {
-      opacity: 1;
-    }
-  }
-}
-
-.left {
-  animation: fadeInLeft 1s ease-in-out;
-}
-
-.right {
-  animation: fadeInRight 1s ease-in-out;
 }
