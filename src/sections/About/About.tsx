@@ -34,15 +34,14 @@ const About = () => {
           <p className="about__profile-bio">
             Fully committed to the philosophy of life-long learning, I’m a full
             stack developer with a deep passion for JavaScript, React and all
-            things web development. As an enthusiast, I am constantly seeking
-            out the latest and greatest, and in my spare time have learnt to
-            program and built interesting new projects.
+            things web development.
           </p>
           <p>
-            But my skills don't stop there, during the pandemic, I've also
-            helped numerous small businesses navigate the digital landscape. When I'm not at my
-            computer I love to spend my time cycling, taking photos, listening
-            to music, and playing guitar.
+            My skills don't stop there, during the pandemic, I've helped
+            numerous small businesses navigate the digital landscape by building
+            their online presence. When I'm not at my computer I love to spend
+            my time cycling, taking photos, listening to music, and playing
+            guitar.
           </p>
         </div>
         <div
