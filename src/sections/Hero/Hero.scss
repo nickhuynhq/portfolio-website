@@ -2,7 +2,8 @@
 @use "../../styles/partials/colors" as *;
 @use "../../styles/partials/mixins" as *;
 
-.particle-background {
+.hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +11,22 @@
   font-family: eurostile-extended;
   padding: 2rem;
   max-height: 100vh;
+
+  &__icons{
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    top: 0;
+    right: 0;
+    font-size: xx-large;
+  }
+
+  &__icon:hover{
+    transition: 0.3s ease-in-out;
+    scale: 1.05;
+    color: $button-background
+  }
 
   &__heading {
     color: black;
@@ -29,7 +46,7 @@
     }
 
     &--left {
-      @extend .particle-background__heading;
+      @extend .hero__heading;
       animation: fadeInLeft 1s ease-in-out;
     }
 

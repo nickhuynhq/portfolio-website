@@ -5,6 +5,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./Hero.scss";
 import { HiArrowDown } from "react-icons/hi";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -19,8 +20,28 @@ const ParticlesBackground = () => {
     []
   );
   return (
-    <section id="hero" className="particle-background">
-      <h1 className="particle-background__heading--left">
+    <section id="hero" className="hero">
+      <div className="hero__icons">
+        <a
+          className="hero__icon"
+          href="https://github.com/nickhuynhq"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillGithub />
+        </a>
+
+        <a
+          className="hero__icon"
+          href="https://www.linkedin.com/in/nickhuynhq/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillLinkedin />
+        </a>
+      </div>
+
+      <h1 className="hero__heading--left">
         <TypeAnimation
           sequence={[
             "Hello", // Types 'One'
@@ -48,39 +69,15 @@ const ParticlesBackground = () => {
           cursor={true}
           repeat={Infinity}
           speed={1}
-          className={"particle-background__heading--hello"}
+          className={"hero__heading--hello"}
         />
         my name is{" "}
-        <span className="particle-background__heading--highlight">
+        <span className="hero__heading--highlight">
           Nick
-          {/* <TypeAnimation
-          sequence={[
-            "Nick", // Types 'One'
-            3500, // Waits 1s
-            "偉仁", // Deletes 'One' and types 'Two'
-            4500, // Waits 2s
-            "Nick",
-            3500,
-            "Vỹ Nhân",
-            3500,
-            "Nick",
-            3500,
-            "위인",
-            4500,
-            // Types 'Three' without deleting 'Two'
-          ]}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-          speed={25}
-          className={"particle-background__heading--hello"}
-        /> */}
         </span>
       </h1>
-      <h1 className="particle-background__heading">
-        And I'm a full stack web developer.
-      </h1>
-      <a href="#about" className="particle-background__button">
+      <h1 className="hero__heading">And I'm a full stack web developer.</h1>
+      <a href="#about" className="hero__button">
         View my work <HiArrowDown />
       </a>
 
