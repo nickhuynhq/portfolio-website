@@ -1,10 +1,10 @@
 import { useCallback } from "react";
-import { TypeAnimation } from "react-type-animation";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./Hero.scss";
-import { HiArrowDown } from "react-icons/hi";
+import { BsChevronDoubleDown } from "react-icons/bs";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -19,69 +19,45 @@ const ParticlesBackground = () => {
     []
   );
   return (
-    <section id="hero" className="particle-background">
-      <h1 className="particle-background__heading--left">
-        <TypeAnimation
-          sequence={[
-            "Hello", // Types 'One'
-            2000, // Waits 1s
-            "你好", // Deletes 'One' and types 'Two'
-            2500, // Waits 2s
-            "Salut",
-            2000,
-            "こんにちは",
-            2000,
-            "Xin chào",
-            2000,
-            "안녕",
-            2500,
-            "Hola",
-            2000,
-            "नमस्ते",
-            2000,
-            "привет",
-            2000,
+    <section id="hero" className="hero">
+      <div className="hero__icons">
+        <a
+          className="hero__icon"
+          href="https://github.com/nickhuynhq"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillGithub />
+        </a>
 
-            // Types 'Three' without deleting 'Two'
-          ]}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-          speed={1}
-          className={"particle-background__heading--hello"}
-        />
-        my name is{" "}
-        <span className="particle-background__heading--highlight">
-          Nick
-          {/* <TypeAnimation
-          sequence={[
-            "Nick", // Types 'One'
-            3500, // Waits 1s
-            "偉仁", // Deletes 'One' and types 'Two'
-            4500, // Waits 2s
-            "Nick",
-            3500,
-            "Vỹ Nhân",
-            3500,
-            "Nick",
-            3500,
-            "위인",
-            4500,
-            // Types 'Three' without deleting 'Two'
-          ]}
-          wrapper="span"
-          cursor={true}
-          repeat={Infinity}
-          speed={25}
-          className={"particle-background__heading--hello"}
-        /> */}
-        </span>
-      </h1>
-      <h1 className="particle-background__heading">
-        And I'm a full stack web developer.
-      </h1>
-      <a href="#about" className="particle-background__button">
-        View my work <HiArrowDown />
+        <a
+          className="hero__icon"
+          href="https://www.linkedin.com/in/nickhuynhq/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillLinkedin />
+        </a>
+      </div>
+      <div className="hero__half-background left"></div>
+
+      <div className="hero__text">
+        <div className="hero__text--top">
+          <a href="#about">
+            <h1 className="hero__heading">nicholashuynh.</h1>
+          </a>
+
+          <p className="hero__heading--sub--top">based in Toronto.</p>
+        </div>
+
+        <div className="hero__text--bottom">
+          <h2 className="hero__heading--sub">full stack web developer</h2>
+          <p className="hero__heading--sub--bottom">based in Toronto.</p>
+        </div>
+      </div>
+
+      <a href="#about" className="hero__button">
+        <BsChevronDoubleDown />
       </a>
 
       <Particles

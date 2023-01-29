@@ -7,7 +7,7 @@
     bottom: 2vh;
     right: 3vw;
     text-transform: uppercase;
-    background-color: black;
+    background-color: $button-background-primary;
     border: none;
     padding: 0.75rem 1rem;
     max-width: 11.25rem;
@@ -23,7 +23,7 @@
 
     &__cheveron{
         font-size: 1rem;
-        color: white;
+        color: $text-white;
 
         @include tablet{
             font-size: 1.5rem;
@@ -36,6 +36,6 @@
 
     &:hover{
         @extend .scroll-to-top-button;
-        background-color: $button-background;
+        background-color: $button-background-secondary;
     }
 }

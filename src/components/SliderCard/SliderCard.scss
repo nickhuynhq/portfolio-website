@@ -43,14 +43,14 @@
 }
 
 .text {
-  background-color: black;
-  color: white;
+  background-color: $button-background-primary;
+  color: $text-white;
   font-size: 16px;
   padding: 16px 32px;
   transition: all 0.3s ease-in;
 
   &:hover {
-    background-color: $button-background;
+    background-color: $button-background-secondary;
     cursor: pointer;
   }
 }

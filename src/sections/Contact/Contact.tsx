@@ -52,7 +52,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <a className="more-arrow vert-move" href="#footer">
+      <a className="more-arrow" href="#footer">
         <BsChevronDoubleDown />
       </a>
     </section>
