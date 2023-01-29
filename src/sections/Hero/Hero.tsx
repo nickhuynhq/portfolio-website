@@ -3,7 +3,7 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./Hero.scss";
-import { HiArrowDown } from "react-icons/hi";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const ParticlesBackground = () => {
@@ -57,7 +57,7 @@ const ParticlesBackground = () => {
       </div>
 
       <a href="#about" className="hero__button">
-        <HiArrowDown />
+        <BsChevronDoubleDown />
       </a>
 
       <Particles

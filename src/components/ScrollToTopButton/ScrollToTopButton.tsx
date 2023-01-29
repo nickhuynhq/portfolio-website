@@ -16,17 +16,13 @@ const ScrollToTopButton = () => {
 
   window.addEventListener("scroll", toggleVisible);
   return (
-    <button
+    <a
       className="scroll-to-top-button"
-      onClick={() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-      }}
+      href="#hero"
       style={{ display: visible ? "inline" : "none" }}
     >
-
-      <BsChevronBarUp className="scroll-to-top-button__cheveron"/>
-
-    </button>
+      <BsChevronBarUp className="scroll-to-top-button__cheveron" />
+    </a>
   );
 };
 
