@@ -20,7 +20,7 @@ const SliderCard = ({
         className={
           isVisible ? "slider-card slider-animation" : "slider-card hidden"
         }
-        style={{ animationDelay: `${(index+1) * 200}ms` }}
+        style={{ animationDelay: `${(index + 1) * 200}ms` }}
       >
         <div className="slider-card__image-box" onClick={handleCurrentProject}>
           <img
