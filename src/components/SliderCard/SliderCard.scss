@@ -20,7 +20,7 @@
     cursor: pointer;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) 2px 5px 15px;
+      box-shadow: rgba(0, 0, 0, 0.35) .125rem .3125rem .9375rem;
       scale: 1.01;
 
       .overlay {
@@ -48,8 +48,8 @@
 .text {
   background-color: $button-background-primary;
   color: $text-white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
   transition: all 0.3s ease-in;
 
   &:hover {
