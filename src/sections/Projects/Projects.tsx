@@ -10,7 +10,7 @@ const Projects = ({ showModal, setCurrentModalProject }) => {
   return (
     <div id="projects" className="projects">
       <h1 className="projects__heading">{`// My Projects`}</h1>
-      <div className="projects__container">
+      <div className="projects__container" ref={projectRef}>
         {projectArray.map((project, i) => (
           <SliderCard
             key={i}
@@ -18,7 +18,7 @@ const Projects = ({ showModal, setCurrentModalProject }) => {
             {...project}
             showModal={showModal}
             setCurrentModalProject={setCurrentModalProject}
-           
+            isVisible = {isVisible}
           />
         ))}
       </div>
