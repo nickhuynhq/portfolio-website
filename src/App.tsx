@@ -20,12 +20,12 @@ function App() {
   const [currentModalProject, setCurrentModalProject] = useState({});
 
   const showModal = (e: React.MouseEvent<HTMLElement>) => {
-    document.body.style.overflow = "hidden";
+    document.body.style.overflowY = "hidden";
     setModalVisible(true);
   };
 
   const closeModal = (e: React.MouseEvent<HTMLElement>) => {
-    document.body.style.overflow = "unset";
+    document.body.style.overflowY = "unset";
     setModalVisible(false);
   };
 
