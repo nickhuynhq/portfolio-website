@@ -39,7 +39,6 @@ const ParticlesBackground = () => {
           <AiFillLinkedin />
         </a>
       </div>
-      <div className="hero__half-background left"></div>
 
       <div className="hero__text top-animation">
         <div className="hero__text--top">

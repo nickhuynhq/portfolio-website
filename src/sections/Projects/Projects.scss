@@ -7,10 +7,10 @@
   flex-direction: column;
   justify-content: center;
   z-index: 0;
-  height: 100vh;
 
-  @include desktop {
+  @include tablet {
     gap: 2rem;
+    height: 100vh;
   }
 
   &__heading {
@@ -18,6 +18,20 @@
 
     @include desktop-xl {
       margin-top: 6rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    align-self: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0 10%;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 33%);
+      grid-template-rows: repeat(2, 50%);
     }
   }
 }

@@ -5,7 +5,7 @@
 .slider-card {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   transition: all 0.3s ease-in;
 
   &__image-box {
@@ -14,30 +14,33 @@
 
   &__image {
     opacity: 1;
-    height: 16rem;
     width: 100%;
     object-fit: cover;
     transition: all 0.3s ease-in;
     cursor: pointer;
 
-    @include tablet {
-      height: 18rem;
-    }
-
-    @include desktop {
-      height: 22rem;
-    }
-
-    @include desktop-xl {
-      height: 28rem;
-    }
-
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-shadow: rgba(0, 0, 0, 0.35) .125rem .3125rem .9375rem;
+      scale: 1.01;
 
       .overlay {
         opacity: 1;
       }
+    }
+
+    @include tablet{
+      width: 25vw;
+      height: 20vh;
+    }
+
+    @include desktop{
+      width: 25vw;
+      height: 25vh;
+    }
+
+    @include desktop-xl{
+      width: 26vw;
+      height: 28vh;
     }
   }
 }
@@ -45,8 +48,8 @@
 .text {
   background-color: $button-background-primary;
   color: $text-white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
   transition: all 0.3s ease-in;
 
   &:hover {
@@ -72,4 +75,22 @@
 
 .slider-card__image-box:hover .middle {
   opacity: 1;
+}
+
+.slider-animation {
+  animation-name: animateIn;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.75) translateX(3rem);
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }

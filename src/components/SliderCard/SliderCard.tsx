@@ -1,17 +1,27 @@
 import "./SliderCard.scss";
 import { handleEventTracking } from "../../utils/utils";
 
-const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
-  
+const SliderCard = ({
+  showModal,
+  setCurrentModalProject,
+  index,
+  isVisible,
+  ...project
+}) => {
   const handleCurrentProject = () => {
     setCurrentModalProject({ ...project });
-    handleEventTracking("Project", "click", project.name)
+    handleEventTracking("Project", "click", project.name);
     showModal();
   };
 
   return (
     <>
-      <div className="slider-card">
+      <div
+        className={
+          isVisible ? "slider-card slider-animation" : "slider-card hidden"
+        }
+        style={{ animationDelay: `${(index+1) * 200}ms` }}
+      >
         <div className="slider-card__image-box" onClick={handleCurrentProject}>
           <img
             className="slider-card__image"
