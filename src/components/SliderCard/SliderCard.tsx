@@ -1,7 +1,7 @@
 import "./SliderCard.scss";
 import { handleEventTracking } from "../../utils/utils";
 
-const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
+const SliderCard = ({ showModal, setCurrentModalProject, index,  ...project }) => {
   
   const handleCurrentProject = () => {
     setCurrentModalProject({ ...project });
@@ -11,7 +11,7 @@ const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
 
   return (
     <>
-      <div className="slider-card top-animation">
+      <div className="slider-card" style={{animationDelay: `${index * 100}ms`}}>
         <div className="slider-card__image-box" onClick={handleCurrentProject}>
           <img
             className="slider-card__image"

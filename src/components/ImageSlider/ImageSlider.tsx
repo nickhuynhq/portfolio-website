@@ -34,14 +34,14 @@ const ImageSlider = ({ showModal, setCurrentModalProject }) => {
       <div className="slider-box">
         <div className="slider-box--items" ref={dragSlider}>
           <div className="slider-box--item">
-            {projectArray.map((project, i) => (
+            {/* {projectArray.map((project, i) => (
               <SliderCard
                 key={i}
                 {...project}
                 showModal={showModal}
                 setCurrentModalProject={setCurrentModalProject}
               />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

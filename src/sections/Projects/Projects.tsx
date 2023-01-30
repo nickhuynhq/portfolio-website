@@ -14,9 +14,11 @@ const Projects = ({ showModal, setCurrentModalProject }) => {
         {projectArray.map((project, i) => (
           <SliderCard
             key={i}
+            index={i}
             {...project}
             showModal={showModal}
             setCurrentModalProject={setCurrentModalProject}
+           
           />
         ))}
       </div>
