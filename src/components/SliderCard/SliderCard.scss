@@ -5,8 +5,9 @@
 .slider-card {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   transition: all 0.3s ease-in;
+  animation: 
 
   &__image-box {
     position: relative;
@@ -14,23 +15,10 @@
 
   &__image {
     opacity: 1;
-    height: 16rem;
     width: 100%;
     object-fit: cover;
     transition: all 0.3s ease-in;
     cursor: pointer;
-
-    @include tablet {
-      height: 18rem;
-    }
-
-    @include desktop {
-      height: 22rem;
-    }
-
-    @include desktop-xl {
-      height: 28rem;
-    }
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -38,6 +26,21 @@
       .overlay {
         opacity: 1;
       }
+    }
+
+    @include tablet{
+      width: 25vw;
+      height: 20vh;
+    }
+
+    @include desktop{
+      width: 25vw;
+      height: 25vh;
+    }
+
+    @include desktop-xl{
+      width: 28vw;
+      height: 28vh;
     }
   }
 }

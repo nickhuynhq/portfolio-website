@@ -11,7 +11,7 @@ const SliderCard = ({ showModal, setCurrentModalProject, ...project }) => {
 
   return (
     <>
-      <div className="slider-card">
+      <div className="slider-card top-animation">
         <div className="slider-card__image-box" onClick={handleCurrentProject}>
           <img
             className="slider-card__image"
