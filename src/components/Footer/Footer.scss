@@ -11,6 +11,11 @@
   opacity: 0.85;
   padding-bottom: 1rem;
 
+  h3:hover{
+    transition: 0.5s ease;
+    scale: 1.03;
+  }
+
   @include tablet {
     padding: 0 8%;
   }
@@ -57,7 +62,7 @@
 
       &:hover {
         color: $text-secondary;
-        transition: 0.5s ease;
+        transition: 0.3s ease;
       }
     }
   }
@@ -98,7 +103,7 @@
       text-transform: uppercase;
       font-size: 1rem;
       color: rgba(255, 255, 255, 1);
-      transition: all 2s ease;
+      transition: all 0.5s ease;
 
       @include tablet {
         font-size: 2.5rem;
@@ -109,6 +114,7 @@
       color: $text-white;
     }
     a:hover {
+      transition: 0.3s ease-in-out;
       -webkit-text-stroke: .0625rem $text-white;
       color: transparent;
     }
