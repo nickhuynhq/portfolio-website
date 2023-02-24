@@ -2,7 +2,7 @@
 
 **Welcome to the repo of my portfolio website!**
 
-This project was created to experiment with React, TypeScript, and Sass! 
+This project was created to experiment with React, TypeScript, and Sass
 Website is fully responsive and uses libraries such as tsParticles for background vector effects.
 Email form functionality is using FormSubmit API.
 
