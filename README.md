@@ -10,6 +10,8 @@ Email form functionality is using FormSubmit API.
 Please use this link to demo the live site!
 https://nickhuynhq.com
 
+## Project Screenshot
+![image](https://user-images.githubusercontent.com/71597829/222938411-c110d98d-9cd2-477d-9858-1d7f7b02d231.png)
 
 ## Tech Stack
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
