@@ -21,30 +21,6 @@ https://nickhuynhq.com
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-## Installation
-
-1. Clone this repository.
-```$ git clone https://git@github.com:nickhuynhq/portfolio-website.git```
-
-
-2. Run `npm install` from inside the client directory.
-```bash
-$ cd portfolio-website
-$ npm install
-```
-
-3. Create your own .env file
-```
-REACT_APP_EMAIL = <YOUR_EMAIL_ADDRESS>
-
-```
-
-4. Run the app 
-
-```bash
-$ npm start
-```
-
 ## Author
 
 Nicholas Huynh [@nickhuynhq](https://github.com/nickhuynhq)
