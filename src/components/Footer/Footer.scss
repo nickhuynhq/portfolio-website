@@ -3,12 +3,14 @@
 @use "../../styles/partials/mixins" as *;
 
 .footer {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: $background-primary;
   opacity: 0.85;
+  bottom: 0;
 
   h3:hover{
     transition: 0.5s ease;
