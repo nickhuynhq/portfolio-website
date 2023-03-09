@@ -3,12 +3,18 @@
 @use "../../styles/partials/mixins" as *;
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 1rem;
-  padding: 2rem 8%;
+  padding: 0 8%;
+
   overflow-x: hidden;
   @include desktop {
     min-height: 100vh;
-    padding: 2rem 10%;
+
+    padding: 0 10%;
+    padding-top: 2rem;
   }
 
   &__heading {
@@ -28,7 +34,7 @@
   &__container {
     display: flex;
     gap: 4rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
   }
 
   &__form {

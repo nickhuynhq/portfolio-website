@@ -9,15 +9,10 @@
   align-items: center;
   background-color: $background-primary;
   opacity: 0.85;
-  padding-bottom: 1rem;
 
   h3:hover{
     transition: 0.5s ease;
     scale: 1.03;
-  }
-
-  @include tablet {
-    padding: 0 8%;
   }
 
   &__home {

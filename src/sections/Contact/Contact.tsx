@@ -1,5 +1,5 @@
 import "./Contact.scss";
-import { BsChevronDoubleDown } from "react-icons/bs";
+import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
@@ -52,9 +52,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <a className="more-arrow" href="#footer">
-        <BsChevronDoubleDown />
-      </a>
+      <Footer />
     </section>
   );
 };
