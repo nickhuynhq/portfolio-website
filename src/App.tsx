@@ -9,6 +9,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton"
 import { useEffect, useState } from "react";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
 import ReactGA from 'react-ga';
+import Footer from "./components/Footer/Footer";
 
 
 ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
@@ -50,6 +51,7 @@ function App() {
           <Experience />
         </main>
         <Contact />
+        <Footer />
         <ScrollToTopButton />
       </div>
     </>
