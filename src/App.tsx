@@ -5,7 +5,6 @@ import Projects from "./sections/Projects/Projects";
 import Experience from "./sections/Experience/Experience";
 import "./App.scss";
 import Contact from "./sections/Contact/Contact";
-import Footer from "./components/Footer/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import { useEffect, useState } from "react";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
@@ -51,7 +50,6 @@ function App() {
           <Experience />
         </main>
         <Contact />
-        <Footer />
         <ScrollToTopButton />
       </div>
     </>
