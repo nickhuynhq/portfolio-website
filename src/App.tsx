@@ -8,14 +8,12 @@ import Contact from "./sections/Contact/Contact";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import { useEffect, useState } from "react";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 import Footer from "./components/Footer/Footer";
-
 
 ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
 
 function App() {
-
   const [modalVisible, setModalVisible] = useState(false);
   const [currentModalProject, setCurrentModalProject] = useState({});
 
@@ -30,8 +28,12 @@ function App() {
   };
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, [])
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+      title: "Main Page",
+    });
+  }, []);
 
   return (
     <>
