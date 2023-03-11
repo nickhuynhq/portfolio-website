@@ -3,7 +3,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .footer {
-  
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,6 +63,16 @@
       }
     }
   }
+
+  &__privacy{
+    cursor: pointer;
+    color: $text-primary;
+
+      &:hover {
+        color: $text-secondary;
+        transition: 0.3s ease;
+      }
+  }
 }
 
 .m-scroll {
@@ -70,6 +80,7 @@
   align-items: center;
   height: 4rem;
   width: 100vw;
+  margin-top: 1rem;
   background-color: $button-background-primary;
   overflow: hidden;
   z-index: 1;
