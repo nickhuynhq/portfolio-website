@@ -48,9 +48,9 @@ const Footer = () => {
         </li>
       </ul>
 
-      <p className="footer__privacy" onClick={() => {}}>
+      {/* <p className="footer__privacy" onClick={() => {}}>
         Privacy Policy
-      </p>
+      </p> */}
 
       <div className="m-scroll">
         <div className="m-scroll__title">
