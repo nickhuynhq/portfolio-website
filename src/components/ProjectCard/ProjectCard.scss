@@ -34,6 +34,7 @@
     align-items: center;
     margin-bottom: 1rem;
     object-fit: cover;
+    width: 100%;
 
     @include tablet {
       width: 90%;
