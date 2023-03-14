@@ -2,7 +2,7 @@
   {
     "name": "Carma",
     "description": "Carma is an vehicle database application where Users and see the true cost of a vehicle including depreciation, insurance, fuel, and maintenance. This project was created to help regular people visualize the true cost of their vehicle before purchasing. Utilizing simple graphics and explanations allows the potential car buyer to have a 'straight to the point verdict' on a variety of vehicles.",
-    "demo": "https://carma-island-app.herokuapp.com/",
+    "demo": "https://carma.nickhuynhq.com/",
     "github": "https://github.com/nickhuynhq/Carma",
     "image": "https://user-images.githubusercontent.com/71597829/214968364-54fd73f6-744b-4c1e-aceb-d38a5702dcac.jpg",
     "techstack": ["react", "sass", "node", "express", "mysql"],
