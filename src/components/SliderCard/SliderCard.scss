@@ -17,6 +17,7 @@
     width: 100%;
     object-fit: cover;
     transition: all 0.3s ease-in;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
 
     &:hover {
@@ -35,12 +36,12 @@
 
     @include desktop{
       width: 25vw;
-      height: 25vh;
+      height: 28vh;
     }
 
     @include desktop-xl{
       width: 26vw;
-      height: 28vh;
+      height: 30vh;
     }
   }
 }
