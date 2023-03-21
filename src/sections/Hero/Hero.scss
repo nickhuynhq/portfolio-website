@@ -75,15 +75,15 @@
       @include desktop {
         align-items: normal;
 
-        bottom: 24px;
-        left: 24px;
+        top: 4px;
+        left: 16px;
       }
 
       &-image {
         width: 28%;
 
         @include desktop {
-          width: 15%;
+          width: 8%;
         }
       }
     }

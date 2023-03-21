@@ -57,7 +57,7 @@ const ParticlesBackground = () => {
       </div>
 
       <a href="https://layerr.xyz" className="hero__text--work">
-        <p>Creating at</p>
+        <p>Creating things at</p>
           <img
             className="hero__text--work-image"
             src={Layerr}
