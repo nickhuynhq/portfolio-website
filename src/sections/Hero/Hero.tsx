@@ -5,6 +5,7 @@ import { loadFull } from "tsparticles";
 import "./Hero.scss";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { RiNewspaperFill } from "react-icons/ri";
 import Layerr from "../../assets/logos/layerr_logo.svg";
 
 const ParticlesBackground = () => {
@@ -27,6 +28,7 @@ const ParticlesBackground = () => {
           href="https://github.com/nickhuynhq"
           target="_blank"
           rel="noopener noreferrer"
+          title="Github"
         >
           <AiFillGithub />
         </a>
@@ -36,8 +38,19 @@ const ParticlesBackground = () => {
           href="https://www.linkedin.com/in/nickhuynhq/"
           target="_blank"
           rel="noopener noreferrer"
+          title="LinkedIn"
         >
           <AiFillLinkedin />
+        </a>
+
+        <a
+          className="hero__icon"
+          href="https://drive.google.com/file/d/1LxFmstBnz4W5cNcPnett1U8LAYoFQ8xW/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Resume"
+        >
+          <RiNewspaperFill />
         </a>
       </div>
 
