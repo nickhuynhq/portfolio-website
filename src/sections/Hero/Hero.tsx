@@ -56,14 +56,16 @@ const ParticlesBackground = () => {
         </div>
       </div>
 
-      <a href="https://layerr.xyz" className="hero__text--work">
+      <div className="hero__text--work">
         <p>Creating things at</p>
+        <a className="hero__text--work-link" href="https://layerr.xyz">
           <img
-            className="hero__text--work-image"
-            src={Layerr}
-            alt="Layerr.xyz"
-          />
-      </a>
+              className="hero__text--work-image"
+              src={Layerr}
+              alt="Layerr.xyz"
+            />
+        </a>
+      </div>
 
       <a href="#about" className="hero__button bounce">
         <BsChevronDoubleDown />
