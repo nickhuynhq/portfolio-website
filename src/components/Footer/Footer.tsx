@@ -78,7 +78,7 @@ const Footer = () => {
                 </a>
                 <span>|</span>
                 <a
-                  href="https://drive.google.com/file/d/18KPOt3RvsMSh0vexUwiL1elDauW5dwwb/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1LxFmstBnz4W5cNcPnett1U8LAYoFQ8xW/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => handleLinkClick("resume")}
