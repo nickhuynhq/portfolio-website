@@ -1,0 +1,18 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.partners {
+  min-height: 0;
+
+  @include desktop {
+    gap: 6rem;
+  }
+
+  &__heading {
+    margin-top: 4.5rem;
+
+    @include desktop-xl {
+      margin-top: 6rem;
+    }
+  }
+}

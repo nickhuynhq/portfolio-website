@@ -1,0 +1,14 @@
+[
+    {"name":"Mindful Occupational Therapy Services",
+    "image": "https://res.cloudinary.com/dhmiad1f3/image/upload/v1679857840/mindful_ot_logo_ullt7f.png",
+    "link": "https://www.mindful-ot.ca/"},
+    {"name":"JS Health & Fitness",
+    "image": "https://res.cloudinary.com/dhmiad1f3/image/upload/v1679857839/js_health_and_fitness_jpvbs8.png",
+    "link": "https://www.jshealthandfitness.ca/"},
+    {"name":"The Haven Hostel",
+    "image": "https://res.cloudinary.com/dhmiad1f3/image/upload/v1679857840/haven_hostel_logo_towwj6.png",
+    "link": "https://thehavenhostel.ca/"},
+    {"name":"Bird House Nature Company",
+    "image": "https://res.cloudinary.com/dhmiad1f3/image/upload/v1679857840/bird_house_nature_company_logo_mfbjvl.png",
+    "link": "https://birdhousenaturecompany.ca/"}
+]
