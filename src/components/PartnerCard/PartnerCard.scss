@@ -1,0 +1,41 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+
+.partner-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    max-height: 125px;
+    max-width: 125px;
+
+
+    @include desktop {
+      max-height: 200px;
+      max-width: 200px;
+    }
+  }
+
+  &__tooltip {
+    visibility: hidden;
+    width: 7.5rem;
+    background-color: $button-background-primary;
+    color: #fff;
+    text-align: center;
+    padding: 0.3125rem 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:hover {
+    transition: 0.3s ease;
+    scale: 1.03;
+
+    & .partner-card__tooltip {
+      visibility: visible;
+    }
+  }
+}
