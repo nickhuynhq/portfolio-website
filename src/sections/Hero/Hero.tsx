@@ -70,7 +70,7 @@ const ParticlesBackground = () => {
       </div>
 
       <div className="hero__text--work">
-        <p>Creating things at</p>
+        <p className="hero__text--work-text">Creating things at</p>
         <a className="hero__text--work-link" href="https://layerr.xyz" target="_blank" rel="noopener noreferrer">
           <img
               className="hero__text--work-image"
