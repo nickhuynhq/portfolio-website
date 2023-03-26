@@ -11,12 +11,12 @@
   padding: 3rem 0;
 
   @include desktop {
-    gap: 4rem;
+    gap: 3rem;
   }
 
   &__heading {
     font-weight: 500;
-    margin-top: 4.5rem;
+    margin-top: 3rem;
 
     @include desktop-xl {
       margin-top: 6rem;
@@ -32,7 +32,7 @@
 
     @include tablet{
       gap: 0;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-direction: row;
     }
   }
