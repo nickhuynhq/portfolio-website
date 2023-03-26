@@ -82,6 +82,10 @@
         left: 1rem;
       }
 
+      &-text{
+        font-size: medium;
+      }
+
       &-link {
         display: flex;
         flex-direction: column;
@@ -98,7 +102,7 @@
       }
 
       &-image {
-        width: 28%;
+        width: 22%;
         max-width: 32rem;
 
         @include desktop {
