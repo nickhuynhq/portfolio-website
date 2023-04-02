@@ -25,6 +25,7 @@ const ExperienceCard = ({ role }) => {
         className="experience-card__image"
         src={role.image}
         alt={role.company}
+        loading="lazy"
       />
     </section>
   );

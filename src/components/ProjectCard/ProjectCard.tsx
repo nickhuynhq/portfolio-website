@@ -30,6 +30,7 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
           className={"projects-card__image"}
           src={image}
           alt={`${name} Mockup`}
+          loading="lazy"
         />
       </div>
 
