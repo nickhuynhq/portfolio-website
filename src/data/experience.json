@@ -1,43 +1,43 @@
-[   
-    {
-        "title":"Technical Analyst",
-        "company":"Oracle",
-        "start_date":"March 2021",
-        "end_date":"July 2022",
-        "description":[
-            "Facilitated long term solutions for clients using extensive product knowledge",
-            "Specialized in product areas including Order to Cash, Procurement, and Advanced Accounting",
-            "Performed advanced SQL queries to ensure accurate data collection and reporting",
-            "Recognized as a top performer with experience in over 450+ Cases",
-            "Achieved record-breaking 10 CSAT Positive Reviews in one-week"
-        ],
-        "image":"https://www.oracle.com/webfolder/assets/newsroom/oracle-netsuite-vert.jpg"
-    },
-    {
-        "title":"E-Commerce Coordinator",
-        "company":"Mosaic",
-        "start_date":"October 2020",
-        "end_date":"March 2021",
-        "description":[
-            "As a member of the ShopHERE project, coordinators consult with a variety of independent small businesses effected by COVID-19 to assist them in building & optimizing their online presence",
-            "Built websites with platforms such as Shopify, WordPress, & Square",
-            "Engage with clients & cater their e-commerce platforms to meet their business’ needs",
-            "Launched over 20 web stores and was recognized as a top performer",
-            "Led all post-launch marketing to generate brand awareness & engagement"
-        ],
-        "image":"https://mma.prnewswire.com/media/1728778/Mosaic_Logo.jpg?p=twitter"
-    },
-    {
-        "title":"Microsoft Instructor",
-        "company":"Wilfrid Laurier University",
-        "start_date":"September 2019",
-        "end_date":"May 2020",
-        "description":[
-            "Taught and developed Microsoft & Programming training courses",
-            "Possess high knowledge in Microsoft Office Suite, Excel, VBA, SQL, and Python",
-            " Develop a systematic approach to better understand how to conduct and improve the training sessions",
-            "Awarded Best Instructor in Fall 2019 term"
-        ],
-        "image":"https://www.wlu.ca/images/general/desktop_logo.png"
-    }
+[
+  {
+    "title": "Software Developer",
+    "company": "Layerr",
+    "start_date": "March 2023",
+    "end_date": "Present",
+    "description": [
+      "Spearheaded full-stack development of high-quality web 3 applications in a agile fast-paced start-up environment",
+      "Designed and developed the main website, viewed and received positively by thousands of users",
+      "Built and maintained a responsive and user-friendly front-end using React, Remix.js, TypeScript, and Tailwind CSS, while consistently delivering high-quality code and ensuring seamless integration with back-end systems.",
+      "Leveraged AWS Lambda and Netlify functions to facilitate efficient and scalable back-end functionality, including database management with MongoDB.",
+      "Demonstrated a keen eye for UI/UX design, using tools such as Figma and Photoshop to create visually appealing and intuitive user interfaces"
+    ],
+    "image": "https://layerr.xyz/build/_assets/logo-WIKFRAM2.png"
+  },
+  {
+    "title": "Technical Analyst",
+    "company": "Oracle",
+    "start_date": "March 2021",
+    "end_date": "July 2022",
+    "description": [
+      "Facilitated long term solutions using extensive product knowledge in the Advanced Accounting ERP product suite",
+      "Used Confluence to routinely document and verify case policies/procedures to strengthen internal controls",
+      "Performed advanced SQL queries to ensure accurate data collection and reporting",
+      "Recognized as a top performer with experience in over 450+ Cases",
+      "Achieved record-breaking 10 CSAT Positive Reviews in one-week"
+    ],
+    "image": "https://www.oracle.com/webfolder/assets/newsroom/oracle-netsuite-vert.jpg"
+  },
+  {
+    "title": "E-Commerce Coordinator",
+    "company": "Mosaic",
+    "start_date": "October 2020",
+    "end_date": "March 2021",
+    "description": [
+      "Consulted and assist businesses during COVID-19 in building and optimizing their online presence",
+      "Built websites with platforms such as Shopify, WordPress, & Square, using HTML, CSS, & JavaScript",
+      "Led all post-launch marketing to generate brand awareness & engagement with CMS tools (HubSpot & WordPress)",
+      "Launched over 20 web stores and was recognized as a top performer"
+    ],
+    "image": "https://mma.prnewswire.com/media/1728778/Mosaic_Logo.jpg?p=twitter"
+  }
 ]
