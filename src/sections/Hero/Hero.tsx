@@ -6,7 +6,6 @@ import "./Hero.scss";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiNewspaperFill } from "react-icons/ri";
-import Layerr from "../../assets/logos/layerr_logo.svg";
 
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -67,18 +66,6 @@ const ParticlesBackground = () => {
           <h2 className="hero__heading--sub">full stack web developer</h2>
           <p className="hero__heading--sub--bottom">based in Toronto.</p>
         </div>
-      </div>
-
-      <div className="hero__text--work">
-        <p className="hero__text--work-text">Creating things at</p>
-        <a className="hero__text--work-link" href="https://layerr.xyz" target="_blank" rel="noopener noreferrer">
-          <img
-              className="hero__text--work-image"
-              src={Layerr}
-              alt="Layerr.xyz"
-              loading="lazy"
-            />
-        </a>
       </div>
 
       <a href="#about" className="hero__button bounce">

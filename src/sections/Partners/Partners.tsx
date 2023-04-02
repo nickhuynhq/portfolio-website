@@ -9,6 +9,7 @@ const Partners = () => {
       <div className="partners__list">
         {partnersData.map((partner) => (
           <PartnerCard
+            key={partner.name}
             partnerName={partner.name}
             image={partner.image}
             link={partner.link}
