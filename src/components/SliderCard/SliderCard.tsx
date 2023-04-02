@@ -27,6 +27,7 @@ const SliderCard = ({
             className="slider-card__image"
             src={project.image}
             alt={project.name}
+            loading="lazy"
           />
           <div className="middle">
             <h1 className="text">INFO</h1>

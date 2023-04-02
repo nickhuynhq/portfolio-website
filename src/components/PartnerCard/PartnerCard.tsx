@@ -15,7 +15,7 @@ const PartnerCard = ({ partnerName, image, link }: PartnerCardInterface) => {
       rel="noopener noreferrer"
       className="partner-card"
     >
-      <img src={image} alt={partnerName} className="partner-card__image" />
+      <img src={image} alt={partnerName} className="partner-card__image" loading="lazy" />
       <p className="partner-card__tooltip">{partnerName.toUpperCase()}</p>
     </a>
   );

@@ -29,6 +29,7 @@ const About = () => {
           <img
             className="about__profile-image"
             src={Memoji}
+            loading="lazy"
             alt="Headshot Nicholas Huynh"
           />
           <p className="about__profile-bio">

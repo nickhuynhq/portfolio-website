@@ -76,6 +76,7 @@ const ParticlesBackground = () => {
               className="hero__text--work-image"
               src={Layerr}
               alt="Layerr.xyz"
+              loading="lazy"
             />
         </a>
       </div>
