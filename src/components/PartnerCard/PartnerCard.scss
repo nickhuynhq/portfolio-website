@@ -7,13 +7,12 @@
   align-items: center;
 
   &__image {
-    max-height: 125px;
-    max-width: 125px;
-
+    max-height: 100px;
+    max-width: 100px;
 
     @include desktop {
-      max-height: 175px;
-      max-width: 175px;
+      max-height: 125px;
+      max-width: 125px;
     }
   }
 

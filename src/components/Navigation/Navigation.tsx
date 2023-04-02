@@ -31,7 +31,7 @@ const Navigation = () => {
                 href="#about"
                 onClick={() => setMenuView(!menuView)}
               >
-                About
+                {`// About`}
               </a>
             </li>
             <li>
@@ -40,7 +40,7 @@ const Navigation = () => {
                 href="#projects"
                 onClick={() => setMenuView(!menuView)}
               >
-                Projects
+                {`// Projects`}
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@ const Navigation = () => {
                 href="#experience"
                 onClick={() => setMenuView(!menuView)}
               >
-                Experience
+                {`// Experience`}
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ const Navigation = () => {
                 href="#contact"
                 onClick={() => setMenuView(!menuView)}
               >
-                Contact
+                {`// Contact`}
               </a>
             </li>
           </ul>

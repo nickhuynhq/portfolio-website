@@ -10,10 +10,6 @@
   width: 100%;
   padding: 3rem 0;
 
-  @include desktop {
-    gap: 3rem;
-  }
-
   &__heading {
     font-weight: 500;
     margin-top: 3rem;
@@ -23,15 +19,16 @@
     }
   }
 
-  &__list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px 125px;
     width: 100%;
+    flex-wrap: wrap;
 
-    @include tablet{
-      gap: 0;
+    @include tablet {
+      display: flex;
+      align-items: center;
       justify-content: space-around;
       flex-direction: row;
     }
