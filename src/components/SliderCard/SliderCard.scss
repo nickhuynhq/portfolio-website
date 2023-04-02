@@ -17,11 +17,11 @@
     width: 100%;
     object-fit: cover;
     transition: all 0.3s ease-in;
-    box-shadow: rgba(100, 100, 111, 0.2) 0rem .4375rem 1.8125rem 0rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0rem 0.4375rem 1.8125rem 0rem;
     cursor: pointer;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) .125rem .3125rem .9375rem;
+      box-shadow: rgba(0, 0, 0, 0.35) 0.125rem 0.3125rem 0.9375rem;
       scale: 1.01;
 
       .overlay {
@@ -29,17 +29,17 @@
       }
     }
 
-    @include tablet{
+    @include tablet {
       width: 25vw;
       height: 20vh;
     }
 
-    @include desktop{
+    @include desktop {
       width: 25vw;
       height: 28vh;
     }
 
-    @include desktop-xl{
+    @include desktop-xl {
       width: 26vw;
       height: 30vh;
     }
@@ -90,7 +90,7 @@
     opacity: 0;
     transform: scale(0.75) translateX(3rem);
   }
-  
+
   100% {
     opacity: 1;
   }
