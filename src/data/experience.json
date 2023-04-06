@@ -11,7 +11,8 @@
       "Leveraged AWS Lambda and Netlify functions to facilitate efficient and scalable back-end functionality, including database management with MongoDB.",
       "Demonstrated a keen eye for UI/UX design, using tools such as Figma and Photoshop to create visually appealing and intuitive user interfaces"
     ],
-    "image": "https://layerr.xyz/build/_assets/logo-WIKFRAM2.png"
+    "image": "https://i.ibb.co/HKtkVDd/layerr.png",
+    "link": "https://layerr.xyz/"
   },
   {
     "title": "Technical Analyst",
@@ -25,11 +26,12 @@
       "Recognized as a top performer with experience in over 450+ Cases",
       "Achieved record-breaking 10 CSAT Positive Reviews in one-week"
     ],
-    "image": "https://www.oracle.com/webfolder/assets/newsroom/oracle-netsuite-vert.jpg"
+    "image": "https://i.ibb.co/bW2fsJt/oracle.png",
+    "link": "https://www.netsuite.com/portal/home.shtml"
   },
   {
     "title": "E-Commerce Coordinator",
-    "company": "Mosaic",
+    "company": "Digital Main Street",
     "start_date": "October 2020",
     "end_date": "March 2021",
     "description": [
@@ -38,6 +40,7 @@
       "Led all post-launch marketing to generate brand awareness & engagement with CMS tools (HubSpot & WordPress)",
       "Launched over 20 web stores and was recognized as a top performer"
     ],
-    "image": "https://mma.prnewswire.com/media/1728778/Mosaic_Logo.jpg?p=twitter"
+    "image": "https://i.ibb.co/F3SMXK5/dms.png",
+    "link": "https://digitalmainstreet.ca/"
   }
 ]

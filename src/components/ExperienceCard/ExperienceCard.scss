@@ -28,15 +28,23 @@
     margin-bottom: 0.75rem
   }
 
-  &__image {
-    margin-top: 5vh;
+  &__right{
     width: 80%;
-    transition: 0.5s ease;
-    cursor: pointer;
 
     @include desktop {
       margin-top: 0;
       width: 35%;
+    }
+  }
+
+  &__image {
+    margin-top: 5vh;
+    width: 100%;
+    transition: 0.5s ease;
+  
+    @include desktop {
+      margin-top: 0;
+      max-width: 28rem;
     }
 
     &:hover {

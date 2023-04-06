@@ -1,4 +1,3 @@
-
 import "./ExperienceCard.scss";
 
 const ExperienceCard = ({ role }) => {
@@ -14,19 +13,26 @@ const ExperienceCard = ({ role }) => {
           {role.description.map((point: String, index: number) => (
             <li key={index} className="experience-card__list-item">
               <p>
-                <strong style={{marginRight:"1rem"}}>{">"}</strong>
+                <strong style={{ marginRight: "1rem" }}>{">"}</strong>
                 {point}
               </p>
             </li>
           ))}
         </ul>
       </div>
-      <img
-        className="experience-card__image"
-        src={role.image}
-        alt={role.company}
-        loading="lazy"
-      />
+      <a
+        href={role.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="experience-card__right"
+      >
+        <img
+          className="experience-card__image"
+          src={role.image}
+          alt={role.company}
+          loading="lazy"
+        />
+      </a>
     </section>
   );
 };

@@ -67,22 +67,22 @@ const Navigation = () => {
         <ul className="navigation__list">
           <li>
             <a className="navigation__list-item" href="#about">
-              About
+            {`// About`}
             </a>
           </li>
           <li>
             <a className="navigation__list-item" href="#projects">
-              Projects
+            {`// Projects`}
             </a>
           </li>
           <li>
             <a className="navigation__list-item" href="#experience">
-              Experience
+            {`// Experience`}
             </a>
           </li>
           <li>
             <a className="navigation__list-item" href="#contact">
-              Contact
+            {`// Contact`}
             </a>
           </li>
         </ul>
