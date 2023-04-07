@@ -87,6 +87,8 @@ a {
 html {
   position: relative;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  
 }
 
 body {
@@ -94,7 +96,6 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .main {
@@ -112,6 +113,7 @@ section {
   justify-content: center;
   min-height: 100vh;
   scroll-snap-align: start;
+  overflow-x: hidden;
 }
 
 .more-arrow {
