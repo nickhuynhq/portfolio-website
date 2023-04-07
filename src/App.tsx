@@ -47,7 +47,7 @@ function App() {
         <Navigation />
         <main className="main">
           <About />
-          <Partners />
+          {/* <Partners /> */}
           <Projects
             showModal={showModal}
             setCurrentModalProject={setCurrentModalProject}
