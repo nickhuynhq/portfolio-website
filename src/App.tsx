@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
 import ReactGA from "react-ga4";
 import Footer from "./components/Footer/Footer";
-import Partners from "./sections/Partners/Partners";
 
 ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
 
