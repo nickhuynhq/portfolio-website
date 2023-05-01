@@ -44,7 +44,7 @@ const ParticlesBackground = () => {
 
         <a
           className="hero__icon"
-          href="https://drive.google.com/file/d/1LxFmstBnz4W5cNcPnett1U8LAYoFQ8xW/view?usp=sharing"
+          href="https://drive.google.com/file/d/1MxnoH_p_3zFh7uu7nRHamb94_BQoATu8/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           title="Resume"
@@ -71,7 +71,6 @@ const ParticlesBackground = () => {
       <a href="#about" className="hero__button bounce">
         <BsChevronDoubleDown />
       </a>
-
       <Particles
         id="tsparticles"
         init={particlesInit}
