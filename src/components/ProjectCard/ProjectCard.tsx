@@ -4,7 +4,7 @@ import { MdWeb } from "react-icons/md";
 import "./ProjectCard.scss";
 import { useEffect, useState } from "react";
 
-const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
+const ProjectCard = ({ name, image, video, description, github, demo, techstack }) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const isMobile = width <= 1280;
 
@@ -21,24 +21,23 @@ const ProjectCard = ({ name, image, description, github, demo, techstack }) => {
 
   return (
     <section className="projects-card">
-      <div className={isMobile ? "projects-card--top": "left-animation"}>
-        <h1 className={isMobile ? "projects-card__heading" : `hidden`}>
-          {`${name}`}
-        </h1>
-
-        <img
-          className={"projects-card__image"}
-          src={image}
-          alt={`${name} Mockup`}
-          loading="lazy"
-        />
+      <div className={isMobile ? "projects-card--top" : "left-animation"}>
+        <h1 className={isMobile ? "projects-card__heading" : `hidden`}>{`${name}`}</h1>
+        {video ? (
+          <video className="projects-card__video" src={video} poster={image} controls loop />
+        ) : (
+          <img
+            className={"projects-card__image"}
+            src={image}
+            alt={`${name} Mockup`}
+            loading="lazy"
+          />
+        )}
       </div>
 
       <div
         className={
-          isMobile
-            ? "projects-card__description"
-            : `projects-card__description right-animation`
+          isMobile ? "projects-card__description" : `projects-card__description right-animation`
         }
       >
         <h2 className="project-card__info">{isMobile ? `INFO` : name}</h2>
