@@ -9,7 +9,6 @@
   width: 100%;
   gap: 1.5rem;
   transition: 1s ease;
-  margin: auto;
 
   @include desktop {
     flex-direction: row;
@@ -26,6 +25,19 @@
 
   &__heading{
     margin-bottom: 1rem;
+  }
+
+  &__video {
+    margin-bottom: 1rem;
+    height: 25rem;
+    width: 100%;
+    object-fit: fit;
+    background-color: black;
+
+    @include tablet {
+      width: 32rem;
+      margin-right: 1rem;
+    }
   }
 
   &__image {

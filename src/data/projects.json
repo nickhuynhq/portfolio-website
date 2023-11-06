@@ -14,6 +14,7 @@
     "demo": "https://expo.dev/@nickhuynhq/nexplore?serviceType=classic&distribution=expo-go",
     "github": "https://github.com/nickhuynhq/nexplore_app",
     "image": "https://user-images.githubusercontent.com/71597829/222345094-743a04ff-858c-41a0-ad84-1489187aa68a.jpg",
+    "video": "https://user-images.githubusercontent.com/71597829/222483501-e63dd60d-a1c6-47a8-baa7-d2a31fbd889d.mov",
     "techstack": ["react", "expo", "typescript", "tailwind"],
     "slogan": "Get out there and explore!"
   },
@@ -23,6 +24,7 @@
     "demo": "https://tripod.nickhuynhq.com/",
     "github": "https://github.com/nickhuynhq/tripod-client",
     "image": "https://user-images.githubusercontent.com/71597829/214748823-9b8b4f6a-9881-4ac8-8bc6-30ba4df34287.jpg",
+    "video": "https://user-images.githubusercontent.com/71597829/204843525-df242242-d280-4c41-8094-dc1b4d2e5adb.mov",
     "techstack": ["react", "redux", "materialui", "mongodb", "express"],
     "slogan": "Share your photos & get in Pods!"
   },
@@ -41,6 +43,7 @@
     "demo": "https://crowd3d.netlify.app/",
     "github": "https://github.com/nickhuynhq/web3_crowdfunding",
     "image": "https://user-images.githubusercontent.com/71597829/214969423-c18fd2bc-7630-43e2-87fb-758006ecbc5d.jpg",
+    "video": "https://user-images.githubusercontent.com/71597829/212486961-09541fe8-738f-40f0-b24b-4e63254a6639.mov",
     "techstack": ["react", "vite", "tailwind", "solidity", "ethereum"],
     "slogan": "Web3 Crowdfunding Platform"
   },
@@ -50,6 +53,7 @@
     "demo": "https://weather-vue-tw.netlify.app/",
     "github": "https://github.com/nickhuynhq/weather-vue",
     "image": "https://user-images.githubusercontent.com/71597829/214969742-d867b36f-fb7e-4c92-a02a-3ed95b1f77cc.jpg",
+    "video": "https://user-images.githubusercontent.com/71597829/195152578-4e5c0ff5-68c0-4acb-9d60-259e3ebc2524.mp4",
     "techstack": ["vue", "javascript", "html", "tailwind"],
     "slogan": "Be prepared, look at the Vue!"
   }
