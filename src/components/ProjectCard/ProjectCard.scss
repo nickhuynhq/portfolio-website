@@ -9,7 +9,6 @@
   width: 100%;
   gap: 1.5rem;
   transition: 1s ease;
-  margin: auto;
 
   @include desktop {
     flex-direction: row;
@@ -37,6 +36,7 @@
 
     @include tablet {
       width: 32rem;
+      margin-right: 1rem;
     }
   }
 
