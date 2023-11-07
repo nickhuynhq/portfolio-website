@@ -21,7 +21,7 @@ const ProjectCard = ({ name, image, video, description, github, demo, techstack 
 
   return (
     <section className="projects-card">
-      <div className={isMobile ? "projects-card--top" : "left-animation"}>
+      <div className={isMobile ? "projects-card--top" : "projects-card--top left-animation"}>
         <h1 className={isMobile ? "projects-card__heading" : `hidden`}>{`${name}`}</h1>
         {video ? (
           <video className="projects-card__video" src={video} poster={image} controls loop />
