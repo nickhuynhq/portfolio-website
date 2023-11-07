@@ -4,7 +4,7 @@
 .projects-card {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   height: 100%;
   width: 100%;
   gap: 1.5rem;
@@ -12,13 +12,14 @@
 
   @include desktop {
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 4rem;
   }
 
   &--top{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
   }
@@ -36,7 +37,11 @@
 
     @include tablet {
       width: 32rem;
-      margin-right: 1rem;
+      margin-right: 2rem;
+    }
+
+    @include desktop {
+      width: 36vw;
     }
   }
 
