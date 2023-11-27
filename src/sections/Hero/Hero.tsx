@@ -6,6 +6,7 @@ import "./Hero.scss";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiNewspaperFill } from "react-icons/ri";
+import { resumeLink } from "../../utils/utils";
 
 const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -44,7 +45,7 @@ const ParticlesBackground = () => {
 
         <a
           className="hero__icon"
-          href="https://drive.google.com/file/d/1MxnoH_p_3zFh7uu7nRHamb94_BQoATu8/view?usp=sharing"
+          href={resumeLink}
           target="_blank"
           rel="noopener noreferrer"
           title="Resume"
