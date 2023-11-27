@@ -1,6 +1,6 @@
 import "./Footer.scss";
 import { v4 as uuidv4 } from "uuid";
-import { handleEventTracking } from "../../utils/utils";
+import { handleEventTracking, resumeLink } from "../../utils/utils";
 
 const Footer = () => {
   const handleLinkClick = (label: string) => {
@@ -39,7 +39,7 @@ const Footer = () => {
         <li onClick={() => handleLinkClick("resume")}>
           <a
             className="footer__list-item"
-            href="https://drive.google.com/file/d/1MxnoH_p_3zFh7uu7nRHamb94_BQoATu8/view?usp=sharing"
+            href={resumeLink}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -78,7 +78,7 @@ const Footer = () => {
                 </a>
                 <span>|</span>
                 <a
-                  href="https://drive.google.com/file/d/1MxnoH_p_3zFh7uu7nRHamb94_BQoATu8/view?usp=sharing"
+                  href={resumeLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => handleLinkClick("resume")}
