@@ -1,9 +1,23 @@
 [
   {
+    "title": "Full Stack Developer",
+    "company": "Droptop",
+    "start_date": "January 2024",
+    "end_date": "Present",
+    "description": [
+      "Develop and maintain a large scale web application (shop management software) using React, PHP (Laravel), Node, Postgres, and Redis.",
+      "Collaborate with founding team members to deliver high-quality software solutions and contribute to all phases of the development lifecycle.",
+      "Troubleshoot, test, and maintain the core product software to ensure strong optimization and functionality.",
+      "Demonstrate keen eye for design and user experience while developing features and services."
+    ],
+    "image": "https://i.ibb.co/PQCrJRh/droptop.png",
+    "link": "https://droptop.io/"
+  },
+  {
     "title": "Software Developer",
     "company": "Layerr",
     "start_date": "March 2023",
-    "end_date": "Present",
+    "end_date": "February 2024",
     "description": [
       "Spearheaded full-stack development of Web 3 applications in an agile start-up environment.",
       "Led UI overhaul for App, visited by tens of thousands of users, resulting in enhanced UX and positive feedback.",

@@ -9,9 +9,13 @@
     "tailwind",
     "vue",
     "node",
-    "express",
     "python",
+    "ruby",
+    "php",
+    "laravel",
     "mysql",
-    "graphql",
-    "mongodb"
+    "postgres",
+    "mongodb",
+    "redis",
+    "graphql"
   ]
