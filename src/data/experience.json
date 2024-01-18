@@ -2,12 +2,13 @@
   {
     "title": "Full Stack Developer",
     "company": "Droptop",
-    "start_date": "March 2023",
+    "start_date": "January 2024",
     "end_date": "Present",
     "description": [
       "Develop and maintain a large scale web application (shop management software) using React, PHP (Laravel), Node, Postgres, and Redis.",
       "Collaborate with founding team members to deliver high-quality software solutions and contribute to all phases of the development lifecycle.",
-      "Troubleshoot, test, and maintain the core product software to ensure strong optimization and functionality."
+      "Troubleshoot, test, and maintain the core product software to ensure strong optimization and functionality.",
+      "Demonstrate keen eye for design and user experience while developing features and services."
     ],
     "image": "https://i.ibb.co/PQCrJRh/droptop.png",
     "link": "https://droptop.io/"
