@@ -30,19 +30,15 @@
     }
 
     @include tablet {
-      width: 25vw;
+      width: 100%;
       height: 20vh;
     }
 
     @include desktop {
-      width: 25vw;
-      height: 28vh;
+      width: 100%;
+      height: 25vh;
     }
 
-    @include desktop-xl {
-      width: 26vw;
-      height: 30vh;
-    }
   }
 }
 

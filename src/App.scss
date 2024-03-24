@@ -99,6 +99,9 @@ body {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $background-primary;
   padding: 2rem 8%;
 
@@ -112,6 +115,7 @@ section {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  max-width: 80rem;
   scroll-snap-align: start;
 }
 
