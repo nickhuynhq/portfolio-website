@@ -29,6 +29,8 @@
   }
 
   &__right{
+    display: flex;
+    justify-content: center;
     width: 80%;
 
     @include desktop {
@@ -41,6 +43,7 @@
     margin-top: 5vh;
     width: 100%;
     transition: 0.5s ease;
+    max-width: 28rem;
   
     @include desktop {
       margin-top: 0;
