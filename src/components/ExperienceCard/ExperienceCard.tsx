@@ -13,7 +13,6 @@ const ExperienceCard = ({ role }) => {
           {role.description.map((point: String, index: number) => (
             <li key={index} className="experience-card__list-item">
               <p>
-                <strong style={{ marginRight: "1rem" }}>{">"}</strong>
                 {point}
               </p>
             </li>
