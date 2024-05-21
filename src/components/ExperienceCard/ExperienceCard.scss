@@ -23,9 +23,25 @@
     }
   }
 
+  &__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    @include tablet{
+      font-size: 2rem;
+    }
+  }
+
   &__company {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
     margin-top: 0.5rem;
-    margin-bottom: 0.75rem
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+
+    @include tablet{
+      font-size: 1.8rem;
+    }
   }
 
   &__right{
