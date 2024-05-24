@@ -14,6 +14,20 @@
     "link": "https://droptop.io/"
   },
   {
+    "title": "Software Engineer",
+    "company": "Mochi Health",
+    "start_date": "April 2024",
+    "end_date": "Present",
+    "description": [
+      "Building high quality full stack applications whilst maintaining existing projects to provide an exceptional health care experience.",
+      "Overhauled and refactored new ux designs for the web application.",
+      "Contributed in making architectural decisions and the technical build-out using TypeScript, React, Node.js, Emotion CSS, Tailwind CSS, and Postgres SQL.",
+      "Collaborated in a small, multi-functional team alongside other engineers, designers, and product managers, blending skills and ideas into a seamless performance."
+    ],
+    "image": "https://i.ibb.co/z8Zgsvm/mochi-logo.webp",
+    "link": "https://joinmochi.com/"
+  },
+  {
     "title": "Software Developer",
     "company": "Layerr",
     "start_date": "March 2023",
@@ -32,7 +46,7 @@
     "title": "Teaching Assistant - Software Engineering",
     "company": "BrainStation",
     "start_date": "October 2023",
-    "end_date": "Present",
+    "end_date": "May 2024",
     "description": [
       "Mentor students to complete a 8-month web development diploma course.",
       "Teach students to use HTML, SASS, JavaScript, React, Node, Express, Git, SQL, AWS, and Jira to create full scale applications.",
@@ -43,7 +57,7 @@
     "link": "https://brainstation.io/"
   },
   {
-    "title": "Technical Analyst",
+    "title": "Senior Technical Analyst",
     "company": "Oracle",
     "start_date": "March 2021",
     "end_date": "July 2022",
@@ -58,7 +72,7 @@
     "link": "https://www.netsuite.com/portal/home.shtml"
   },
   {
-    "title": "E-Commerce Coordinator",
+    "title": "E-Commerce Developer",
     "company": "Digital Main Street",
     "start_date": "October 2020",
     "end_date": "March 2021",
