@@ -6,18 +6,19 @@
     "end_date": "Present",
     "description": [
       "Develop and maintain a large scale web application (shop management software) using React, PHP (Laravel), Node, Postgres, and Redis.",
-      "Collaborate with founding team members to deliver high-quality software solutions and contribute to all phases of the development lifecycle.",
+      "Led front-end overhaul of Reporting module of the web application from design to implementation used by thousands of users",
+      "Collaborate with founding team members to deliver high-quality software solutions and contribute to all phases of the development lifecycle. ",
       "Troubleshoot, test, and maintain the core product software to ensure strong optimization and functionality.",
       "Demonstrate keen eye for design and user experience while developing features and services."
     ],
-    "image": "https://i.ibb.co/PQCrJRh/droptop.png",
+    "image": "/assets/png/droptop_logo.png",
     "link": "https://droptop.io/"
   },
   {
     "title": "Software Developer",
     "company": "Layerr",
-    "start_date": "March 2023",
-    "end_date": "February 2024",
+    "start_date": "January 2023",
+    "end_date": "January 2024",
     "description": [
       "Spearheaded full-stack development of Web 3 applications in an agile start-up environment.",
       "Led UI overhaul for App, visited by tens of thousands of users, resulting in enhanced UX and positive feedback.",
@@ -25,7 +26,7 @@
       "Formulated AWS Lambda functions to enable efficient, scalable back-end functionality with MongoDB database.",
       "Optimized SEO of web apps and implemented Google Analytics tags and reporting."
     ],
-    "image": "https://i.ibb.co/HKtkVDd/layerr.png",
+    "image": "/assets/png/layerr_logo.png",
     "link": "https://layerr.xyz/"
   },
   {
@@ -34,12 +35,12 @@
     "start_date": "October 2023",
     "end_date": "May 2024",
     "description": [
-      "Mentor students to complete a 8-month web development diploma course.",
-      "Teach students to use HTML, SASS, JavaScript, React, Node, Express, Git, SQL, AWS, and Jira to create full scale applications.",
-      "Prepare and lead students through coding challenges and code reviews.",
-      "Collaborate with course educators and education experience team by providing student progress check-ins, actively participating in regular stand ups & retrospective sessions."
+      "Mentored students to complete a 8-month web development diploma course.",
+      "Taught students to use HTML, SASS, JavaScript, React, Node, Express, Git, SQL, AWS, and Jira to create full scale applications.",
+      "Prepared and led students through coding challenges and code reviews.",
+      "Collaborated with course educators and education experience team by providing student progress check-ins, actively participating in regular stand ups & retrospective sessions."
     ],
-    "image": "https://i.ibb.co/YcsFmvK/brainstation.png",
+    "image": "/assets/png/brainstation_logo.png",
     "link": "https://brainstation.io/"
   },
   {
@@ -54,7 +55,7 @@
       "Recognized as a top performer with experience in over 450+ Cases.",
       "Achieved record-breaking 10 CSAT Positive Reviews in one-week."
     ],
-    "image": "https://i.ibb.co/bW2fsJt/oracle.png",
+    "image": "/assets/png/oracle_logo.png",
     "link": "https://www.netsuite.com/portal/home.shtml"
   },
   {
@@ -68,7 +69,7 @@
       "Led all post-launch marketing to generate brand awareness & engagement with CMS tools (HubSpot & WordPress).",
       "Launched over 20 web stores and was recognized as a top performer."
     ],
-    "image": "https://i.ibb.co/F3SMXK5/dms.png",
+    "image": "/assets/png/dms_logo.png",
     "link": "https://digitalmainstreet.ca/"
   }
 ]
