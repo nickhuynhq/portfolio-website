@@ -1,12 +1,26 @@
 [
   {
+    "title": "Software Engineer",
+    "company": "Mochi Health",
+    "start_date": "January 2025",
+    "end_date": "Present",
+    "description": [
+      "Building high quality full stack applications whilst maintaining existing projects to provide an exceptional health care experience.",
+      "Contributed in making architectural decisions and the technical build-out using TypeScript, React, Node.js, Emotion CSS, Tailwind CSS, and Postgres SQL.",
+      "Collaborated in a small, multi-functional team alongside other engineers, designers, and product managers, blending skills and ideas into a seamless performance."
+    ],
+    "image": "https://i.ibb.co/z8Zgsvm/mochi-logo.webp",
+    "link": "https://joinmochi.com/"
+  },
+  {
     "title": "Full Stack Developer",
     "company": "Droptop",
     "start_date": "January 2024",
-    "end_date": "Present",
+    "end_date": "January 2025",
     "description": [
       "Develop and maintain a large scale web application (shop management software) using React, PHP (Laravel), Node, Postgres, and Redis.",
-      "Led front-end overhaul of Reporting module of the web application from design to implementation used by thousands of users",
+      "Implemented front-end overhaul of the App's Reporting module from design to implementation used by thousands of users.",
+      "Designed and built large scale full-stack internal Admin portal to manage thousands of accounts.",
       "Collaborate with founding team members to deliver high-quality software solutions and contribute to all phases of the development lifecycle. ",
       "Troubleshoot, test, and maintain the core product software to ensure strong optimization and functionality.",
       "Demonstrate keen eye for design and user experience while developing features and services."
