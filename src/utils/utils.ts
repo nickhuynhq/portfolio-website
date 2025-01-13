@@ -8,4 +8,4 @@ export const handleEventTracking = (
   ReactGA.event({ category: category, action: action, label: label });
 };
 
-export const resumeLink = "https://drive.google.com/file/d/1dyg9b93L9mZy-z3YbFpu6-TQZ6-rJ1-0/view?usp=sharing"
+export const resumeLink = "https://drive.google.com/file/d/1mahdIWxnqX2L10I6Cb6hJRxSF8QebOhw/view?usp=sharing"
