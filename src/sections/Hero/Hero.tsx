@@ -60,12 +60,12 @@ const ParticlesBackground = () => {
             <h1 className="hero__heading">nicholashuynh.</h1>
           </a>
 
-          <p className="hero__heading--sub--top">based in Toronto.</p>
+          <p className="hero__heading--sub--top">based in San Francisco.</p>
         </div>
 
         <div className="hero__text--bottom">
           <h2 className="hero__heading--sub">full stack software engineer</h2>
-          <p className="hero__heading--sub--bottom">based in Toronto.</p>
+          <p className="hero__heading--sub--bottom">based in San Francisco.</p>
         </div>
       </div>
 
