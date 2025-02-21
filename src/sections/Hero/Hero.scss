@@ -139,7 +139,7 @@
     cursor: pointer;
 
     @include desktop {
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     &:hover {
@@ -154,7 +154,7 @@
       z-index: 1;
 
       @include desktop {
-        font-size: 3rem;
+        font-size: 2rem;
       }
 
       &--top {
