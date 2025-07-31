@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
-  height: 100%;
   width: 100%;
   gap: 1.5rem;
   transition: 1s ease;
@@ -17,23 +16,21 @@
     gap: 1rem;
   }
 
-  &--top{
+  &--top {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 1rem;
 
-    @include desktop{
+    @include desktop {
       width: 50%;
+      padding-right: 1rem;
     }
   }
 
-  &__heading{
-    margin-bottom: 1rem;
+  &__heading {
   }
 
   &__video {
-    margin-bottom: 1rem;
     height: 25rem;
     width: 100%;
     object-fit: fit;
@@ -49,9 +46,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
     object-fit: cover;
     width: 100%;
+    height: auto;
 
     @include tablet {
       width: 90%;
@@ -67,22 +64,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
 
-    @include desktop{
+    @include desktop {
       width: 50%;
     }
   }
 
   &__text {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
   }
 
   &__tech {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+
     gap: 1rem;
     flex-wrap: wrap;
 
@@ -100,7 +95,6 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1rem;
 
     @include tablet {
       justify-content: flex-start;
@@ -111,7 +105,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border: .0625rem solid $button-background-primary;
+    border: 0.0625rem solid $button-background-primary;
     font-size: 1.25rem;
     padding: 0.5rem;
     transition: 0.3s ease;

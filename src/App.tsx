@@ -18,12 +18,14 @@ function App() {
   const [currentModalProject, setCurrentModalProject] = useState({});
 
   const showModal = (e: React.MouseEvent<HTMLElement>) => {
-    document.body.style.overflowY = "hidden";
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
     setModalVisible(true);
   };
 
   const closeModal = (e: React.MouseEvent<HTMLElement>) => {
-    document.body.style.overflowY = "unset";
+    document.body.style.overflow = "unset";
+    document.documentElement.style.overflow = "unset";
     setModalVisible(false);
   };
 
@@ -34,6 +36,22 @@ function App() {
       title: "Main Page",
     });
   }, []);
+
+  useEffect(() => {
+    if (modalVisible) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+      document.documentElement.style.overflow = "unset";
+    }
+
+    // Cleanup function to ensure scroll is restored when component unmounts
+    return () => {
+      document.body.style.overflow = "unset";
+      document.documentElement.style.overflow = "unset";
+    };
+  }, [modalVisible]);
 
   return (
     <>

@@ -18,7 +18,7 @@ const Projects = ({ showModal, setCurrentModalProject }) => {
             {...project}
             showModal={showModal}
             setCurrentModalProject={setCurrentModalProject}
-            isVisible = {isVisible}
+            isVisible={isVisible}
           />
         ))}
       </div>
