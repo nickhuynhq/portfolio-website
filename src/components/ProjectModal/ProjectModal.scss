@@ -4,22 +4,32 @@
 
 .project-modal {
   position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   z-index: 1001; /* Sit on top */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
   background-color: $button-background-primary; /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  overflow: hidden; /* Prevent any scrolling in the modal itself */
 
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
   animation-duration: 0.4s;
 
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+  }
+
   &__overlay {
-    position: fixed; /* Stay in place */
+    position: absolute; /* Changed from fixed to absolute */
+    top: 0;
+    left: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     z-index: 1002;
@@ -31,8 +41,8 @@
     align-items: center;
     position: relative;
     gap: 1rem;
-    height: 85%;
-    width: 90%;
+    height: 100vh;
+    width: 100vw;
     background-color: $background-primary;
     z-index: 1002;
     overflow-y: scroll;
@@ -40,7 +50,6 @@
     @include tablet {
       height: 80%;
       width: 80%;
-   
     }
 
     @include desktop {
